@@ -1,0 +1,18 @@
+{
+  "name": "covid-19_dashboard",
+  "version": "1.0.0",
+  "description": "A web app which will first show a graph of new COVID-19 deaths against total deaths, and will later be a more comprehensive data viz dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Hills",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.9.3",
+    "handlebars": "^4.7.3",
+    "koa-body": "^4.1.1",
+    "koa-handlebars": "^2.0.0",
+    "koa-views": "^6.2.1"
+  }
+}
