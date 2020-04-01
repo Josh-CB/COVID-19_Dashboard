@@ -28,8 +28,6 @@ module.exports.fetchData = function() {
             }
         }
     }
-    console.log(data)
-    console.log(dates)
     return [data, dates, lastUpdate]
     
 }
