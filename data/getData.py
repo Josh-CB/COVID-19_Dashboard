@@ -65,7 +65,6 @@ for country in toWrite_raw:
         weeklyDeaths = deathsUpToToday - deathsAWeekAgo
         toWrite_raw[country][date]["totalDeathsInLastWeek"] = weeklyDeaths
 
-print(toWrite_raw)
 toWrite = json.dumps(toWrite_raw)
 
 f = open("data.json", "w")
@@ -73,6 +72,6 @@ f.write(toWrite)
 f.close()
 
 f = open("lastUpdate.txt", "w")
-lastUpdated = datetime.datetime.now().strftime("%d/%m/%Y %H:%M") + " UTC+01:00"
+lastUpdated = datetime.datetime.now().strftime("%d/%m/%Y %H:%M") + " UTC"
 f.write(lastUpdated)
 f.close()
