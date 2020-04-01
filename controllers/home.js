@@ -9,6 +9,7 @@ module.exports.home = async(ctx) => {
         UKdata: data.GBR,
         CHNdata: data.CHN,
         ITAdata: data.ITA,
+        USAdata: data.USA,
         dates: dates,
         lastUpdate: lastUpdated
     })
