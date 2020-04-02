@@ -24,14 +24,14 @@ def getDateAWeekAgo(date):
 try:
     url = "https://opendata.ecdc.europa.eu/covid19/casedistribution/json/"
     data = requests.get(url)
-    f = open("raw_data.json", "w")
+    f = open("data/raw_data.json", "w")
     f.write(data.text)
     f.close()
     print("retrieved and saved.")
 except Exception as e:
     print("Exception: ", e)
 
-f = open("raw_data.json", "r")
+f = open("data/raw_data.json", "r")
 raw_data = f.read()
 data = json.loads(raw_data)["records"]
 f.close()
@@ -67,11 +67,11 @@ for country in toWrite_raw:
 
 toWrite = json.dumps(toWrite_raw)
 
-f = open("data.json", "w")
+f = open("data/data.json", "w")
 f.write(toWrite)
 f.close()
 
-f = open("lastUpdate.txt", "w")
+f = open("data/lastUpdate.txt", "w")
 lastUpdated = datetime.datetime.now().strftime("%d/%m/%Y %H:%M") + " UTC"
 f.write(lastUpdated)
 f.close()

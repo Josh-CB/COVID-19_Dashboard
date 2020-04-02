@@ -76,6 +76,79 @@ var myChart = new Chart(ctx, {
 </script>
 
 <section class="faq">
-    <p class="question">What is this?</p>
-    <p class="answer">This graph shows the confirmed deaths of COVID-19 in China, the UK, and Italy against the total confirmed deaths for each country.</p>
+    <section class="qa-block">
+        <p class="question">What is this?</p>
+        <p class="answer">This graph shows the confirmed deaths of COVID-19 in China, the UK, and Italy against the total confirmed deaths for each country. The diagonal line that most countries follow is the period of exponential growth.</p>
+    </section>
+    <section class="qa-block">
+        <p class="question">Why are the numbers on the left and bottom weird?</p>
+        <p class="answer">This graph uses logarithmic scales. Virus growth is, at first, exponential and so are the deaths it may cause. Here's what the graph looks like if I use normal (linear) scales:</p>
+        <canvas id="linear" width="500" height="400"></canvas>
+        <script>
+            var ctx = document.getElementById('linear').getContext('2d');
+            var linear = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'China',
+                        backgroundColor: 'rgba(255,0,0,0.4)',
+                        borderColor: 'rgba(255,0,0,0.4)',
+                        data: {{{json CHNdata }}},
+                        fill: false
+            }, {
+                label: 'United Kingdom',
+                backgroundColor: 'rgba(0,255,0,0.4)',
+                borderColor: 'rgba(0,255,0,0.4)',
+                data: {{{json UKdata}}},
+                fill: false
+            }, {
+                label: 'Italy',
+                backgroundColor: 'rgba(0,0,255,0.4)',
+                borderColor: 'rgba(0,0,255,0.4)',
+                data: {{{json ITAdata}}},
+                fill: false
+            }, {
+                label: 'United States',
+                backgroundColor: 'rgba(255,0,150,0.4)',
+                borderColor: 'rgba(255,0,150,0.4)',
+                data: {{{json USAdata}}},
+                fill: false
+            }],
+            labels: {{{json dates}}}
+            },
+            options: {
+                responsive: false,
+                maintainAspectRatio: false,
+                scales: {
+                    yAxes: [{
+                        scaleLabel: {
+                         display: true,
+                            labelString: 'Weekly confirmed deaths'
+                    },
+                    type: 'linear',
+                    ticks: {
+                        beginAtZero: false,
+                        callback: function(tick, index, ticks) {
+                            return tick.toLocaleString()
+                        }
+                    }
+                    }],
+            xAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Total confirmed deaths'
+                },
+                type: 'linear',
+                ticks: {
+                    beginAtZero: false,
+                    callback: function(tick, index, ticks) {
+                        return tick.toLocaleString()
+                    }
+                }
+            }]
+        }
+    }
+});
+</script>
+    </section>
 </section>
