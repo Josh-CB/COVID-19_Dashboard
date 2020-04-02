@@ -10,6 +10,11 @@ module.exports.fetchData = function() {
         return data
     })
 
+    worldData = fs.readFileSync('./data/worlddata.json', (err, data) => {
+        if(err) throw err;
+        return data
+    })
+
     let data = {} 
 
     readDataJSON = JSON.parse(readData)
@@ -28,6 +33,8 @@ module.exports.fetchData = function() {
             }
         }
     }
-    return [data, dates, lastUpdate]
+
+    worldDataJSON = JSON.parse(worldData)
+    return [data, dates, lastUpdate, worldDataJSON]
     
 }

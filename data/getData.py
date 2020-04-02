@@ -7,12 +7,6 @@ import json
 import datetime
 
 def getDateAWeekAgo(date):
-    '''
-    1) take date as string
-    2) convert date string to datetime object
-    3) find date 7 days ago
-    4) convert back to string format
-    '''
     datetimeDate = datetime.datetime.strptime(date, '%d/%m/%Y')
     datetimeSevenDaysAgo = datetimeDate - datetime.timedelta(days=7)
     minimumDate = datetime.datetime(2019, 12, 31)
@@ -37,8 +31,12 @@ data = json.loads(raw_data)["records"]
 f.close()
 toWrite_raw = {}
 
-countriesToInclude = ["GBR", "CHN", "ITA", "USA", "ESP"]
+totalWorldDeaths = 0
+totalWorldCases = 0
+countriesToInclude = ["GBR", "CHN", "ITA", "USA", "ESP", "KOR", "DEU", "JPN"]
 for record in data:
+    totalWorldDeaths = totalWorldDeaths + int(record["deaths"])
+    totalWorldCases = totalWorldCases + int(record["cases"])
     if record["countryterritoryCode"] in countriesToInclude:
         country = record["countryterritoryCode"]
         newDeaths = int(record["deaths"])
@@ -74,4 +72,13 @@ f.close()
 f = open("data/lastUpdate.txt", "w")
 lastUpdated = datetime.datetime.now().strftime("%d/%m/%Y %H:%M") + " UTC"
 f.write(lastUpdated)
+f.close()
+
+worlddata = {
+    "totalCases": totalWorldCases,
+    "totalDeaths": totalWorldDeaths
+}
+worlddata = json.dumps(worlddata)
+f=open("data/worlddata.json", "w")
+f.write(worlddata)
 f.close()

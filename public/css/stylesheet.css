@@ -60,3 +60,42 @@
 .answer {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.worldCard {
+  text-align: center;
+  background-color: #EFEFEF;
+  border-radius: 15px;
+}
+
+.worldCard .data{
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.worldCard .cardtitle {
+  margin-bottom: 0rem;
+}
+
+.worldCard .titledata {
+  vertical-align: middle;
+}
+
+.col-md.leftCard {
+  padding-right: 25px;
+  padding-left: 150px;
+}
+
+.col-md.rightCard {
+  padding-right: 150px;
+  padding-left: 25px;
+}
+
+#deathChart {
+  width: 100%
+}
+
+
+
+.cardTitle {
+  font-weight: bold;
+}

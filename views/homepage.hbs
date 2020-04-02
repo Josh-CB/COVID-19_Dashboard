@@ -1,6 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
-    <title>COVID-19 Dashoard</title>
+    
+    <title>COVID-19 Dashboard</title>
     <meta name="description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in major countries."/>
     <meta name="og:title" property="og:title" content="COVID-19 Dashoard"/>
     <meta name="twitter:card" content="summary" />
@@ -10,7 +14,6 @@
     <meta property="og:url" content="http://coviddash.digital" />
     <meta name="twitter:image" content="ogimage.png" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
-
     <header>
         {{> header}}
     </header>
@@ -18,21 +21,40 @@
 
 
 <body>
-    <section class="chartwrapper">
-        <p class="update">Last updated: {{lastUpdate}}</p>
-        <canvas id="deathChart" width="1300" height="600"></canvas>
+    <div class="container">
+        <div class="row">
+            <p class="update">Last updated: {{lastUpdate}}</p>
+        </div>
+        <div class="row">
+            <div class="col-md leftCard">
+                <div class="worldCard">
+                <p class="cardtitle">Confirmed worldwide cases</p>
+                <p class="data">{{{json worlddata.totalCases}}}</p>
+                </div>
+            </div>
+            <div class="col-md rightCard">
+                <div class="worldCard">
+                <p class="cardtitle">Confirmed worldwide deaths</p>
+                <p class="data">{{{json worlddata.totalDeaths}}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p style="font-size: 12px;">Tip: Click a country's name on the legend below to remove the country from the graph.</p>
+            <canvas id="deathChart" height="600"></canvas>
+        </div>
     <script>
         var ctx = document.getElementById('deathChart').getContext('2d');
         var deathChart = new Chart(ctx, {
             type: 'line',
             data: {
-                datasets: [{
+                datasets: [/*{
                     label: 'China',
                     backgroundColor: 'rgba(255,0,0,0.4)',
                     borderColor: 'rgba(255,0,0,0.4)',
                     data: {{{json CHNdata }}},
                     fill: false
-                }, {
+                },*/ {
                     label: 'United Kingdom',
                     backgroundColor: 'rgba(0,255,0,0.4)',
                     borderColor: 'rgba(0,255,0,0.4)',
@@ -55,6 +77,24 @@
                     backgroundColor: 'rgba(255,0,150,0.4)',
                     borderColor: 'rgba(255,0,150,0.4)',
                     data: {{{json USAdata}}},
+                    fill: false
+                }, {
+                    label: 'South Korea',
+                    backgroundColor: 'rgba(0,255,255,0.4)',
+                    borderColor: 'rgba(0,255,255,0.4)',
+                    data: {{{json KORdata}}},
+                    fill: false
+                }, {
+                    label: 'Germany',
+                    backgroundColor: 'rgba(50,100,75,0.4)',
+                    borderColor: 'rgba(50,100,75,0.4)',
+                    data: {{{json DEUdata}}},
+                    fill: false
+                }, {
+                    label: 'Japan',
+                    backgroundColor: 'rgba(0,125,120,0.4)',
+                    borderColor: 'rgba(0,125,120,0.4)',
+                    data: {{{json JPNdata}}},
                     fill: false
                 }],
             labels: {{{json dates}}}
@@ -125,11 +165,15 @@
     <section class="faq">
         <section class="qa-block">
             <p class="question">What is this?</p>
-            <p class="answer">This graph shows the confirmed deaths of COVID-19 in China, the UK, Italy, Spain and the US against the total confirmed deaths for each country. The diagonal line that most countries follow is the period of exponential growth. Italy and Spain appear to be approaching their peaks. Note that this means they are having the same amount of weekly cases. As the line for China shows, as a country starts reporting less weekly cases, it will drop dramatically. This is when a country has reached its peak daily deaths.</p>
+            <p class="answer">This graph shows the confirmed deaths of COVID-19 in some major countries against the total confirmed deaths for each country. The diagonal line that most countries follow is the period of exponential growth. Italy and Spain appear to be approaching their peaks. Note that this means they are having the same amount of weekly cases. As the line for China shows, as a country starts reporting less weekly cases, it will drop dramatically. This is when a country has reached its peak daily deaths.</p>
+        </section>
+        <section class="qa-block">
+            <p class="question">China's data is rubbish!!! Why are you showing it?</p>
+            <p class="answer">Because there is simply no way of knowing. It's quite hard to hide an epidemic and there is no evidence suggesting their death figures are completely wrong. Their data may or may not be correct, but I've plotted them anyway. I may remove it in the future. Other countries will be added an removed as the situation changes. </p>
         </section>
         <section class="qa-block">
             <p class="question">Why's this different from the other graphs I've seen?</p>
-            <p class="answer">It probably shows the same trend - the UK closely following Italy's trajectory and the US following Spain's. Most graphs I've seen plot a measure of cases or deaths against a time (e.g. days since nth death). The approach on this web page is better as it ignores time.</p>
+            <p class="answer">It probably shows the same trend - countries roughly following the same trajectory. Most graphs I've seen plot a measure of cases or deaths against a time (e.g. days since nth death). The approach on this web page is in my opinion better as it ignores time.</p>
         </section>
         <section class="qa-block">
             <p class="question">How often is this updated?</p>
@@ -140,5 +184,6 @@
             <p class="answer">All code, including for the web app, is available on GitHub <a href="https://github.com/josh-cb/COVID-19_Dashboard">here</a>.</p>
         </section>
     </section>
-    </section>
+    </div>
 </body>
+</html>
