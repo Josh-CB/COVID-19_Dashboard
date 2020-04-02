@@ -1,5 +1,14 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+    <title>COVID-19 Dashoard</title>
+    <meta name="description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in major countries."/>
+    <meta name="og:title" property="og:title" content="COVID-19 Dashoard"/>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@limitless_josh" />
+    <meta property="og:description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in major countries." />
+    <meta property="og:image" content="ogimage.png" />
+    <meta property="og:url" content="http://coviddash.digital" />
+
 </head>
 <header>
     {{> header}}
@@ -32,6 +41,12 @@ var myChart = new Chart(ctx, {
             data: {{{json ITAdata}}},
             fill: false
         }, {
+            label: 'Spain',
+            backgroundColor: 'rgba(255,127,0,0.4)',
+            borderColor: 'rgba(255,127,0,0.4)',
+            data: {{{json ESPdata}}},
+            fill: false
+        }, {
             label: 'United States',
             backgroundColor: 'rgba(255,0,150,0.4)',
             borderColor: 'rgba(255,0,150,0.4)',
@@ -41,6 +56,17 @@ var myChart = new Chart(ctx, {
         labels: {{{json dates}}}
     },
     options: {
+        tooltips: {
+            enabled: true,
+            callbacks: {
+                beforeTitle: function(toolTipItem, data) {
+                    return 'Total confirmed deaths: '
+                },
+                beforeBody: function(toolTipItem, data) {
+                    return 'Weekly confirmed deaths: '
+                }
+            }
+        },
         responsive: false,
         maintainAspectRatio: false,
         scales: {
@@ -51,10 +77,19 @@ var myChart = new Chart(ctx, {
                 },
                 type: 'logarithmic',
                 ticks: {
-                    beginAtZero: false,
-                    callback: function(tick, index, ticks) {
-                        return tick.toLocaleString()
+                    min: 10, //minimum tick
+                    max: 100000, //maximum tick
+                    callback: function (value, index, values) {
+                        return Number(value.toString());//pass tick values as a string into Number function
                     }
+                },
+                afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
+                    chartObj.ticks = [];
+                    chartObj.ticks.push(10);
+                    chartObj.ticks.push(100);
+                    chartObj.ticks.push(1000);
+                    chartObj.ticks.push(10000);
+                    chartObj.ticks.push(100000);
                 }
             }],
             xAxes: [{
@@ -64,10 +99,18 @@ var myChart = new Chart(ctx, {
                 },
                 type: 'logarithmic',
                 ticks: {
-                    beginAtZero: false,
-                    callback: function(tick, index, ticks) {
-                        return tick.toLocaleString()
+                    min: 100, //minimum tick
+                    max: 100000, //maximum tick
+                    callback: function (value, index, values) {
+                        return Number(value.toString());//pass tick values as a string into Number function
                     }
+                },
+                afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
+                    chartObj.ticks = [];
+                    chartObj.ticks.push(100);
+                    chartObj.ticks.push(1000);
+                    chartObj.ticks.push(10000);
+                    chartObj.ticks.push(100000);
                 }
             }]
         }

@@ -37,7 +37,7 @@ data = json.loads(raw_data)["records"]
 f.close()
 toWrite_raw = {}
 
-countriesToInclude = ["GBR", "CHN", "ITA", "USA"]
+countriesToInclude = ["GBR", "CHN", "ITA", "USA", "ESP"]
 for record in data:
     if record["countryterritoryCode"] in countriesToInclude:
         country = record["countryterritoryCode"]
