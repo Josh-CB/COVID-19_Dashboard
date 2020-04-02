@@ -9,190 +9,117 @@
     <meta property="og:image" content="ogimage.png" />
     <meta property="og:url" content="http://coviddash.digital" />
     <meta name="twitter:image" content="ogimage.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
 
+    <header>
+        {{> header}}
+    </header>
 </head>
-<header>
-    {{> header}}
-</header>
 
-<p class="update">Last updated: {{lastUpdate}}</p>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
-<canvas id="myChart" width="1300" height="600"></canvas>
-<script>
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        datasets: [{
-            label: 'China',
-            backgroundColor: 'rgba(255,0,0,0.4)',
-            borderColor: 'rgba(255,0,0,0.4)',
-            data: {{{json CHNdata }}},
-            fill: false
-        }, {
-            label: 'United Kingdom',
-            backgroundColor: 'rgba(0,255,0,0.4)',
-            borderColor: 'rgba(0,255,0,0.4)',
-            data: {{{json UKdata}}},
-            fill: false
-        }, {
-            label: 'Italy',
-            backgroundColor: 'rgba(0,0,255,0.4)',
-            borderColor: 'rgba(0,0,255,0.4)',
-            data: {{{json ITAdata}}},
-            fill: false
-        }, {
-            label: 'Spain',
-            backgroundColor: 'rgba(255,127,0,0.4)',
-            borderColor: 'rgba(255,127,0,0.4)',
-            data: {{{json ESPdata}}},
-            fill: false
-        }, {
-            label: 'United States',
-            backgroundColor: 'rgba(255,0,150,0.4)',
-            borderColor: 'rgba(255,0,150,0.4)',
-            data: {{{json USAdata}}},
-            fill: false
-        }],
-        labels: {{{json dates}}}
-    },
-    options: {
-        tooltips: {
-            enabled: true,
-            callbacks: {
-                beforeTitle: function(toolTipItem, data) {
-                    return 'Total confirmed deaths: '
-                },
-                beforeBody: function(toolTipItem, data) {
-                    return 'Weekly confirmed deaths: '
-                }
-            }
-        },
-        responsive: false,
-        maintainAspectRatio: false,
-        scales: {
-            yAxes: [{
-                scaleLabel: {
-                    display: true,
-                    labelString: 'Weekly confirmed deaths'
-                },
-                type: 'logarithmic',
-                ticks: {
-                    min: 10, //minimum tick
-                    max: 100000, //maximum tick
-                    callback: function (value, index, values) {
-                        return Number(value.toString());//pass tick values as a string into Number function
-                    }
-                },
-                afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
-                    chartObj.ticks = [];
-                    chartObj.ticks.push(10);
-                    chartObj.ticks.push(100);
-                    chartObj.ticks.push(1000);
-                    chartObj.ticks.push(10000);
-                    chartObj.ticks.push(100000);
-                }
-            }],
-            xAxes: [{
-                scaleLabel: {
-                    display: true,
-                    labelString: 'Total confirmed deaths'
-                },
-                type: 'logarithmic',
-                ticks: {
-                    min: 100, //minimum tick
-                    max: 100000, //maximum tick
-                    callback: function (value, index, values) {
-                        return Number(value.toString());//pass tick values as a string into Number function
-                    }
-                },
-                afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
-                    chartObj.ticks = [];
-                    chartObj.ticks.push(100);
-                    chartObj.ticks.push(1000);
-                    chartObj.ticks.push(10000);
-                    chartObj.ticks.push(100000);
-                }
-            }]
-        }
-    }
-});
-</script>
 
-<section class="faq">
-    <section class="qa-block">
-        <p class="question">What is this?</p>
-        <p class="answer">This graph shows the confirmed deaths of COVID-19 in China, the UK, and Italy against the total confirmed deaths for each country. The diagonal line that most countries follow is the period of exponential growth.</p>
-    </section>
-    <section class="qa-block">
-        <p class="question">Why are the numbers on the left and bottom weird?</p>
-        <p class="answer">This graph uses logarithmic scales. Virus growth is, at first, exponential and so are the deaths it may cause. Here's what the graph looks like if I use normal (linear) scales:</p>
-        <canvas id="linear" width="500" height="400"></canvas>
-        <script>
-            var ctx = document.getElementById('linear').getContext('2d');
-            var linear = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    datasets: [{
-                        label: 'China',
-                        backgroundColor: 'rgba(255,0,0,0.4)',
-                        borderColor: 'rgba(255,0,0,0.4)',
-                        data: {{{json CHNdata }}},
-                        fill: false
-            }, {
-                label: 'United Kingdom',
-                backgroundColor: 'rgba(0,255,0,0.4)',
-                borderColor: 'rgba(0,255,0,0.4)',
-                data: {{{json UKdata}}},
-                fill: false
-            }, {
-                label: 'Italy',
-                backgroundColor: 'rgba(0,0,255,0.4)',
-                borderColor: 'rgba(0,0,255,0.4)',
-                data: {{{json ITAdata}}},
-                fill: false
-            }, {
-                label: 'United States',
-                backgroundColor: 'rgba(255,0,150,0.4)',
-                borderColor: 'rgba(255,0,150,0.4)',
-                data: {{{json USAdata}}},
-                fill: false
-            }],
+<body>
+    <section class="chartwrapper">
+        <p class="update">Last updated: {{lastUpdate}}</p>
+        <canvas id="deathChart" width="1300" height="600"></canvas>
+    <script>
+        var ctx = document.getElementById('deathChart').getContext('2d');
+        var deathChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'China',
+                    backgroundColor: 'rgba(255,0,0,0.4)',
+                    borderColor: 'rgba(255,0,0,0.4)',
+                    data: {{{json CHNdata }}},
+                    fill: false
+                }, {
+                    label: 'United Kingdom',
+                    backgroundColor: 'rgba(0,255,0,0.4)',
+                    borderColor: 'rgba(0,255,0,0.4)',
+                    data: {{{json UKdata}}},
+                    fill: false
+                }, {
+                    label: 'Italy',
+                    backgroundColor: 'rgba(0,0,255,0.4)',
+                    borderColor: 'rgba(0,0,255,0.4)',
+                    data: {{{json ITAdata}}},
+                    fill: false
+                }, {
+                    label: 'Spain',
+                    backgroundColor: 'rgba(255,127,0,0.4)',
+                    borderColor: 'rgba(255,127,0,0.4)',
+                    data: {{{json ESPdata}}},
+                    fill: false
+                }, {
+                    label: 'United States',
+                    backgroundColor: 'rgba(255,0,150,0.4)',
+                    borderColor: 'rgba(255,0,150,0.4)',
+                    data: {{{json USAdata}}},
+                    fill: false
+                }],
             labels: {{{json dates}}}
             },
             options: {
-                responsive: false,
-                maintainAspectRatio: false,
-                scales: {
-                    yAxes: [{
-                        scaleLabel: {
-                         display: true,
-                            labelString: 'Weekly confirmed deaths'
-                    },
-                    type: 'linear',
-                    ticks: {
-                        beginAtZero: false,
-                        callback: function(tick, index, ticks) {
-                            return tick.toLocaleString()
+                tooltips: {
+                    enabled: true,
+                    callbacks: {
+                        beforeTitle: function(toolTipItem, data) {
+                            return 'Total confirmed deaths: '
+                        },
+                        beforeBody: function(toolTipItem, data) {
+                            return 'Weekly confirmed deaths: '
                         }
                     }
-                    }],
-            xAxes: [{
-                scaleLabel: {
-                    display: true,
-                    labelString: 'Total confirmed deaths'
-                },
-                type: 'linear',
-                ticks: {
-                    beginAtZero: false,
-                    callback: function(tick, index, ticks) {
-                        return tick.toLocaleString()
+            },  
+            responsive: false,
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Weekly confirmed deaths'
+                    },
+                    type: 'logarithmic',
+                    ticks: {
+                        min: 10, //minimum tick
+                        max: 100000, //maximum tick
+                        callback: function (value, index, values) {
+                            return Number(value.toString());//pass tick values as a string into Number function
+                        }
+                    },
+                    afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
+                        chartObj.ticks = [];
+                        chartObj.ticks.push(10);
+                        chartObj.ticks.push(100);
+                        chartObj.ticks.push(1000);
+                        chartObj.ticks.push(10000);
+                        chartObj.ticks.push(100000);
                     }
-                }
-            }]
+                }],
+                xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Total confirmed deaths'
+                    },
+                    type: 'logarithmic',
+                    ticks: {
+                        min: 100, //minimum tick
+                        max: 100000, //maximum tick
+                        callback: function (value, index, values) {
+                            return Number(value.toString());//pass tick values as a string into Number function
+                        }
+                    },
+                    afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
+                        chartObj.ticks = [];
+                        chartObj.ticks.push(100);
+                        chartObj.ticks.push(1000);
+                        chartObj.ticks.push(10000);
+                        chartObj.ticks.push(100000);
+                    }
+                }]
+            }
         }
-    }
-});
-</script>
+    });
+    </script>
     </section>
-</section>
+</body>
