@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
     
+    
     <title>COVID-19 Dashboard</title>
     <meta name="description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in major countries."/>
     <meta name="og:title" property="og:title" content="COVID-19 Dashoard"/>
@@ -30,28 +31,29 @@
     <header>
         {{> header}}
     </header>
-    <div class="container">
-        <div class="row">
-            <p class="update">Last updated: {{lastUpdate}}</p>
-        </div>
+    <div class="container" style="padding-top: 20px;">
         <div class="row">
             <div class="col-md leftCard">
                 <div class="worldCard">
                 <p class="cardtitle">Confirmed worldwide cases</p>
-                <p class="data">{{{worlddata.totalCases}}}</p>
+                <p class="data">{{{counterdata.cases}}}</p>
                 </div>
             </div>
             <div class="col-md rightCard">
                 <div class="worldCard">
                 <p class="cardtitle">Confirmed worldwide deaths</p>
-                <p class="data">{{{worlddata.totalDeaths}}}</p>
+                <p class="data">{{{counterdata.deaths}}}</p>
                 </div>
             </div>
         </div>
+        <p style="float: left;">Source: <a href="{{{counterdata.url}}}">{{{counterdata.source}}}</a></p>
+        <p class="update" style="text-align: right;">Last updated: {{counterdata.last-updated}}</p>
+        <br>
         <div class="row">
             <p style="font-size: 12px;">Tip: Click a country's name on the legend below to remove the country from the graph.</p>
             <canvas id="deathChart" height="600"></canvas>
         </div>
+        
     <script>
         var ctx = document.getElementById('deathChart').getContext('2d');
         var deathChart = new Chart(ctx, {
@@ -87,11 +89,11 @@
                     label: 'Germany',
                     data: {{{json DEUdata}}},
                     fill: false
-                }, {
+                }, /*{
                     label: 'Japan',
                     data: {{{json JPNdata}}},
                     fill: false
-                }],
+                }*/],
             labels: {{{json dates}}}
             },
             options: {
@@ -123,7 +125,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 10, //minimum tick
-                        max: 100000, //maximum tick
+                        max: 10000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -145,7 +147,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 100, //minimum tick
-                        max: 100000, //maximum tick
+                        max: 50000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -155,30 +157,32 @@
                         chartObj.ticks.push(100);
                         chartObj.ticks.push(1000);
                         chartObj.ticks.push(10000);
-                        chartObj.ticks.push(100000);
+                        chartObj.ticks.push(50000);
                     }
                 }]
             }
         }
     });
     </script>
-    <p class="answer"> Data: <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">European Centre for Disease Control</a></p>
+    <p style="float: left;"> Data: <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">European Centre for Disease Control</a></p>
+    <p class="update" style="text-align:right;">Last checked for update: {{{lastUpdate}}}</p>
+    <br>
     <section class="faq">
         <section class="qa-block">
             <p class="question">What is this?</p>
-            <p class="answer">This graph shows the confirmed deaths of COVID-19 in some major countries against the total confirmed deaths for each country. The diagonal line that most countries follow is the period of exponential growth. Italy and Spain appear to be approaching their peaks. Note that this means they are having the same amount of weekly deaths. As the line for China shows, as a country starts reporting less weekly cases, it will drop dramatically. This is when a country has reached its peak daily deaths.</p>
+            <p class="answer">This is a dashboard of information relating to the 2019/2020 COVID-19 pandemic. The counters at the top show the latest worldwide cases and deaths, and the graph shows the confirmed deaths of COVID-19 in some major countries against the total confirmed deaths for each country. The diagonal line that most countries follow is the period of exponential growth. Italy and Spain appear to be approaching their peaks. Note that this means they are having the same amount of weekly deaths. As the line for China shows, as a country starts reporting less weekly cases, it will drop dramatically. This is when a country has reached its peak daily deaths.</p>
         </section>
-        <section class="qa-block">
+        <!---<section class="qa-block">
             <p class="question">China's data is rubbish!!! Why are you showing it?</p>
             <p class="answer">Because there is simply no way of knowing. It's quite hard to hide an epidemic and there is no evidence suggesting their death figures are completely wrong. Their data may or may not be correct, but I've plotted them anyway. I may remove it in the future. Other countries will be added an removed as the situation changes. </p>
-        </section>
+        </section>--->
         <section class="qa-block">
             <p class="question">Why's this different from the other graphs I've seen?</p>
             <p class="answer">It probably shows the same trend - countries roughly following the same trajectory. Most graphs I've seen plot a measure of cases or deaths against a time (e.g. days since nth death). The approach on this web page is in my opinion better as it ignores time.</p>
         </section>
         <section class="qa-block">
             <p class="question">How often is this updated?</p>
-            <p class="answer">The ECDC publishes data every morning (UTC), which could be up to 24 hours after a country has released it. The graph may therefore take up to 24 hours to update. The counters at the top of the page for cases and deaths update very frequently and use different sources.</p>
+            <p class="answer">The counters check for updates every two minutes. The graph uses ECDC data which is updated every morning (UTC), which could be up to 24 hours after a country has released it. The graph may therefore take up to 24 hours to update. The counters at the top of the page for cases and deaths update very frequently and use different sources.</p>
         </section>
         <section class="qa-block">
             <p class="question">Can I use your data/How did you make this/is there a GitHub repo?</p>

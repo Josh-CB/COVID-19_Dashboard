@@ -15,6 +15,11 @@ module.exports.fetchData = function() {
         return data
     })
 
+    counterData = fs.readFileSync('./data/counterData.json', (err, data) => {
+        if(err) throw err;
+        return data
+    })
+
     let data = {} 
 
     readDataJSON = JSON.parse(readData)
@@ -34,10 +39,10 @@ module.exports.fetchData = function() {
         }
     }
 
-    worldDataJSON = JSON.parse(worldData)
-    for(var stat in worldDataJSON){
-        worldDataJSON[stat] = worldDataJSON[stat].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-    }
-    return [data, dates, lastUpdate, worldDataJSON]
-    
+    counterDataJSON = JSON.parse(counterData)
+    counterDataJSON['cases'] = counterDataJSON['cases'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    counterDataJSON['deaths'] = counterDataJSON['deaths'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+
+
+    return [data, dates, lastUpdate, counterDataJSON]
 }

@@ -63,7 +63,7 @@
 
 .worldCard {
   text-align: center;
-  background-color: #EFEFEF;
+  background-color: rgb(255, 255, 255); 
   border-radius: 15px;
 }
 
@@ -81,13 +81,11 @@
 }
 
 .col-md.leftCard {
-  padding-right: 25px;
-  padding-left: 150px;
+  padding-left: 250px;
 }
 
 .col-md.rightCard {
-  padding-right: 150px;
-  padding-left: 25px;
+  padding-right: 250px;
 }
 
 #deathChart {

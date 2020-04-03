@@ -1,1 +1,3823 @@
-{"CHN": {"03/04/2020": {"newDeaths": 10, "totalDeathsToDate": 3326, "totalDeathsInLastWeek": 30}, "02/04/2020": {"newDeaths": 6, "totalDeathsToDate": 3316, "totalDeathsInLastWeek": 25}, "01/04/2020": {"newDeaths": 1, "totalDeathsToDate": 3310, "totalDeathsInLastWeek": 25}, "31/03/2020": {"newDeaths": 3, "totalDeathsToDate": 3309, "totalDeathsInLastWeek": 28}, "30/03/2020": {"newDeaths": 2, "totalDeathsToDate": 3306, "totalDeathsInLastWeek": 32}, "29/03/2020": {"newDeaths": 5, "totalDeathsToDate": 3304, "totalDeathsInLastWeek": 39}, "28/03/2020": {"newDeaths": 3, "totalDeathsToDate": 3299, "totalDeathsInLastWeek": 40}, "27/03/2020": {"newDeaths": 5, "totalDeathsToDate": 3296, "totalDeathsInLastWeek": 43}, "26/03/2020": {"newDeaths": 6, "totalDeathsToDate": 3291, "totalDeathsInLastWeek": 42}, "25/03/2020": {"newDeaths": 4, "totalDeathsToDate": 3285, "totalDeathsInLastWeek": 44}, "24/03/2020": {"newDeaths": 7, "totalDeathsToDate": 3281, "totalDeathsInLastWeek": 56}, "23/03/2020": {"newDeaths": 9, "totalDeathsToDate": 3274, "totalDeathsInLastWeek": 58}, "22/03/2020": {"newDeaths": 6, "totalDeathsToDate": 3265, "totalDeathsInLastWeek": 62}, "21/03/2020": {"newDeaths": 6, "totalDeathsToDate": 3259, "totalDeathsInLastWeek": 65}, "20/03/2020": {"newDeaths": 4, "totalDeathsToDate": 3253, "totalDeathsInLastWeek": 74}, "19/03/2020": {"newDeaths": 8, "totalDeathsToDate": 3249, "totalDeathsInLastWeek": 77}, "18/03/2020": {"newDeaths": 16, "totalDeathsToDate": 3241, "totalDeathsInLastWeek": 80}, "17/03/2020": {"newDeaths": 9, "totalDeathsToDate": 3225, "totalDeathsInLastWeek": 86}, "16/03/2020": {"newDeaths": 13, "totalDeathsToDate": 3216, "totalDeathsInLastWeek": 94}, "15/03/2020": {"newDeaths": 9, "totalDeathsToDate": 3203, "totalDeathsInLastWeek": 104}, "14/03/2020": {"newDeaths": 15, "totalDeathsToDate": 3194, "totalDeathsInLastWeek": 122}, "13/03/2020": {"newDeaths": 7, "totalDeathsToDate": 3179, "totalDeathsInLastWeek": 135}, "12/03/2020": {"newDeaths": 11, "totalDeathsToDate": 3172, "totalDeathsInLastWeek": 158}, "11/03/2020": {"newDeaths": 22, "totalDeathsToDate": 3161, "totalDeathsInLastWeek": 178}, "10/03/2020": {"newDeaths": 17, "totalDeathsToDate": 3139, "totalDeathsInLastWeek": 193}, "09/03/2020": {"newDeaths": 23, "totalDeathsToDate": 3122, "totalDeathsInLastWeek": 208}, "08/03/2020": {"newDeaths": 27, "totalDeathsToDate": 3099, "totalDeathsInLastWeek": 227}, "07/03/2020": {"newDeaths": 28, "totalDeathsToDate": 3072, "totalDeathsInLastWeek": 235}, "06/03/2020": {"newDeaths": 30, "totalDeathsToDate": 3044, "totalDeathsInLastWeek": 254}, "05/03/2020": {"newDeaths": 31, "totalDeathsToDate": 3014, "totalDeathsInLastWeek": 268}, "04/03/2020": {"newDeaths": 37, "totalDeathsToDate": 2983, "totalDeathsInLastWeek": 266}, "03/03/2020": {"newDeaths": 32, "totalDeathsToDate": 2946, "totalDeathsInLastWeek": 281}, "02/03/2020": {"newDeaths": 42, "totalDeathsToDate": 2914, "totalDeathsInLastWeek": 319}, "01/03/2020": {"newDeaths": 35, "totalDeathsToDate": 2872, "totalDeathsInLastWeek": 427}, "29/02/2020": {"newDeaths": 47, "totalDeathsToDate": 2837, "totalDeathsInLastWeek": 490}, "28/02/2020": {"newDeaths": 44, "totalDeathsToDate": 2790, "totalDeathsInLastWeek": 552}, "27/02/2020": {"newDeaths": 29, "totalDeathsToDate": 2746, "totalDeathsInLastWeek": 626}, "26/02/2020": {"newDeaths": 52, "totalDeathsToDate": 2717, "totalDeathsInLastWeek": 709}, "25/02/2020": {"newDeaths": 70, "totalDeathsToDate": 2665, "totalDeathsInLastWeek": 796}, "24/02/2020": {"newDeaths": 150, "totalDeathsToDate": 2595, "totalDeathsInLastWeek": 824}, "23/02/2020": {"newDeaths": 98, "totalDeathsToDate": 2445, "totalDeathsInLastWeek": 779}, "22/02/2020": {"newDeaths": 109, "totalDeathsToDate": 2347, "totalDeathsInLastWeek": 823}, "21/02/2020": {"newDeaths": 118, "totalDeathsToDate": 2238, "totalDeathsInLastWeek": 857}, "20/02/2020": {"newDeaths": 112, "totalDeathsToDate": 2120, "totalDeathsInLastWeek": 752}, "19/02/2020": {"newDeaths": 139, "totalDeathsToDate": 2008, "totalDeathsInLastWeek": 894}, "18/02/2020": {"newDeaths": 98, "totalDeathsToDate": 1869, "totalDeathsInLastWeek": 852}, "17/02/2020": {"newDeaths": 105, "totalDeathsToDate": 1771, "totalDeathsInLastWeek": 862}, "16/02/2020": {"newDeaths": 142, "totalDeathsToDate": 1666, "totalDeathsInLastWeek": 854}, "15/02/2020": {"newDeaths": 143, "totalDeathsToDate": 1524, "totalDeathsInLastWeek": 801}, "14/02/2020": {"newDeaths": 13, "totalDeathsToDate": 1381, "totalDeathsInLastWeek": 744}, "13/02/2020": {"newDeaths": 254, "totalDeathsToDate": 1368, "totalDeathsInLastWeek": 804}, "12/02/2020": {"newDeaths": 97, "totalDeathsToDate": 1114, "totalDeathsInLastWeek": 622}, "11/02/2020": {"newDeaths": 108, "totalDeathsToDate": 1017, "totalDeathsInLastWeek": 591}, "10/02/2020": {"newDeaths": 97, "totalDeathsToDate": 909, "totalDeathsInLastWeek": 548}, "09/02/2020": {"newDeaths": 89, "totalDeathsToDate": 812, "totalDeathsInLastWeek": 508}, "08/02/2020": {"newDeaths": 86, "totalDeathsToDate": 723, "totalDeathsInLastWeek": 464}, "07/02/2020": {"newDeaths": 73, "totalDeathsToDate": 637, "totalDeathsInLastWeek": 424}, "06/02/2020": {"newDeaths": 72, "totalDeathsToDate": 564, "totalDeathsInLastWeek": 394}, "05/02/2020": {"newDeaths": 66, "totalDeathsToDate": 492, "totalDeathsInLastWeek": 360}, "04/02/2020": {"newDeaths": 65, "totalDeathsToDate": 426, "totalDeathsInLastWeek": 320}, "03/02/2020": {"newDeaths": 57, "totalDeathsToDate": 361, "totalDeathsInLastWeek": 280}, "02/02/2020": {"newDeaths": 45, "totalDeathsToDate": 304, "totalDeathsInLastWeek": 248}, "01/02/2020": {"newDeaths": 46, "totalDeathsToDate": 259, "totalDeathsInLastWeek": 218}, "31/01/2020": {"newDeaths": 43, "totalDeathsToDate": 213, "totalDeathsInLastWeek": 187}, "30/01/2020": {"newDeaths": 38, "totalDeathsToDate": 170, "totalDeathsInLastWeek": 153}, "29/01/2020": {"newDeaths": 26, "totalDeathsToDate": 132, "totalDeathsInLastWeek": 115}, "28/01/2020": {"newDeaths": 25, "totalDeathsToDate": 106, "totalDeathsInLastWeek": 100}, "27/01/2020": {"newDeaths": 25, "totalDeathsToDate": 81, "totalDeathsInLastWeek": 78}, "26/01/2020": {"newDeaths": 15, "totalDeathsToDate": 56, "totalDeathsInLastWeek": 53}, "25/01/2020": {"newDeaths": 15, "totalDeathsToDate": 41, "totalDeathsInLastWeek": 39}, "24/01/2020": {"newDeaths": 9, "totalDeathsToDate": 26, "totalDeathsInLastWeek": 24}, "23/01/2020": {"newDeaths": 0, "totalDeathsToDate": 17, "totalDeathsInLastWeek": 15}, "22/01/2020": {"newDeaths": 11, "totalDeathsToDate": 17, "totalDeathsInLastWeek": 15}, "21/01/2020": {"newDeaths": 3, "totalDeathsToDate": 6, "totalDeathsInLastWeek": 5}, "20/01/2020": {"newDeaths": 0, "totalDeathsToDate": 3, "totalDeathsInLastWeek": 2}, "19/01/2020": {"newDeaths": 1, "totalDeathsToDate": 3, "totalDeathsInLastWeek": 2}, "18/01/2020": {"newDeaths": 0, "totalDeathsToDate": 2, "totalDeathsInLastWeek": 1}, "17/01/2020": {"newDeaths": 0, "totalDeathsToDate": 2, "totalDeathsInLastWeek": 2}, "16/01/2020": {"newDeaths": 0, "totalDeathsToDate": 2, "totalDeathsInLastWeek": 2}, "15/01/2020": {"newDeaths": 1, "totalDeathsToDate": 2, "totalDeathsInLastWeek": 2}, "14/01/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "13/01/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "12/01/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "11/01/2020": {"newDeaths": 1, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "10/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/12/2019": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}}, "DEU": {"03/04/2020": {"newDeaths": 0, "totalDeathsToDate": 872, "totalDeathsInLastWeek": 619}, "02/04/2020": {"newDeaths": 140, "totalDeathsToDate": 872, "totalDeathsInLastWeek": 674}, "01/04/2020": {"newDeaths": 149, "totalDeathsToDate": 732, "totalDeathsInLastWeek": 583}, "31/03/2020": {"newDeaths": 128, "totalDeathsToDate": 583, "totalDeathsInLastWeek": 457}, "30/03/2020": {"newDeaths": 66, "totalDeathsToDate": 455, "totalDeathsInLastWeek": 361}, "29/03/2020": {"newDeaths": 64, "totalDeathsToDate": 389, "totalDeathsInLastWeek": 322}, "28/03/2020": {"newDeaths": 72, "totalDeathsToDate": 325, "totalDeathsInLastWeek": 280}, "27/03/2020": {"newDeaths": 55, "totalDeathsToDate": 253, "totalDeathsInLastWeek": 210}, "26/03/2020": {"newDeaths": 49, "totalDeathsToDate": 198, "totalDeathsInLastWeek": 185}, "25/03/2020": {"newDeaths": 23, "totalDeathsToDate": 149, "totalDeathsInLastWeek": 136}, "24/03/2020": {"newDeaths": 32, "totalDeathsToDate": 126, "totalDeathsInLastWeek": 113}, "23/03/2020": {"newDeaths": 27, "totalDeathsToDate": 94, "totalDeathsInLastWeek": 82}, "22/03/2020": {"newDeaths": 22, "totalDeathsToDate": 67, "totalDeathsInLastWeek": 59}, "21/03/2020": {"newDeaths": 2, "totalDeathsToDate": 45, "totalDeathsInLastWeek": 40}, "20/03/2020": {"newDeaths": 30, "totalDeathsToDate": 43, "totalDeathsInLastWeek": 38}, "19/03/2020": {"newDeaths": 0, "totalDeathsToDate": 13, "totalDeathsInLastWeek": 10}, "18/03/2020": {"newDeaths": 0, "totalDeathsToDate": 13, "totalDeathsInLastWeek": 11}, "17/03/2020": {"newDeaths": 1, "totalDeathsToDate": 13, "totalDeathsInLastWeek": 11}, "16/03/2020": {"newDeaths": 4, "totalDeathsToDate": 12, "totalDeathsInLastWeek": 12}, "15/03/2020": {"newDeaths": 3, "totalDeathsToDate": 8, "totalDeathsInLastWeek": 8}, "14/03/2020": {"newDeaths": 0, "totalDeathsToDate": 5, "totalDeathsInLastWeek": 5}, "13/03/2020": {"newDeaths": 2, "totalDeathsToDate": 5, "totalDeathsInLastWeek": 5}, "12/03/2020": {"newDeaths": 1, "totalDeathsToDate": 3, "totalDeathsInLastWeek": 3}, "11/03/2020": {"newDeaths": 0, "totalDeathsToDate": 2, "totalDeathsInLastWeek": 2}, "10/03/2020": {"newDeaths": 2, "totalDeathsToDate": 2, "totalDeathsInLastWeek": 2}, "09/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "29/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "28/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "27/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "26/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "25/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "24/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "23/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "22/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "21/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "20/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "30/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "29/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "28/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "27/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "26/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "25/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "24/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "23/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "22/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "21/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "20/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/12/2019": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}}, "ITA": {"03/04/2020": {"newDeaths": 760, "totalDeathsToDate": 13917, "totalDeathsInLastWeek": 5752}, "02/04/2020": {"newDeaths": 727, "totalDeathsToDate": 13157, "totalDeathsInLastWeek": 5652}, "01/04/2020": {"newDeaths": 839, "totalDeathsToDate": 12430, "totalDeathsInLastWeek": 5610}, "31/03/2020": {"newDeaths": 810, "totalDeathsToDate": 11591, "totalDeathsInLastWeek": 5514}, "30/03/2020": {"newDeaths": 758, "totalDeathsToDate": 10781, "totalDeathsInLastWeek": 5305}, "29/03/2020": {"newDeaths": 887, "totalDeathsToDate": 10023, "totalDeathsInLastWeek": 5196}, "28/03/2020": {"newDeaths": 971, "totalDeathsToDate": 9136, "totalDeathsInLastWeek": 5104}, "27/03/2020": {"newDeaths": 660, "totalDeathsToDate": 8165, "totalDeathsInLastWeek": 4758}, "26/03/2020": {"newDeaths": 685, "totalDeathsToDate": 7505, "totalDeathsInLastWeek": 4527}, "25/03/2020": {"newDeaths": 743, "totalDeathsToDate": 6820, "totalDeathsInLastWeek": 4315}, "24/03/2020": {"newDeaths": 601, "totalDeathsToDate": 6077, "totalDeathsInLastWeek": 3919}, "23/03/2020": {"newDeaths": 649, "totalDeathsToDate": 5476, "totalDeathsInLastWeek": 3665}, "22/03/2020": {"newDeaths": 795, "totalDeathsToDate": 4827, "totalDeathsInLastWeek": 3386}, "21/03/2020": {"newDeaths": 625, "totalDeathsToDate": 4032, "totalDeathsInLastWeek": 2764}, "20/03/2020": {"newDeaths": 429, "totalDeathsToDate": 3407, "totalDeathsInLastWeek": 2391}, "19/03/2020": {"newDeaths": 473, "totalDeathsToDate": 2978, "totalDeathsInLastWeek": 2151}, "18/03/2020": {"newDeaths": 347, "totalDeathsToDate": 2505, "totalDeathsInLastWeek": 1874}, "17/03/2020": {"newDeaths": 347, "totalDeathsToDate": 2158, "totalDeathsInLastWeek": 1694}, "16/03/2020": {"newDeaths": 370, "totalDeathsToDate": 1811, "totalDeathsInLastWeek": 1445}, "15/03/2020": {"newDeaths": 173, "totalDeathsToDate": 1441, "totalDeathsInLastWeek": 1208}, "14/03/2020": {"newDeaths": 252, "totalDeathsToDate": 1268, "totalDeathsInLastWeek": 1071}, "13/03/2020": {"newDeaths": 189, "totalDeathsToDate": 1016, "totalDeathsInLastWeek": 868}, "12/03/2020": {"newDeaths": 196, "totalDeathsToDate": 827, "totalDeathsInLastWeek": 720}, "11/03/2020": {"newDeaths": 167, "totalDeathsToDate": 631, "totalDeathsInLastWeek": 551}, "10/03/2020": {"newDeaths": 98, "totalDeathsToDate": 464, "totalDeathsInLastWeek": 412}, "09/03/2020": {"newDeaths": 133, "totalDeathsToDate": 366, "totalDeathsInLastWeek": 331}, "08/03/2020": {"newDeaths": 36, "totalDeathsToDate": 233, "totalDeathsInLastWeek": 204}, "07/03/2020": {"newDeaths": 49, "totalDeathsToDate": 197, "totalDeathsInLastWeek": 176}, "06/03/2020": {"newDeaths": 41, "totalDeathsToDate": 148, "totalDeathsInLastWeek": 131}, "05/03/2020": {"newDeaths": 27, "totalDeathsToDate": 107, "totalDeathsInLastWeek": 95}, "04/03/2020": {"newDeaths": 28, "totalDeathsToDate": 80, "totalDeathsInLastWeek": 69}, "03/03/2020": {"newDeaths": 17, "totalDeathsToDate": 52, "totalDeathsInLastWeek": 46}, "02/03/2020": {"newDeaths": 6, "totalDeathsToDate": 35, "totalDeathsInLastWeek": 33}, "01/03/2020": {"newDeaths": 8, "totalDeathsToDate": 29, "totalDeathsInLastWeek": 27}, "29/02/2020": {"newDeaths": 4, "totalDeathsToDate": 21, "totalDeathsInLastWeek": 21}, "28/02/2020": {"newDeaths": 5, "totalDeathsToDate": 17, "totalDeathsInLastWeek": 17}, "27/02/2020": {"newDeaths": 1, "totalDeathsToDate": 12, "totalDeathsInLastWeek": 12}, "26/02/2020": {"newDeaths": 5, "totalDeathsToDate": 11, "totalDeathsInLastWeek": 11}, "25/02/2020": {"newDeaths": 4, "totalDeathsToDate": 6, "totalDeathsInLastWeek": 6}, "24/02/2020": {"newDeaths": 0, "totalDeathsToDate": 2, "totalDeathsInLastWeek": 2}, "23/02/2020": {"newDeaths": 2, "totalDeathsToDate": 2, "totalDeathsInLastWeek": 2}, "22/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "21/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "20/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "30/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "29/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "28/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "27/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "26/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "25/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "24/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "23/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "22/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "21/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "20/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/12/2019": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}}, "JPN": {"03/04/2020": {"newDeaths": 6, "totalDeathsToDate": 63, "totalDeathsInLastWeek": 17}, "02/04/2020": {"newDeaths": 1, "totalDeathsToDate": 57, "totalDeathsInLastWeek": 12}, "01/04/2020": {"newDeaths": 0, "totalDeathsToDate": 56, "totalDeathsInLastWeek": 13}, "31/03/2020": {"newDeaths": 2, "totalDeathsToDate": 56, "totalDeathsInLastWeek": 14}, "30/03/2020": {"newDeaths": 2, "totalDeathsToDate": 54, "totalDeathsInLastWeek": 13}, "29/03/2020": {"newDeaths": 3, "totalDeathsToDate": 52, "totalDeathsInLastWeek": 16}, "28/03/2020": {"newDeaths": 3, "totalDeathsToDate": 49, "totalDeathsInLastWeek": 14}, "27/03/2020": {"newDeaths": 1, "totalDeathsToDate": 46, "totalDeathsInLastWeek": 13}, "26/03/2020": {"newDeaths": 2, "totalDeathsToDate": 45, "totalDeathsInLastWeek": 16}, "25/03/2020": {"newDeaths": 1, "totalDeathsToDate": 43, "totalDeathsInLastWeek": 15}, "24/03/2020": {"newDeaths": 1, "totalDeathsToDate": 42, "totalDeathsInLastWeek": 14}, "23/03/2020": {"newDeaths": 5, "totalDeathsToDate": 41, "totalDeathsInLastWeek": 17}, "22/03/2020": {"newDeaths": 1, "totalDeathsToDate": 36, "totalDeathsInLastWeek": 14}, "21/03/2020": {"newDeaths": 2, "totalDeathsToDate": 35, "totalDeathsInLastWeek": 14}, "20/03/2020": {"newDeaths": 4, "totalDeathsToDate": 33, "totalDeathsInLastWeek": 14}, "19/03/2020": {"newDeaths": 1, "totalDeathsToDate": 29, "totalDeathsInLastWeek": 14}, "18/03/2020": {"newDeaths": 0, "totalDeathsToDate": 28, "totalDeathsInLastWeek": 16}, "17/03/2020": {"newDeaths": 4, "totalDeathsToDate": 28, "totalDeathsInLastWeek": 19}, "16/03/2020": {"newDeaths": 2, "totalDeathsToDate": 24, "totalDeathsInLastWeek": 17}, "15/03/2020": {"newDeaths": 1, "totalDeathsToDate": 22, "totalDeathsInLastWeek": 16}, "14/03/2020": {"newDeaths": 2, "totalDeathsToDate": 21, "totalDeathsInLastWeek": 15}, "13/03/2020": {"newDeaths": 4, "totalDeathsToDate": 19, "totalDeathsInLastWeek": 13}, "12/03/2020": {"newDeaths": 3, "totalDeathsToDate": 15, "totalDeathsInLastWeek": 9}, "11/03/2020": {"newDeaths": 3, "totalDeathsToDate": 12, "totalDeathsInLastWeek": 6}, "10/03/2020": {"newDeaths": 2, "totalDeathsToDate": 9, "totalDeathsInLastWeek": 3}, "09/03/2020": {"newDeaths": 1, "totalDeathsToDate": 7, "totalDeathsInLastWeek": 1}, "08/03/2020": {"newDeaths": 0, "totalDeathsToDate": 6, "totalDeathsInLastWeek": 1}, "07/03/2020": {"newDeaths": 0, "totalDeathsToDate": 6, "totalDeathsInLastWeek": 3}, "06/03/2020": {"newDeaths": 0, "totalDeathsToDate": 6, "totalDeathsInLastWeek": 3}, "05/03/2020": {"newDeaths": 0, "totalDeathsToDate": 6, "totalDeathsInLastWeek": 3}, "04/03/2020": {"newDeaths": 0, "totalDeathsToDate": 6, "totalDeathsInLastWeek": 5}, "03/03/2020": {"newDeaths": 0, "totalDeathsToDate": 6, "totalDeathsInLastWeek": 5}, "02/03/2020": {"newDeaths": 1, "totalDeathsToDate": 6, "totalDeathsInLastWeek": 5}, "01/03/2020": {"newDeaths": 2, "totalDeathsToDate": 5, "totalDeathsInLastWeek": 4}, "29/02/2020": {"newDeaths": 0, "totalDeathsToDate": 3, "totalDeathsInLastWeek": 2}, "28/02/2020": {"newDeaths": 0, "totalDeathsToDate": 3, "totalDeathsInLastWeek": 2}, "27/02/2020": {"newDeaths": 2, "totalDeathsToDate": 3, "totalDeathsInLastWeek": 2}, "26/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 0}, "25/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 0}, "24/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 0}, "23/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 0}, "22/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 0}, "21/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 0}, "20/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 0}, "19/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "18/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "17/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "16/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "15/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "14/02/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "13/02/2020": {"newDeaths": 1, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "12/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "30/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "29/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "28/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "27/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "26/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "25/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "24/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "23/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "22/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "21/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "20/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/12/2019": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}}, "KOR": {"03/04/2020": {"newDeaths": 5, "totalDeathsToDate": 174, "totalDeathsInLastWeek": 35}, "02/04/2020": {"newDeaths": 6, "totalDeathsToDate": 169, "totalDeathsInLastWeek": 38}, "01/04/2020": {"newDeaths": 0, "totalDeathsToDate": 163, "totalDeathsInLastWeek": 37}, "31/03/2020": {"newDeaths": 5, "totalDeathsToDate": 163, "totalDeathsInLastWeek": 43}, "30/03/2020": {"newDeaths": 6, "totalDeathsToDate": 158, "totalDeathsInLastWeek": 45}, "29/03/2020": {"newDeaths": 8, "totalDeathsToDate": 152, "totalDeathsInLastWeek": 48}, "28/03/2020": {"newDeaths": 5, "totalDeathsToDate": 144, "totalDeathsInLastWeek": 41}, "27/03/2020": {"newDeaths": 8, "totalDeathsToDate": 139, "totalDeathsInLastWeek": 39}, "26/03/2020": {"newDeaths": 5, "totalDeathsToDate": 131, "totalDeathsInLastWeek": 40}, "25/03/2020": {"newDeaths": 6, "totalDeathsToDate": 126, "totalDeathsInLastWeek": 40}, "24/03/2020": {"newDeaths": 7, "totalDeathsToDate": 120, "totalDeathsInLastWeek": 39}, "23/03/2020": {"newDeaths": 9, "totalDeathsToDate": 113, "totalDeathsInLastWeek": 38}, "22/03/2020": {"newDeaths": 1, "totalDeathsToDate": 104, "totalDeathsInLastWeek": 29}, "21/03/2020": {"newDeaths": 3, "totalDeathsToDate": 103, "totalDeathsInLastWeek": 31}, "20/03/2020": {"newDeaths": 9, "totalDeathsToDate": 100, "totalDeathsInLastWeek": 33}, "19/03/2020": {"newDeaths": 5, "totalDeathsToDate": 91, "totalDeathsInLastWeek": 25}, "18/03/2020": {"newDeaths": 5, "totalDeathsToDate": 86, "totalDeathsInLastWeek": 26}, "17/03/2020": {"newDeaths": 6, "totalDeathsToDate": 81, "totalDeathsInLastWeek": 27}, "16/03/2020": {"newDeaths": 0, "totalDeathsToDate": 75, "totalDeathsInLastWeek": 24}, "15/03/2020": {"newDeaths": 3, "totalDeathsToDate": 75, "totalDeathsInLastWeek": 25}, "14/03/2020": {"newDeaths": 5, "totalDeathsToDate": 72, "totalDeathsInLastWeek": 28}, "13/03/2020": {"newDeaths": 1, "totalDeathsToDate": 67, "totalDeathsInLastWeek": 25}, "12/03/2020": {"newDeaths": 6, "totalDeathsToDate": 66, "totalDeathsInLastWeek": 31}, "11/03/2020": {"newDeaths": 6, "totalDeathsToDate": 60, "totalDeathsInLastWeek": 28}, "10/03/2020": {"newDeaths": 3, "totalDeathsToDate": 54, "totalDeathsInLastWeek": 26}, "09/03/2020": {"newDeaths": 1, "totalDeathsToDate": 51, "totalDeathsInLastWeek": 29}, "08/03/2020": {"newDeaths": 6, "totalDeathsToDate": 50, "totalDeathsInLastWeek": 33}, "07/03/2020": {"newDeaths": 2, "totalDeathsToDate": 44, "totalDeathsInLastWeek": 28}, "06/03/2020": {"newDeaths": 7, "totalDeathsToDate": 42, "totalDeathsInLastWeek": 29}, "05/03/2020": {"newDeaths": 3, "totalDeathsToDate": 35, "totalDeathsInLastWeek": 23}, "04/03/2020": {"newDeaths": 4, "totalDeathsToDate": 32, "totalDeathsInLastWeek": 21}, "03/03/2020": {"newDeaths": 6, "totalDeathsToDate": 28, "totalDeathsInLastWeek": 20}, "02/03/2020": {"newDeaths": 5, "totalDeathsToDate": 22, "totalDeathsInLastWeek": 15}, "01/03/2020": {"newDeaths": 1, "totalDeathsToDate": 17, "totalDeathsInLastWeek": 12}, "29/02/2020": {"newDeaths": 3, "totalDeathsToDate": 16, "totalDeathsInLastWeek": 14}, "28/02/2020": {"newDeaths": 1, "totalDeathsToDate": 13, "totalDeathsInLastWeek": 12}, "27/02/2020": {"newDeaths": 1, "totalDeathsToDate": 12, "totalDeathsInLastWeek": 12}, "26/02/2020": {"newDeaths": 3, "totalDeathsToDate": 11, "totalDeathsInLastWeek": 11}, "25/02/2020": {"newDeaths": 1, "totalDeathsToDate": 8, "totalDeathsInLastWeek": 8}, "24/02/2020": {"newDeaths": 2, "totalDeathsToDate": 7, "totalDeathsInLastWeek": 7}, "23/02/2020": {"newDeaths": 3, "totalDeathsToDate": 5, "totalDeathsInLastWeek": 5}, "22/02/2020": {"newDeaths": 1, "totalDeathsToDate": 2, "totalDeathsInLastWeek": 2}, "21/02/2020": {"newDeaths": 1, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "20/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "30/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "29/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "28/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "27/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "26/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "25/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "24/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "23/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "22/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "21/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "20/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/12/2019": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}}, "ESP": {"03/04/2020": {"newDeaths": 950, "totalDeathsToDate": 10003, "totalDeathsInLastWeek": 5914}, "02/04/2020": {"newDeaths": 864, "totalDeathsToDate": 9053, "totalDeathsInLastWeek": 5619}, "01/04/2020": {"newDeaths": 849, "totalDeathsToDate": 8189, "totalDeathsInLastWeek": 5493}, "31/03/2020": {"newDeaths": 812, "totalDeathsToDate": 7340, "totalDeathsInLastWeek": 5158}, "30/03/2020": {"newDeaths": 838, "totalDeathsToDate": 6528, "totalDeathsInLastWeek": 4808}, "29/03/2020": {"newDeaths": 832, "totalDeathsToDate": 5690, "totalDeathsInLastWeek": 4364}, "28/03/2020": {"newDeaths": 769, "totalDeathsToDate": 4858, "totalDeathsInLastWeek": 3856}, "27/03/2020": {"newDeaths": 655, "totalDeathsToDate": 4089, "totalDeathsInLastWeek": 3322}, "26/03/2020": {"newDeaths": 738, "totalDeathsToDate": 3434, "totalDeathsInLastWeek": 2836}, "25/03/2020": {"newDeaths": 514, "totalDeathsToDate": 2696, "totalDeathsInLastWeek": 2205}, "24/03/2020": {"newDeaths": 462, "totalDeathsToDate": 2182, "totalDeathsInLastWeek": 1873}, "23/03/2020": {"newDeaths": 394, "totalDeathsToDate": 1720, "totalDeathsInLastWeek": 1432}, "22/03/2020": {"newDeaths": 324, "totalDeathsToDate": 1326, "totalDeathsInLastWeek": 1190}, "21/03/2020": {"newDeaths": 235, "totalDeathsToDate": 1002, "totalDeathsInLastWeek": 881}, "20/03/2020": {"newDeaths": 169, "totalDeathsToDate": 767, "totalDeathsInLastWeek": 683}, "19/03/2020": {"newDeaths": 107, "totalDeathsToDate": 598, "totalDeathsInLastWeek": 551}, "18/03/2020": {"newDeaths": 182, "totalDeathsToDate": 491, "totalDeathsInLastWeek": 456}, "17/03/2020": {"newDeaths": 21, "totalDeathsToDate": 309, "totalDeathsInLastWeek": 281}, "16/03/2020": {"newDeaths": 152, "totalDeathsToDate": 288, "totalDeathsInLastWeek": 283}, "15/03/2020": {"newDeaths": 15, "totalDeathsToDate": 136, "totalDeathsInLastWeek": 131}, "14/03/2020": {"newDeaths": 37, "totalDeathsToDate": 121, "totalDeathsInLastWeek": 116}, "13/03/2020": {"newDeaths": 37, "totalDeathsToDate": 84, "totalDeathsInLastWeek": 81}, "12/03/2020": {"newDeaths": 12, "totalDeathsToDate": 47, "totalDeathsInLastWeek": 46}, "11/03/2020": {"newDeaths": 7, "totalDeathsToDate": 35, "totalDeathsInLastWeek": 35}, "10/03/2020": {"newDeaths": 23, "totalDeathsToDate": 28, "totalDeathsInLastWeek": 28}, "09/03/2020": {"newDeaths": 0, "totalDeathsToDate": 5, "totalDeathsInLastWeek": 5}, "08/03/2020": {"newDeaths": 0, "totalDeathsToDate": 5, "totalDeathsInLastWeek": 5}, "07/03/2020": {"newDeaths": 2, "totalDeathsToDate": 5, "totalDeathsInLastWeek": 5}, "06/03/2020": {"newDeaths": 2, "totalDeathsToDate": 3, "totalDeathsInLastWeek": 3}, "05/03/2020": {"newDeaths": 1, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "04/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "29/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "28/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "27/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "26/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "25/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "24/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "23/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "22/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "21/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "20/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "30/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "29/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "28/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "27/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "26/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "25/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "24/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "23/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "22/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "21/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "20/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/12/2019": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}}, "GBR": {"03/04/2020": {"newDeaths": 389, "totalDeathsToDate": 2921, "totalDeathsInLastWeek": 2343}, "02/04/2020": {"newDeaths": 743, "totalDeathsToDate": 2532, "totalDeathsInLastWeek": 2069}, "01/04/2020": {"newDeaths": 381, "totalDeathsToDate": 1789, "totalDeathsInLastWeek": 1367}, "31/03/2020": {"newDeaths": 180, "totalDeathsToDate": 1408, "totalDeathsInLastWeek": 1073}, "30/03/2020": {"newDeaths": 209, "totalDeathsToDate": 1228, "totalDeathsInLastWeek": 947}, "29/03/2020": {"newDeaths": 260, "totalDeathsToDate": 1019, "totalDeathsInLastWeek": 786}, "28/03/2020": {"newDeaths": 181, "totalDeathsToDate": 759, "totalDeathsInLastWeek": 582}, "27/03/2020": {"newDeaths": 115, "totalDeathsToDate": 578, "totalDeathsInLastWeek": 434}, "26/03/2020": {"newDeaths": 41, "totalDeathsToDate": 463, "totalDeathsInLastWeek": 360}, "25/03/2020": {"newDeaths": 87, "totalDeathsToDate": 422, "totalDeathsInLastWeek": 362}, "24/03/2020": {"newDeaths": 54, "totalDeathsToDate": 335, "totalDeathsInLastWeek": 280}, "23/03/2020": {"newDeaths": 48, "totalDeathsToDate": 281, "totalDeathsInLastWeek": 246}, "22/03/2020": {"newDeaths": 56, "totalDeathsToDate": 233, "totalDeathsInLastWeek": 212}, "21/03/2020": {"newDeaths": 33, "totalDeathsToDate": 177, "totalDeathsInLastWeek": 167}, "20/03/2020": {"newDeaths": 41, "totalDeathsToDate": 144, "totalDeathsInLastWeek": 134}, "19/03/2020": {"newDeaths": 43, "totalDeathsToDate": 103, "totalDeathsInLastWeek": 97}, "18/03/2020": {"newDeaths": 5, "totalDeathsToDate": 60, "totalDeathsInLastWeek": 54}, "17/03/2020": {"newDeaths": 20, "totalDeathsToDate": 55, "totalDeathsInLastWeek": 50}, "16/03/2020": {"newDeaths": 14, "totalDeathsToDate": 35, "totalDeathsInLastWeek": 32}, "15/03/2020": {"newDeaths": 11, "totalDeathsToDate": 21, "totalDeathsInLastWeek": 19}, "14/03/2020": {"newDeaths": 0, "totalDeathsToDate": 10, "totalDeathsInLastWeek": 9}, "13/03/2020": {"newDeaths": 4, "totalDeathsToDate": 10, "totalDeathsInLastWeek": 9}, "12/03/2020": {"newDeaths": 0, "totalDeathsToDate": 6, "totalDeathsInLastWeek": 6}, "11/03/2020": {"newDeaths": 1, "totalDeathsToDate": 6, "totalDeathsInLastWeek": 6}, "10/03/2020": {"newDeaths": 2, "totalDeathsToDate": 5, "totalDeathsInLastWeek": 5}, "09/03/2020": {"newDeaths": 1, "totalDeathsToDate": 3, "totalDeathsInLastWeek": 3}, "08/03/2020": {"newDeaths": 1, "totalDeathsToDate": 2, "totalDeathsInLastWeek": 2}, "07/03/2020": {"newDeaths": 0, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "06/03/2020": {"newDeaths": 1, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "05/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/03/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "29/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "28/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "27/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "26/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "25/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "24/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "23/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "22/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "21/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "20/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "30/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "29/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "28/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "27/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "26/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "25/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "24/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "23/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "22/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "21/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "20/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/12/2019": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}}, "USA": {"03/04/2020": {"newDeaths": 915, "totalDeathsToDate": 6053, "totalDeathsInLastWeek": 4757}, "02/04/2020": {"newDeaths": 1059, "totalDeathsToDate": 5138, "totalDeathsInLastWeek": 4088}, "01/04/2020": {"newDeaths": 909, "totalDeathsToDate": 4079, "totalDeathsInLastWeek": 3278}, "31/03/2020": {"newDeaths": 661, "totalDeathsToDate": 3170, "totalDeathsInLastWeek": 2580}, "30/03/2020": {"newDeaths": 318, "totalDeathsToDate": 2509, "totalDeathsInLastWeek": 2038}, "29/03/2020": {"newDeaths": 484, "totalDeathsToDate": 2191, "totalDeathsInLastWeek": 1851}, "28/03/2020": {"newDeaths": 411, "totalDeathsToDate": 1707, "totalDeathsInLastWeek": 1447}, "27/03/2020": {"newDeaths": 246, "totalDeathsToDate": 1296, "totalDeathsInLastWeek": 1146}, "26/03/2020": {"newDeaths": 249, "totalDeathsToDate": 1050, "totalDeathsInLastWeek": 900}, "25/03/2020": {"newDeaths": 211, "totalDeathsToDate": 801, "totalDeathsInLastWeek": 693}, "24/03/2020": {"newDeaths": 119, "totalDeathsToDate": 590, "totalDeathsInLastWeek": 505}, "23/03/2020": {"newDeaths": 131, "totalDeathsToDate": 471, "totalDeathsInLastWeek": 402}, "22/03/2020": {"newDeaths": 80, "totalDeathsToDate": 340, "totalDeathsInLastWeek": 283}, "21/03/2020": {"newDeaths": 110, "totalDeathsToDate": 260, "totalDeathsInLastWeek": 213}, "20/03/2020": {"newDeaths": 0, "totalDeathsToDate": 150, "totalDeathsInLastWeek": 110}, "19/03/2020": {"newDeaths": 42, "totalDeathsToDate": 150, "totalDeathsInLastWeek": 120}, "18/03/2020": {"newDeaths": 23, "totalDeathsToDate": 108, "totalDeathsInLastWeek": 80}, "17/03/2020": {"newDeaths": 16, "totalDeathsToDate": 85, "totalDeathsInLastWeek": 59}, "16/03/2020": {"newDeaths": 12, "totalDeathsToDate": 69, "totalDeathsInLastWeek": 48}, "15/03/2020": {"newDeaths": 10, "totalDeathsToDate": 57, "totalDeathsInLastWeek": 40}, "14/03/2020": {"newDeaths": 7, "totalDeathsToDate": 47, "totalDeathsInLastWeek": 33}, "13/03/2020": {"newDeaths": 10, "totalDeathsToDate": 40, "totalDeathsInLastWeek": 28}, "12/03/2020": {"newDeaths": 2, "totalDeathsToDate": 30, "totalDeathsInLastWeek": 19}, "11/03/2020": {"newDeaths": 2, "totalDeathsToDate": 28, "totalDeathsInLastWeek": 19}, "10/03/2020": {"newDeaths": 5, "totalDeathsToDate": 26, "totalDeathsInLastWeek": 20}, "09/03/2020": {"newDeaths": 4, "totalDeathsToDate": 21, "totalDeathsInLastWeek": 19}, "08/03/2020": {"newDeaths": 3, "totalDeathsToDate": 17, "totalDeathsInLastWeek": 16}, "07/03/2020": {"newDeaths": 2, "totalDeathsToDate": 14, "totalDeathsInLastWeek": 14}, "06/03/2020": {"newDeaths": 1, "totalDeathsToDate": 12, "totalDeathsInLastWeek": 12}, "05/03/2020": {"newDeaths": 2, "totalDeathsToDate": 11, "totalDeathsInLastWeek": 11}, "04/03/2020": {"newDeaths": 3, "totalDeathsToDate": 9, "totalDeathsInLastWeek": 9}, "03/03/2020": {"newDeaths": 4, "totalDeathsToDate": 6, "totalDeathsInLastWeek": 6}, "02/03/2020": {"newDeaths": 1, "totalDeathsToDate": 2, "totalDeathsInLastWeek": 2}, "01/03/2020": {"newDeaths": 1, "totalDeathsToDate": 1, "totalDeathsInLastWeek": 1}, "29/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "28/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "27/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "26/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "25/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "24/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "23/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "22/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "21/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "20/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/02/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "30/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "29/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "28/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "27/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "26/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "25/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "24/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "23/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "22/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "21/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "20/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "19/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "18/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "17/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "16/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "15/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "14/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "13/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "12/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "11/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "10/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "09/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "08/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "07/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "06/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "05/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "04/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "03/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "02/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "01/01/2020": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}, "31/12/2019": {"newDeaths": 0, "totalDeathsToDate": 0, "totalDeathsInLastWeek": 0}}}
+{
+	"CHN": {
+		"03/04/2020": {
+			"newDeaths": 10,
+			"totalDeathsToDate": 3326,
+			"totalDeathsInLastWeek": 30
+		},
+		"02/04/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 3316,
+			"totalDeathsInLastWeek": 25
+		},
+		"01/04/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 3310,
+			"totalDeathsInLastWeek": 25
+		},
+		"31/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 3309,
+			"totalDeathsInLastWeek": 28
+		},
+		"30/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 3306,
+			"totalDeathsInLastWeek": 32
+		},
+		"29/03/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 3304,
+			"totalDeathsInLastWeek": 39
+		},
+		"28/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 3299,
+			"totalDeathsInLastWeek": 40
+		},
+		"27/03/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 3296,
+			"totalDeathsInLastWeek": 43
+		},
+		"26/03/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 3291,
+			"totalDeathsInLastWeek": 42
+		},
+		"25/03/2020": {
+			"newDeaths": 4,
+			"totalDeathsToDate": 3285,
+			"totalDeathsInLastWeek": 44
+		},
+		"24/03/2020": {
+			"newDeaths": 7,
+			"totalDeathsToDate": 3281,
+			"totalDeathsInLastWeek": 56
+		},
+		"23/03/2020": {
+			"newDeaths": 9,
+			"totalDeathsToDate": 3274,
+			"totalDeathsInLastWeek": 58
+		},
+		"22/03/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 3265,
+			"totalDeathsInLastWeek": 62
+		},
+		"21/03/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 3259,
+			"totalDeathsInLastWeek": 65
+		},
+		"20/03/2020": {
+			"newDeaths": 4,
+			"totalDeathsToDate": 3253,
+			"totalDeathsInLastWeek": 74
+		},
+		"19/03/2020": {
+			"newDeaths": 8,
+			"totalDeathsToDate": 3249,
+			"totalDeathsInLastWeek": 77
+		},
+		"18/03/2020": {
+			"newDeaths": 16,
+			"totalDeathsToDate": 3241,
+			"totalDeathsInLastWeek": 80
+		},
+		"17/03/2020": {
+			"newDeaths": 9,
+			"totalDeathsToDate": 3225,
+			"totalDeathsInLastWeek": 86
+		},
+		"16/03/2020": {
+			"newDeaths": 13,
+			"totalDeathsToDate": 3216,
+			"totalDeathsInLastWeek": 94
+		},
+		"15/03/2020": {
+			"newDeaths": 9,
+			"totalDeathsToDate": 3203,
+			"totalDeathsInLastWeek": 104
+		},
+		"14/03/2020": {
+			"newDeaths": 15,
+			"totalDeathsToDate": 3194,
+			"totalDeathsInLastWeek": 122
+		},
+		"13/03/2020": {
+			"newDeaths": 7,
+			"totalDeathsToDate": 3179,
+			"totalDeathsInLastWeek": 135
+		},
+		"12/03/2020": {
+			"newDeaths": 11,
+			"totalDeathsToDate": 3172,
+			"totalDeathsInLastWeek": 158
+		},
+		"11/03/2020": {
+			"newDeaths": 22,
+			"totalDeathsToDate": 3161,
+			"totalDeathsInLastWeek": 178
+		},
+		"10/03/2020": {
+			"newDeaths": 17,
+			"totalDeathsToDate": 3139,
+			"totalDeathsInLastWeek": 193
+		},
+		"09/03/2020": {
+			"newDeaths": 23,
+			"totalDeathsToDate": 3122,
+			"totalDeathsInLastWeek": 208
+		},
+		"08/03/2020": {
+			"newDeaths": 27,
+			"totalDeathsToDate": 3099,
+			"totalDeathsInLastWeek": 227
+		},
+		"07/03/2020": {
+			"newDeaths": 28,
+			"totalDeathsToDate": 3072,
+			"totalDeathsInLastWeek": 235
+		},
+		"06/03/2020": {
+			"newDeaths": 30,
+			"totalDeathsToDate": 3044,
+			"totalDeathsInLastWeek": 254
+		},
+		"05/03/2020": {
+			"newDeaths": 31,
+			"totalDeathsToDate": 3014,
+			"totalDeathsInLastWeek": 268
+		},
+		"04/03/2020": {
+			"newDeaths": 37,
+			"totalDeathsToDate": 2983,
+			"totalDeathsInLastWeek": 266
+		},
+		"03/03/2020": {
+			"newDeaths": 32,
+			"totalDeathsToDate": 2946,
+			"totalDeathsInLastWeek": 281
+		},
+		"02/03/2020": {
+			"newDeaths": 42,
+			"totalDeathsToDate": 2914,
+			"totalDeathsInLastWeek": 319
+		},
+		"01/03/2020": {
+			"newDeaths": 35,
+			"totalDeathsToDate": 2872,
+			"totalDeathsInLastWeek": 427
+		},
+		"29/02/2020": {
+			"newDeaths": 47,
+			"totalDeathsToDate": 2837,
+			"totalDeathsInLastWeek": 490
+		},
+		"28/02/2020": {
+			"newDeaths": 44,
+			"totalDeathsToDate": 2790,
+			"totalDeathsInLastWeek": 552
+		},
+		"27/02/2020": {
+			"newDeaths": 29,
+			"totalDeathsToDate": 2746,
+			"totalDeathsInLastWeek": 626
+		},
+		"26/02/2020": {
+			"newDeaths": 52,
+			"totalDeathsToDate": 2717,
+			"totalDeathsInLastWeek": 709
+		},
+		"25/02/2020": {
+			"newDeaths": 70,
+			"totalDeathsToDate": 2665,
+			"totalDeathsInLastWeek": 796
+		},
+		"24/02/2020": {
+			"newDeaths": 150,
+			"totalDeathsToDate": 2595,
+			"totalDeathsInLastWeek": 824
+		},
+		"23/02/2020": {
+			"newDeaths": 98,
+			"totalDeathsToDate": 2445,
+			"totalDeathsInLastWeek": 779
+		},
+		"22/02/2020": {
+			"newDeaths": 109,
+			"totalDeathsToDate": 2347,
+			"totalDeathsInLastWeek": 823
+		},
+		"21/02/2020": {
+			"newDeaths": 118,
+			"totalDeathsToDate": 2238,
+			"totalDeathsInLastWeek": 857
+		},
+		"20/02/2020": {
+			"newDeaths": 112,
+			"totalDeathsToDate": 2120,
+			"totalDeathsInLastWeek": 752
+		},
+		"19/02/2020": {
+			"newDeaths": 139,
+			"totalDeathsToDate": 2008,
+			"totalDeathsInLastWeek": 894
+		},
+		"18/02/2020": {
+			"newDeaths": 98,
+			"totalDeathsToDate": 1869,
+			"totalDeathsInLastWeek": 852
+		},
+		"17/02/2020": {
+			"newDeaths": 105,
+			"totalDeathsToDate": 1771,
+			"totalDeathsInLastWeek": 862
+		},
+		"16/02/2020": {
+			"newDeaths": 142,
+			"totalDeathsToDate": 1666,
+			"totalDeathsInLastWeek": 854
+		},
+		"15/02/2020": {
+			"newDeaths": 143,
+			"totalDeathsToDate": 1524,
+			"totalDeathsInLastWeek": 801
+		},
+		"14/02/2020": {
+			"newDeaths": 13,
+			"totalDeathsToDate": 1381,
+			"totalDeathsInLastWeek": 744
+		},
+		"13/02/2020": {
+			"newDeaths": 254,
+			"totalDeathsToDate": 1368,
+			"totalDeathsInLastWeek": 804
+		},
+		"12/02/2020": {
+			"newDeaths": 97,
+			"totalDeathsToDate": 1114,
+			"totalDeathsInLastWeek": 622
+		},
+		"11/02/2020": {
+			"newDeaths": 108,
+			"totalDeathsToDate": 1017,
+			"totalDeathsInLastWeek": 591
+		},
+		"10/02/2020": {
+			"newDeaths": 97,
+			"totalDeathsToDate": 909,
+			"totalDeathsInLastWeek": 548
+		},
+		"09/02/2020": {
+			"newDeaths": 89,
+			"totalDeathsToDate": 812,
+			"totalDeathsInLastWeek": 508
+		},
+		"08/02/2020": {
+			"newDeaths": 86,
+			"totalDeathsToDate": 723,
+			"totalDeathsInLastWeek": 464
+		},
+		"07/02/2020": {
+			"newDeaths": 73,
+			"totalDeathsToDate": 637,
+			"totalDeathsInLastWeek": 424
+		},
+		"06/02/2020": {
+			"newDeaths": 72,
+			"totalDeathsToDate": 564,
+			"totalDeathsInLastWeek": 394
+		},
+		"05/02/2020": {
+			"newDeaths": 66,
+			"totalDeathsToDate": 492,
+			"totalDeathsInLastWeek": 360
+		},
+		"04/02/2020": {
+			"newDeaths": 65,
+			"totalDeathsToDate": 426,
+			"totalDeathsInLastWeek": 320
+		},
+		"03/02/2020": {
+			"newDeaths": 57,
+			"totalDeathsToDate": 361,
+			"totalDeathsInLastWeek": 280
+		},
+		"02/02/2020": {
+			"newDeaths": 45,
+			"totalDeathsToDate": 304,
+			"totalDeathsInLastWeek": 248
+		},
+		"01/02/2020": {
+			"newDeaths": 46,
+			"totalDeathsToDate": 259,
+			"totalDeathsInLastWeek": 218
+		},
+		"31/01/2020": {
+			"newDeaths": 43,
+			"totalDeathsToDate": 213,
+			"totalDeathsInLastWeek": 187
+		},
+		"30/01/2020": {
+			"newDeaths": 38,
+			"totalDeathsToDate": 170,
+			"totalDeathsInLastWeek": 153
+		},
+		"29/01/2020": {
+			"newDeaths": 26,
+			"totalDeathsToDate": 132,
+			"totalDeathsInLastWeek": 115
+		},
+		"28/01/2020": {
+			"newDeaths": 25,
+			"totalDeathsToDate": 106,
+			"totalDeathsInLastWeek": 100
+		},
+		"27/01/2020": {
+			"newDeaths": 25,
+			"totalDeathsToDate": 81,
+			"totalDeathsInLastWeek": 78
+		},
+		"26/01/2020": {
+			"newDeaths": 15,
+			"totalDeathsToDate": 56,
+			"totalDeathsInLastWeek": 53
+		},
+		"25/01/2020": {
+			"newDeaths": 15,
+			"totalDeathsToDate": 41,
+			"totalDeathsInLastWeek": 39
+		},
+		"24/01/2020": {
+			"newDeaths": 9,
+			"totalDeathsToDate": 26,
+			"totalDeathsInLastWeek": 24
+		},
+		"23/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 17,
+			"totalDeathsInLastWeek": 15
+		},
+		"22/01/2020": {
+			"newDeaths": 11,
+			"totalDeathsToDate": 17,
+			"totalDeathsInLastWeek": 15
+		},
+		"21/01/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 6,
+			"totalDeathsInLastWeek": 5
+		},
+		"20/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 3,
+			"totalDeathsInLastWeek": 2
+		},
+		"19/01/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 3,
+			"totalDeathsInLastWeek": 2
+		},
+		"18/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 2,
+			"totalDeathsInLastWeek": 1
+		},
+		"17/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 2,
+			"totalDeathsInLastWeek": 2
+		},
+		"16/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 2,
+			"totalDeathsInLastWeek": 2
+		},
+		"15/01/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 2,
+			"totalDeathsInLastWeek": 2
+		},
+		"14/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"13/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"12/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"11/01/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"10/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/12/2019": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		}
+	},
+	"DEU": {
+		"03/04/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 872,
+			"totalDeathsInLastWeek": 619
+		},
+		"02/04/2020": {
+			"newDeaths": 140,
+			"totalDeathsToDate": 872,
+			"totalDeathsInLastWeek": 674
+		},
+		"01/04/2020": {
+			"newDeaths": 149,
+			"totalDeathsToDate": 732,
+			"totalDeathsInLastWeek": 583
+		},
+		"31/03/2020": {
+			"newDeaths": 128,
+			"totalDeathsToDate": 583,
+			"totalDeathsInLastWeek": 457
+		},
+		"30/03/2020": {
+			"newDeaths": 66,
+			"totalDeathsToDate": 455,
+			"totalDeathsInLastWeek": 361
+		},
+		"29/03/2020": {
+			"newDeaths": 64,
+			"totalDeathsToDate": 389,
+			"totalDeathsInLastWeek": 322
+		},
+		"28/03/2020": {
+			"newDeaths": 72,
+			"totalDeathsToDate": 325,
+			"totalDeathsInLastWeek": 280
+		},
+		"27/03/2020": {
+			"newDeaths": 55,
+			"totalDeathsToDate": 253,
+			"totalDeathsInLastWeek": 210
+		},
+		"26/03/2020": {
+			"newDeaths": 49,
+			"totalDeathsToDate": 198,
+			"totalDeathsInLastWeek": 185
+		},
+		"25/03/2020": {
+			"newDeaths": 23,
+			"totalDeathsToDate": 149,
+			"totalDeathsInLastWeek": 136
+		},
+		"24/03/2020": {
+			"newDeaths": 32,
+			"totalDeathsToDate": 126,
+			"totalDeathsInLastWeek": 113
+		},
+		"23/03/2020": {
+			"newDeaths": 27,
+			"totalDeathsToDate": 94,
+			"totalDeathsInLastWeek": 82
+		},
+		"22/03/2020": {
+			"newDeaths": 22,
+			"totalDeathsToDate": 67,
+			"totalDeathsInLastWeek": 59
+		},
+		"21/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 45,
+			"totalDeathsInLastWeek": 40
+		},
+		"20/03/2020": {
+			"newDeaths": 30,
+			"totalDeathsToDate": 43,
+			"totalDeathsInLastWeek": 38
+		},
+		"19/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 13,
+			"totalDeathsInLastWeek": 10
+		},
+		"18/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 13,
+			"totalDeathsInLastWeek": 11
+		},
+		"17/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 13,
+			"totalDeathsInLastWeek": 11
+		},
+		"16/03/2020": {
+			"newDeaths": 4,
+			"totalDeathsToDate": 12,
+			"totalDeathsInLastWeek": 12
+		},
+		"15/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 8,
+			"totalDeathsInLastWeek": 8
+		},
+		"14/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 5,
+			"totalDeathsInLastWeek": 5
+		},
+		"13/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 5,
+			"totalDeathsInLastWeek": 5
+		},
+		"12/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 3,
+			"totalDeathsInLastWeek": 3
+		},
+		"11/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 2,
+			"totalDeathsInLastWeek": 2
+		},
+		"10/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 2,
+			"totalDeathsInLastWeek": 2
+		},
+		"09/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"29/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"28/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"27/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"26/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"25/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"24/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"23/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"22/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"30/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"29/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"28/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"27/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"26/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"25/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"24/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"23/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"22/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/12/2019": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		}
+	},
+	"ITA": {
+		"03/04/2020": {
+			"newDeaths": 760,
+			"totalDeathsToDate": 13917,
+			"totalDeathsInLastWeek": 5752
+		},
+		"02/04/2020": {
+			"newDeaths": 727,
+			"totalDeathsToDate": 13157,
+			"totalDeathsInLastWeek": 5652
+		},
+		"01/04/2020": {
+			"newDeaths": 839,
+			"totalDeathsToDate": 12430,
+			"totalDeathsInLastWeek": 5610
+		},
+		"31/03/2020": {
+			"newDeaths": 810,
+			"totalDeathsToDate": 11591,
+			"totalDeathsInLastWeek": 5514
+		},
+		"30/03/2020": {
+			"newDeaths": 758,
+			"totalDeathsToDate": 10781,
+			"totalDeathsInLastWeek": 5305
+		},
+		"29/03/2020": {
+			"newDeaths": 887,
+			"totalDeathsToDate": 10023,
+			"totalDeathsInLastWeek": 5196
+		},
+		"28/03/2020": {
+			"newDeaths": 971,
+			"totalDeathsToDate": 9136,
+			"totalDeathsInLastWeek": 5104
+		},
+		"27/03/2020": {
+			"newDeaths": 660,
+			"totalDeathsToDate": 8165,
+			"totalDeathsInLastWeek": 4758
+		},
+		"26/03/2020": {
+			"newDeaths": 685,
+			"totalDeathsToDate": 7505,
+			"totalDeathsInLastWeek": 4527
+		},
+		"25/03/2020": {
+			"newDeaths": 743,
+			"totalDeathsToDate": 6820,
+			"totalDeathsInLastWeek": 4315
+		},
+		"24/03/2020": {
+			"newDeaths": 601,
+			"totalDeathsToDate": 6077,
+			"totalDeathsInLastWeek": 3919
+		},
+		"23/03/2020": {
+			"newDeaths": 649,
+			"totalDeathsToDate": 5476,
+			"totalDeathsInLastWeek": 3665
+		},
+		"22/03/2020": {
+			"newDeaths": 795,
+			"totalDeathsToDate": 4827,
+			"totalDeathsInLastWeek": 3386
+		},
+		"21/03/2020": {
+			"newDeaths": 625,
+			"totalDeathsToDate": 4032,
+			"totalDeathsInLastWeek": 2764
+		},
+		"20/03/2020": {
+			"newDeaths": 429,
+			"totalDeathsToDate": 3407,
+			"totalDeathsInLastWeek": 2391
+		},
+		"19/03/2020": {
+			"newDeaths": 473,
+			"totalDeathsToDate": 2978,
+			"totalDeathsInLastWeek": 2151
+		},
+		"18/03/2020": {
+			"newDeaths": 347,
+			"totalDeathsToDate": 2505,
+			"totalDeathsInLastWeek": 1874
+		},
+		"17/03/2020": {
+			"newDeaths": 347,
+			"totalDeathsToDate": 2158,
+			"totalDeathsInLastWeek": 1694
+		},
+		"16/03/2020": {
+			"newDeaths": 370,
+			"totalDeathsToDate": 1811,
+			"totalDeathsInLastWeek": 1445
+		},
+		"15/03/2020": {
+			"newDeaths": 173,
+			"totalDeathsToDate": 1441,
+			"totalDeathsInLastWeek": 1208
+		},
+		"14/03/2020": {
+			"newDeaths": 252,
+			"totalDeathsToDate": 1268,
+			"totalDeathsInLastWeek": 1071
+		},
+		"13/03/2020": {
+			"newDeaths": 189,
+			"totalDeathsToDate": 1016,
+			"totalDeathsInLastWeek": 868
+		},
+		"12/03/2020": {
+			"newDeaths": 196,
+			"totalDeathsToDate": 827,
+			"totalDeathsInLastWeek": 720
+		},
+		"11/03/2020": {
+			"newDeaths": 167,
+			"totalDeathsToDate": 631,
+			"totalDeathsInLastWeek": 551
+		},
+		"10/03/2020": {
+			"newDeaths": 98,
+			"totalDeathsToDate": 464,
+			"totalDeathsInLastWeek": 412
+		},
+		"09/03/2020": {
+			"newDeaths": 133,
+			"totalDeathsToDate": 366,
+			"totalDeathsInLastWeek": 331
+		},
+		"08/03/2020": {
+			"newDeaths": 36,
+			"totalDeathsToDate": 233,
+			"totalDeathsInLastWeek": 204
+		},
+		"07/03/2020": {
+			"newDeaths": 49,
+			"totalDeathsToDate": 197,
+			"totalDeathsInLastWeek": 176
+		},
+		"06/03/2020": {
+			"newDeaths": 41,
+			"totalDeathsToDate": 148,
+			"totalDeathsInLastWeek": 131
+		},
+		"05/03/2020": {
+			"newDeaths": 27,
+			"totalDeathsToDate": 107,
+			"totalDeathsInLastWeek": 95
+		},
+		"04/03/2020": {
+			"newDeaths": 28,
+			"totalDeathsToDate": 80,
+			"totalDeathsInLastWeek": 69
+		},
+		"03/03/2020": {
+			"newDeaths": 17,
+			"totalDeathsToDate": 52,
+			"totalDeathsInLastWeek": 46
+		},
+		"02/03/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 35,
+			"totalDeathsInLastWeek": 33
+		},
+		"01/03/2020": {
+			"newDeaths": 8,
+			"totalDeathsToDate": 29,
+			"totalDeathsInLastWeek": 27
+		},
+		"29/02/2020": {
+			"newDeaths": 4,
+			"totalDeathsToDate": 21,
+			"totalDeathsInLastWeek": 21
+		},
+		"28/02/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 17,
+			"totalDeathsInLastWeek": 17
+		},
+		"27/02/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 12,
+			"totalDeathsInLastWeek": 12
+		},
+		"26/02/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 11,
+			"totalDeathsInLastWeek": 11
+		},
+		"25/02/2020": {
+			"newDeaths": 4,
+			"totalDeathsToDate": 6,
+			"totalDeathsInLastWeek": 6
+		},
+		"24/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 2,
+			"totalDeathsInLastWeek": 2
+		},
+		"23/02/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 2,
+			"totalDeathsInLastWeek": 2
+		},
+		"22/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"30/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"29/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"28/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"27/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"26/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"25/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"24/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"23/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"22/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/12/2019": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		}
+	},
+	"JPN": {
+		"03/04/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 63,
+			"totalDeathsInLastWeek": 17
+		},
+		"02/04/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 57,
+			"totalDeathsInLastWeek": 12
+		},
+		"01/04/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 56,
+			"totalDeathsInLastWeek": 13
+		},
+		"31/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 56,
+			"totalDeathsInLastWeek": 14
+		},
+		"30/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 54,
+			"totalDeathsInLastWeek": 13
+		},
+		"29/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 52,
+			"totalDeathsInLastWeek": 16
+		},
+		"28/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 49,
+			"totalDeathsInLastWeek": 14
+		},
+		"27/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 46,
+			"totalDeathsInLastWeek": 13
+		},
+		"26/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 45,
+			"totalDeathsInLastWeek": 16
+		},
+		"25/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 43,
+			"totalDeathsInLastWeek": 15
+		},
+		"24/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 42,
+			"totalDeathsInLastWeek": 14
+		},
+		"23/03/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 41,
+			"totalDeathsInLastWeek": 17
+		},
+		"22/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 36,
+			"totalDeathsInLastWeek": 14
+		},
+		"21/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 35,
+			"totalDeathsInLastWeek": 14
+		},
+		"20/03/2020": {
+			"newDeaths": 4,
+			"totalDeathsToDate": 33,
+			"totalDeathsInLastWeek": 14
+		},
+		"19/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 29,
+			"totalDeathsInLastWeek": 14
+		},
+		"18/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 28,
+			"totalDeathsInLastWeek": 16
+		},
+		"17/03/2020": {
+			"newDeaths": 4,
+			"totalDeathsToDate": 28,
+			"totalDeathsInLastWeek": 19
+		},
+		"16/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 24,
+			"totalDeathsInLastWeek": 17
+		},
+		"15/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 22,
+			"totalDeathsInLastWeek": 16
+		},
+		"14/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 21,
+			"totalDeathsInLastWeek": 15
+		},
+		"13/03/2020": {
+			"newDeaths": 4,
+			"totalDeathsToDate": 19,
+			"totalDeathsInLastWeek": 13
+		},
+		"12/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 15,
+			"totalDeathsInLastWeek": 9
+		},
+		"11/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 12,
+			"totalDeathsInLastWeek": 6
+		},
+		"10/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 9,
+			"totalDeathsInLastWeek": 3
+		},
+		"09/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 7,
+			"totalDeathsInLastWeek": 1
+		},
+		"08/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 6,
+			"totalDeathsInLastWeek": 1
+		},
+		"07/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 6,
+			"totalDeathsInLastWeek": 3
+		},
+		"06/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 6,
+			"totalDeathsInLastWeek": 3
+		},
+		"05/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 6,
+			"totalDeathsInLastWeek": 3
+		},
+		"04/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 6,
+			"totalDeathsInLastWeek": 5
+		},
+		"03/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 6,
+			"totalDeathsInLastWeek": 5
+		},
+		"02/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 6,
+			"totalDeathsInLastWeek": 5
+		},
+		"01/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 5,
+			"totalDeathsInLastWeek": 4
+		},
+		"29/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 3,
+			"totalDeathsInLastWeek": 2
+		},
+		"28/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 3,
+			"totalDeathsInLastWeek": 2
+		},
+		"27/02/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 3,
+			"totalDeathsInLastWeek": 2
+		},
+		"26/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 0
+		},
+		"25/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 0
+		},
+		"24/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 0
+		},
+		"23/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 0
+		},
+		"22/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"18/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"17/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"16/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"15/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"14/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"13/02/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"12/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"30/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"29/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"28/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"27/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"26/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"25/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"24/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"23/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"22/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/12/2019": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		}
+	},
+	"KOR": {
+		"03/04/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 174,
+			"totalDeathsInLastWeek": 35
+		},
+		"02/04/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 169,
+			"totalDeathsInLastWeek": 38
+		},
+		"01/04/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 163,
+			"totalDeathsInLastWeek": 37
+		},
+		"31/03/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 163,
+			"totalDeathsInLastWeek": 43
+		},
+		"30/03/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 158,
+			"totalDeathsInLastWeek": 45
+		},
+		"29/03/2020": {
+			"newDeaths": 8,
+			"totalDeathsToDate": 152,
+			"totalDeathsInLastWeek": 48
+		},
+		"28/03/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 144,
+			"totalDeathsInLastWeek": 41
+		},
+		"27/03/2020": {
+			"newDeaths": 8,
+			"totalDeathsToDate": 139,
+			"totalDeathsInLastWeek": 39
+		},
+		"26/03/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 131,
+			"totalDeathsInLastWeek": 40
+		},
+		"25/03/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 126,
+			"totalDeathsInLastWeek": 40
+		},
+		"24/03/2020": {
+			"newDeaths": 7,
+			"totalDeathsToDate": 120,
+			"totalDeathsInLastWeek": 39
+		},
+		"23/03/2020": {
+			"newDeaths": 9,
+			"totalDeathsToDate": 113,
+			"totalDeathsInLastWeek": 38
+		},
+		"22/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 104,
+			"totalDeathsInLastWeek": 29
+		},
+		"21/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 103,
+			"totalDeathsInLastWeek": 31
+		},
+		"20/03/2020": {
+			"newDeaths": 9,
+			"totalDeathsToDate": 100,
+			"totalDeathsInLastWeek": 33
+		},
+		"19/03/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 91,
+			"totalDeathsInLastWeek": 25
+		},
+		"18/03/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 86,
+			"totalDeathsInLastWeek": 26
+		},
+		"17/03/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 81,
+			"totalDeathsInLastWeek": 27
+		},
+		"16/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 75,
+			"totalDeathsInLastWeek": 24
+		},
+		"15/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 75,
+			"totalDeathsInLastWeek": 25
+		},
+		"14/03/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 72,
+			"totalDeathsInLastWeek": 28
+		},
+		"13/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 67,
+			"totalDeathsInLastWeek": 25
+		},
+		"12/03/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 66,
+			"totalDeathsInLastWeek": 31
+		},
+		"11/03/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 60,
+			"totalDeathsInLastWeek": 28
+		},
+		"10/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 54,
+			"totalDeathsInLastWeek": 26
+		},
+		"09/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 51,
+			"totalDeathsInLastWeek": 29
+		},
+		"08/03/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 50,
+			"totalDeathsInLastWeek": 33
+		},
+		"07/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 44,
+			"totalDeathsInLastWeek": 28
+		},
+		"06/03/2020": {
+			"newDeaths": 7,
+			"totalDeathsToDate": 42,
+			"totalDeathsInLastWeek": 29
+		},
+		"05/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 35,
+			"totalDeathsInLastWeek": 23
+		},
+		"04/03/2020": {
+			"newDeaths": 4,
+			"totalDeathsToDate": 32,
+			"totalDeathsInLastWeek": 21
+		},
+		"03/03/2020": {
+			"newDeaths": 6,
+			"totalDeathsToDate": 28,
+			"totalDeathsInLastWeek": 20
+		},
+		"02/03/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 22,
+			"totalDeathsInLastWeek": 15
+		},
+		"01/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 17,
+			"totalDeathsInLastWeek": 12
+		},
+		"29/02/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 16,
+			"totalDeathsInLastWeek": 14
+		},
+		"28/02/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 13,
+			"totalDeathsInLastWeek": 12
+		},
+		"27/02/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 12,
+			"totalDeathsInLastWeek": 12
+		},
+		"26/02/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 11,
+			"totalDeathsInLastWeek": 11
+		},
+		"25/02/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 8,
+			"totalDeathsInLastWeek": 8
+		},
+		"24/02/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 7,
+			"totalDeathsInLastWeek": 7
+		},
+		"23/02/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 5,
+			"totalDeathsInLastWeek": 5
+		},
+		"22/02/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 2,
+			"totalDeathsInLastWeek": 2
+		},
+		"21/02/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"20/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"30/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"29/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"28/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"27/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"26/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"25/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"24/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"23/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"22/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/12/2019": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		}
+	},
+	"ESP": {
+		"03/04/2020": {
+			"newDeaths": 950,
+			"totalDeathsToDate": 10003,
+			"totalDeathsInLastWeek": 5914
+		},
+		"02/04/2020": {
+			"newDeaths": 864,
+			"totalDeathsToDate": 9053,
+			"totalDeathsInLastWeek": 5619
+		},
+		"01/04/2020": {
+			"newDeaths": 849,
+			"totalDeathsToDate": 8189,
+			"totalDeathsInLastWeek": 5493
+		},
+		"31/03/2020": {
+			"newDeaths": 812,
+			"totalDeathsToDate": 7340,
+			"totalDeathsInLastWeek": 5158
+		},
+		"30/03/2020": {
+			"newDeaths": 838,
+			"totalDeathsToDate": 6528,
+			"totalDeathsInLastWeek": 4808
+		},
+		"29/03/2020": {
+			"newDeaths": 832,
+			"totalDeathsToDate": 5690,
+			"totalDeathsInLastWeek": 4364
+		},
+		"28/03/2020": {
+			"newDeaths": 769,
+			"totalDeathsToDate": 4858,
+			"totalDeathsInLastWeek": 3856
+		},
+		"27/03/2020": {
+			"newDeaths": 655,
+			"totalDeathsToDate": 4089,
+			"totalDeathsInLastWeek": 3322
+		},
+		"26/03/2020": {
+			"newDeaths": 738,
+			"totalDeathsToDate": 3434,
+			"totalDeathsInLastWeek": 2836
+		},
+		"25/03/2020": {
+			"newDeaths": 514,
+			"totalDeathsToDate": 2696,
+			"totalDeathsInLastWeek": 2205
+		},
+		"24/03/2020": {
+			"newDeaths": 462,
+			"totalDeathsToDate": 2182,
+			"totalDeathsInLastWeek": 1873
+		},
+		"23/03/2020": {
+			"newDeaths": 394,
+			"totalDeathsToDate": 1720,
+			"totalDeathsInLastWeek": 1432
+		},
+		"22/03/2020": {
+			"newDeaths": 324,
+			"totalDeathsToDate": 1326,
+			"totalDeathsInLastWeek": 1190
+		},
+		"21/03/2020": {
+			"newDeaths": 235,
+			"totalDeathsToDate": 1002,
+			"totalDeathsInLastWeek": 881
+		},
+		"20/03/2020": {
+			"newDeaths": 169,
+			"totalDeathsToDate": 767,
+			"totalDeathsInLastWeek": 683
+		},
+		"19/03/2020": {
+			"newDeaths": 107,
+			"totalDeathsToDate": 598,
+			"totalDeathsInLastWeek": 551
+		},
+		"18/03/2020": {
+			"newDeaths": 182,
+			"totalDeathsToDate": 491,
+			"totalDeathsInLastWeek": 456
+		},
+		"17/03/2020": {
+			"newDeaths": 21,
+			"totalDeathsToDate": 309,
+			"totalDeathsInLastWeek": 281
+		},
+		"16/03/2020": {
+			"newDeaths": 152,
+			"totalDeathsToDate": 288,
+			"totalDeathsInLastWeek": 283
+		},
+		"15/03/2020": {
+			"newDeaths": 15,
+			"totalDeathsToDate": 136,
+			"totalDeathsInLastWeek": 131
+		},
+		"14/03/2020": {
+			"newDeaths": 37,
+			"totalDeathsToDate": 121,
+			"totalDeathsInLastWeek": 116
+		},
+		"13/03/2020": {
+			"newDeaths": 37,
+			"totalDeathsToDate": 84,
+			"totalDeathsInLastWeek": 81
+		},
+		"12/03/2020": {
+			"newDeaths": 12,
+			"totalDeathsToDate": 47,
+			"totalDeathsInLastWeek": 46
+		},
+		"11/03/2020": {
+			"newDeaths": 7,
+			"totalDeathsToDate": 35,
+			"totalDeathsInLastWeek": 35
+		},
+		"10/03/2020": {
+			"newDeaths": 23,
+			"totalDeathsToDate": 28,
+			"totalDeathsInLastWeek": 28
+		},
+		"09/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 5,
+			"totalDeathsInLastWeek": 5
+		},
+		"08/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 5,
+			"totalDeathsInLastWeek": 5
+		},
+		"07/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 5,
+			"totalDeathsInLastWeek": 5
+		},
+		"06/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 3,
+			"totalDeathsInLastWeek": 3
+		},
+		"05/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"04/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"29/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"28/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"27/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"26/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"25/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"24/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"23/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"22/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"30/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"29/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"28/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"27/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"26/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"25/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"24/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"23/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"22/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/12/2019": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		}
+	},
+	"GBR": {
+		"04/04/2020": {
+			"newDeaths": 684,
+			"totalDeathsToDate": 3605,
+			"totalDeathsInLastWeek": 2846
+		},
+		"03/04/2020": {
+			"newDeaths": 389,
+			"totalDeathsToDate": 2921,
+			"totalDeathsInLastWeek": 2343
+		},
+		"02/04/2020": {
+			"newDeaths": 743,
+			"totalDeathsToDate": 2532,
+			"totalDeathsInLastWeek": 2069
+		},
+		"01/04/2020": {
+			"newDeaths": 381,
+			"totalDeathsToDate": 1789,
+			"totalDeathsInLastWeek": 1367
+		},
+		"31/03/2020": {
+			"newDeaths": 180,
+			"totalDeathsToDate": 1408,
+			"totalDeathsInLastWeek": 1073
+		},
+		"30/03/2020": {
+			"newDeaths": 209,
+			"totalDeathsToDate": 1228,
+			"totalDeathsInLastWeek": 947
+		},
+		"29/03/2020": {
+			"newDeaths": 260,
+			"totalDeathsToDate": 1019,
+			"totalDeathsInLastWeek": 786
+		},
+		"28/03/2020": {
+			"newDeaths": 181,
+			"totalDeathsToDate": 759,
+			"totalDeathsInLastWeek": 582
+		},
+		"27/03/2020": {
+			"newDeaths": 115,
+			"totalDeathsToDate": 578,
+			"totalDeathsInLastWeek": 434
+		},
+		"26/03/2020": {
+			"newDeaths": 41,
+			"totalDeathsToDate": 463,
+			"totalDeathsInLastWeek": 360
+		},
+		"25/03/2020": {
+			"newDeaths": 87,
+			"totalDeathsToDate": 422,
+			"totalDeathsInLastWeek": 362
+		},
+		"24/03/2020": {
+			"newDeaths": 54,
+			"totalDeathsToDate": 335,
+			"totalDeathsInLastWeek": 280
+		},
+		"23/03/2020": {
+			"newDeaths": 48,
+			"totalDeathsToDate": 281,
+			"totalDeathsInLastWeek": 246
+		},
+		"22/03/2020": {
+			"newDeaths": 56,
+			"totalDeathsToDate": 233,
+			"totalDeathsInLastWeek": 212
+		},
+		"21/03/2020": {
+			"newDeaths": 33,
+			"totalDeathsToDate": 177,
+			"totalDeathsInLastWeek": 167
+		},
+		"20/03/2020": {
+			"newDeaths": 41,
+			"totalDeathsToDate": 144,
+			"totalDeathsInLastWeek": 134
+		},
+		"19/03/2020": {
+			"newDeaths": 43,
+			"totalDeathsToDate": 103,
+			"totalDeathsInLastWeek": 97
+		},
+		"18/03/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 60,
+			"totalDeathsInLastWeek": 54
+		},
+		"17/03/2020": {
+			"newDeaths": 20,
+			"totalDeathsToDate": 55,
+			"totalDeathsInLastWeek": 50
+		},
+		"16/03/2020": {
+			"newDeaths": 14,
+			"totalDeathsToDate": 35,
+			"totalDeathsInLastWeek": 32
+		},
+		"15/03/2020": {
+			"newDeaths": 11,
+			"totalDeathsToDate": 21,
+			"totalDeathsInLastWeek": 19
+		},
+		"14/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 10,
+			"totalDeathsInLastWeek": 9
+		},
+		"13/03/2020": {
+			"newDeaths": 4,
+			"totalDeathsToDate": 10,
+			"totalDeathsInLastWeek": 9
+		},
+		"12/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 6,
+			"totalDeathsInLastWeek": 6
+		},
+		"11/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 6,
+			"totalDeathsInLastWeek": 6
+		},
+		"10/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 5,
+			"totalDeathsInLastWeek": 5
+		},
+		"09/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 3,
+			"totalDeathsInLastWeek": 3
+		},
+		"08/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 2,
+			"totalDeathsInLastWeek": 2
+		},
+		"07/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"06/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"05/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"29/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"28/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"27/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"26/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"25/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"24/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"23/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"22/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"30/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"29/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"28/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"27/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"26/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"25/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"24/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"23/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"22/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/12/2019": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		}
+	},
+	"USA": {
+		"03/04/2020": {
+			"newDeaths": 915,
+			"totalDeathsToDate": 6053,
+			"totalDeathsInLastWeek": 4757
+		},
+		"02/04/2020": {
+			"newDeaths": 1059,
+			"totalDeathsToDate": 5138,
+			"totalDeathsInLastWeek": 4088
+		},
+		"01/04/2020": {
+			"newDeaths": 909,
+			"totalDeathsToDate": 4079,
+			"totalDeathsInLastWeek": 3278
+		},
+		"31/03/2020": {
+			"newDeaths": 661,
+			"totalDeathsToDate": 3170,
+			"totalDeathsInLastWeek": 2580
+		},
+		"30/03/2020": {
+			"newDeaths": 318,
+			"totalDeathsToDate": 2509,
+			"totalDeathsInLastWeek": 2038
+		},
+		"29/03/2020": {
+			"newDeaths": 484,
+			"totalDeathsToDate": 2191,
+			"totalDeathsInLastWeek": 1851
+		},
+		"28/03/2020": {
+			"newDeaths": 411,
+			"totalDeathsToDate": 1707,
+			"totalDeathsInLastWeek": 1447
+		},
+		"27/03/2020": {
+			"newDeaths": 246,
+			"totalDeathsToDate": 1296,
+			"totalDeathsInLastWeek": 1146
+		},
+		"26/03/2020": {
+			"newDeaths": 249,
+			"totalDeathsToDate": 1050,
+			"totalDeathsInLastWeek": 900
+		},
+		"25/03/2020": {
+			"newDeaths": 211,
+			"totalDeathsToDate": 801,
+			"totalDeathsInLastWeek": 693
+		},
+		"24/03/2020": {
+			"newDeaths": 119,
+			"totalDeathsToDate": 590,
+			"totalDeathsInLastWeek": 505
+		},
+		"23/03/2020": {
+			"newDeaths": 131,
+			"totalDeathsToDate": 471,
+			"totalDeathsInLastWeek": 402
+		},
+		"22/03/2020": {
+			"newDeaths": 80,
+			"totalDeathsToDate": 340,
+			"totalDeathsInLastWeek": 283
+		},
+		"21/03/2020": {
+			"newDeaths": 110,
+			"totalDeathsToDate": 260,
+			"totalDeathsInLastWeek": 213
+		},
+		"20/03/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 150,
+			"totalDeathsInLastWeek": 110
+		},
+		"19/03/2020": {
+			"newDeaths": 42,
+			"totalDeathsToDate": 150,
+			"totalDeathsInLastWeek": 120
+		},
+		"18/03/2020": {
+			"newDeaths": 23,
+			"totalDeathsToDate": 108,
+			"totalDeathsInLastWeek": 80
+		},
+		"17/03/2020": {
+			"newDeaths": 16,
+			"totalDeathsToDate": 85,
+			"totalDeathsInLastWeek": 59
+		},
+		"16/03/2020": {
+			"newDeaths": 12,
+			"totalDeathsToDate": 69,
+			"totalDeathsInLastWeek": 48
+		},
+		"15/03/2020": {
+			"newDeaths": 10,
+			"totalDeathsToDate": 57,
+			"totalDeathsInLastWeek": 40
+		},
+		"14/03/2020": {
+			"newDeaths": 7,
+			"totalDeathsToDate": 47,
+			"totalDeathsInLastWeek": 33
+		},
+		"13/03/2020": {
+			"newDeaths": 10,
+			"totalDeathsToDate": 40,
+			"totalDeathsInLastWeek": 28
+		},
+		"12/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 30,
+			"totalDeathsInLastWeek": 19
+		},
+		"11/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 28,
+			"totalDeathsInLastWeek": 19
+		},
+		"10/03/2020": {
+			"newDeaths": 5,
+			"totalDeathsToDate": 26,
+			"totalDeathsInLastWeek": 20
+		},
+		"09/03/2020": {
+			"newDeaths": 4,
+			"totalDeathsToDate": 21,
+			"totalDeathsInLastWeek": 19
+		},
+		"08/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 17,
+			"totalDeathsInLastWeek": 16
+		},
+		"07/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 14,
+			"totalDeathsInLastWeek": 14
+		},
+		"06/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 12,
+			"totalDeathsInLastWeek": 12
+		},
+		"05/03/2020": {
+			"newDeaths": 2,
+			"totalDeathsToDate": 11,
+			"totalDeathsInLastWeek": 11
+		},
+		"04/03/2020": {
+			"newDeaths": 3,
+			"totalDeathsToDate": 9,
+			"totalDeathsInLastWeek": 9
+		},
+		"03/03/2020": {
+			"newDeaths": 4,
+			"totalDeathsToDate": 6,
+			"totalDeathsInLastWeek": 6
+		},
+		"02/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 2,
+			"totalDeathsInLastWeek": 2
+		},
+		"01/03/2020": {
+			"newDeaths": 1,
+			"totalDeathsToDate": 1,
+			"totalDeathsInLastWeek": 1
+		},
+		"29/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"28/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"27/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"26/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"25/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"24/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"23/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"22/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/02/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"30/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"29/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"28/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"27/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"26/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"25/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"24/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"23/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"22/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"21/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"20/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"19/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"18/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"17/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"16/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"15/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"14/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"13/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"12/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"11/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"10/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"09/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"08/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"07/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"06/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"05/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"04/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"03/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"02/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"01/01/2020": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		},
+		"31/12/2019": {
+			"newDeaths": 0,
+			"totalDeathsToDate": 0,
+			"totalDeathsInLastWeek": 0
+		}
+	}
+}

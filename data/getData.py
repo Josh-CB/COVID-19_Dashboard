@@ -84,7 +84,3 @@ worlddata = json.dumps(worlddata)
 f=open("{}/worlddata.json".format(dir_path), "w")
 f.write(worlddata)
 f.close()
-
-###
-'''WEB SCRAPERS FOR COUNTERS'''
-###
