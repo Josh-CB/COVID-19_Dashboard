@@ -5,6 +5,8 @@
 import requests
 import json
 import datetime
+import os 
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 def getDateAWeekAgo(date):
     datetimeDate = datetime.datetime.strptime(date, '%d/%m/%Y')
@@ -18,14 +20,14 @@ def getDateAWeekAgo(date):
 try:
     url = "https://opendata.ecdc.europa.eu/covid19/casedistribution/json/"
     data = requests.get(url)
-    f = open("data/raw_data.json", "w")
+    f = open("{}/raw_data.json".format(dir_path), "w")
     f.write(data.text)
     f.close()
     print("retrieved and saved.")
 except Exception as e:
     print("Exception: ", e)
 
-f = open("data/raw_data.json", "r")
+f = open("{}/raw_data.json".format(dir_path), "r")
 raw_data = f.read()
 data = json.loads(raw_data)["records"]
 f.close()
@@ -65,11 +67,11 @@ for country in toWrite_raw:
 
 toWrite = json.dumps(toWrite_raw)
 
-f = open("data/data.json", "w")
+f = open("{}/data.json".format(dir_path), "w")
 f.write(toWrite)
 f.close()
 
-f = open("data/lastUpdate.txt", "w")
+f = open("{}/lastUpdate.txt".format(dir_path), "w")
 lastUpdated = datetime.datetime.now().strftime("%d/%m/%Y %H:%M") + " UTC"
 f.write(lastUpdated)
 f.close()
@@ -79,6 +81,10 @@ worlddata = {
     "totalDeaths": totalWorldDeaths
 }
 worlddata = json.dumps(worlddata)
-f=open("data/worlddata.json", "w")
+f=open("{}/worlddata.json".format(dir_path), "w")
 f.write(worlddata)
 f.close()
+
+###
+'''WEB SCRAPERS FOR COUNTERS'''
+###

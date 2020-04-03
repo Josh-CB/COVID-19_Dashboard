@@ -38,13 +38,13 @@
             <div class="col-md leftCard">
                 <div class="worldCard">
                 <p class="cardtitle">Confirmed worldwide cases</p>
-                <p class="data">{{{json worlddata.totalCases}}}</p>
+                <p class="data">{{{worlddata.totalCases}}}</p>
                 </div>
             </div>
             <div class="col-md rightCard">
                 <div class="worldCard">
                 <p class="cardtitle">Confirmed worldwide deaths</p>
-                <p class="data">{{{json worlddata.totalDeaths}}}</p>
+                <p class="data">{{{worlddata.totalDeaths}}}</p>
                 </div>
             </div>
         </div>
@@ -166,7 +166,7 @@
     <section class="faq">
         <section class="qa-block">
             <p class="question">What is this?</p>
-            <p class="answer">This graph shows the confirmed deaths of COVID-19 in some major countries against the total confirmed deaths for each country. The diagonal line that most countries follow is the period of exponential growth. Italy and Spain appear to be approaching their peaks. Note that this means they are having the same amount of weekly cases. As the line for China shows, as a country starts reporting less weekly cases, it will drop dramatically. This is when a country has reached its peak daily deaths.</p>
+            <p class="answer">This graph shows the confirmed deaths of COVID-19 in some major countries against the total confirmed deaths for each country. The diagonal line that most countries follow is the period of exponential growth. Italy and Spain appear to be approaching their peaks. Note that this means they are having the same amount of weekly deaths. As the line for China shows, as a country starts reporting less weekly cases, it will drop dramatically. This is when a country has reached its peak daily deaths.</p>
         </section>
         <section class="qa-block">
             <p class="question">China's data is rubbish!!! Why are you showing it?</p>
@@ -178,7 +178,7 @@
         </section>
         <section class="qa-block">
             <p class="question">How often is this updated?</p>
-            <p class="answer">The ECDC publishes data up to 24 hours after a country has released it. As it uses the ECDC's data, the graph may take a while to update. It is sometimes manually updated, too.</p>
+            <p class="answer">The ECDC publishes data every morning (UTC), which could be up to 24 hours after a country has released it. The graph may therefore take up to 24 hours to update. The counters at the top of the page for cases and deaths update very frequently and use different sources.</p>
         </section>
         <section class="qa-block">
             <p class="question">Can I use your data/How did you make this/is there a GitHub repo?</p>

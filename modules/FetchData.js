@@ -35,6 +35,9 @@ module.exports.fetchData = function() {
     }
 
     worldDataJSON = JSON.parse(worldData)
+    for(var stat in worldDataJSON){
+        worldDataJSON[stat] = worldDataJSON[stat].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    }
     return [data, dates, lastUpdate, worldDataJSON]
     
 }
