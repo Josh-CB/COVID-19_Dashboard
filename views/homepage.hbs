@@ -18,6 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162603226-1"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -150,6 +151,19 @@
                         },
                         beforeBody: function(toolTipItem, data) {
                             return 'Weekly confirmed deaths: '
+                        },
+                        footer: function(toolTipItem, data) {
+                            var dates = {{{json dates}}}
+                            var dateObj = {
+                                'United Kingdom': 'GBR',
+                                'Italy': 'ITA',
+                                'Spain': 'ESP',
+                                'United States': 'USA',
+                                'South Korea': 'KOR',
+                                'Germany': 'DEU'
+                            }
+                            var countryCode = dateObj[data.datasets[toolTipItem[0].datasetIndex].label]
+                            return dates[countryCode][toolTipItem[0].index]
                         }
                     }
             },  

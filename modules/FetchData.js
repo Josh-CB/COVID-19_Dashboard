@@ -24,7 +24,7 @@ module.exports.fetchData = function() {
 
     readDataJSON = JSON.parse(readData)
 
-    dates = []
+    dates = {}
     for(const country in readDataJSON){
         data[country] = []
         dates[country] = []

@@ -56,4 +56,3 @@ module.exports = app.listen(port, async() =>
 handlebars.registerHelper('json', function (content) {
     return JSON.stringify(content);
 });
-
