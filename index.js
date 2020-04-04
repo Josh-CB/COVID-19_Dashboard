@@ -15,6 +15,7 @@ const app = new Koa()
 const router = new Router()
 
 const Home = require('./controllers/home')
+const Counters = require('./controllers/counters')
 
 app.keys = ['darkSecret']
 app.use(staticDir('public'))
@@ -37,6 +38,14 @@ const port = process.env.PORT || defaultPort
 
 router.get('/', async ctx => {
 		await Home.home(ctx)
+})
+
+router.get('/counters/cases', async ctx => {
+	await ctx.render('counter', {count: Counters.cases()})
+})
+
+router.get('/counters/deaths', async ctx => {
+	await ctx.render('counter', {count: Counters.deaths()})
 })
 
 app.use(router.routes())

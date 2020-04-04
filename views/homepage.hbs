@@ -24,6 +24,17 @@
         gtag('js', new Date());
         gtag('config', 'UA-162603226-1');
     </script>
+    <head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+    <script>
+        $(document).ready(function(){
+            setInterval(updateCases,10000);
+        });
+        $(document).ready(function(){
+            setInterval(updateDeaths,10000);
+        });
+    </script>
 </head>
 
 
@@ -31,23 +42,51 @@
     <header>
         {{> header}}
     </header>
+    <script>
+        function updateCases() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("cases").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "/counters/cases", true);
+            xhttp.send();
+        }
+    </script>
+    <script>
+        function updateDeaths() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("deaths").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "/counters/deaths", true);
+            xhttp.send();
+        }
+    </script>
     <div class="container" style="padding-top: 20px;">
         <div class="row">
             <div class="col-md leftCard">
                 <div class="worldCard">
                 <p class="cardtitle">Confirmed worldwide cases</p>
-                <p class="data">{{{counterdata.cases}}}</p>
+                <p class="data" id="cases">{{{counterdata.cases}}}</p>
                 </div>
             </div>
             <div class="col-md rightCard">
                 <div class="worldCard">
                 <p class="cardtitle">Confirmed worldwide deaths</p>
-                <p class="data">{{{counterdata.deaths}}}</p>
+                <p class="data" id="deaths">{{{counterdata.deaths}}}</p>
                 </div>
             </div>
         </div>
-        <p style="float: left;">Source: <a href="{{{counterdata.url}}}">{{{counterdata.source}}}</a></p>
-        <p class="update" style="text-align: right;">Last updated: {{counterdata.last-updated}}</p>
+        
+        <svg height="20" width="20" class="update" style="float: left;">
+            <circle cx="10" cy="10" r="5" fill="red" />
+        </svg>
+        <p class="update" style="float: left; font-size: 15px; color:darkgrey;">Checking for updates</p>
+        <p style="text-align: right;">Source: <a href="https://www.worldometers.info/coronavirus/">Worldometers</a>, <a href="https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/">BNO News</a></p>
         <br>
         <div class="row">
             <p style="font-size: 12px;">Tip: Click a country's name on the legend below to remove the country from the graph.</p>
@@ -165,7 +204,7 @@
     });
     </script>
     <p style="float: left;"> Data: <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">European Centre for Disease Control</a></p>
-    <p class="update" style="text-align:right;">Last checked for update: {{{lastUpdate}}}</p>
+    <p class="graphupdate" style="text-align:right;">Last checked for update: {{{lastUpdate}}}</p>
     <br>
     <section class="faq">
         <section class="qa-block">
@@ -182,7 +221,7 @@
         </section>
         <section class="qa-block">
             <p class="question">How often is this updated?</p>
-            <p class="answer">The counters check for updates every two minutes. The graph uses ECDC data which is updated every morning (UTC), which could be up to 24 hours after a country has released it. The graph may therefore take up to 24 hours to update. The counters at the top of the page for cases and deaths update very frequently and use different sources.</p>
+            <p class="answer">The counters check for updates every two minutes. You don't need to refresh the page, they will update automatically if new data is available. The graph uses ECDC data which is updated every morning (UTC), which could be up to 24 hours after a country has released it. The graph may therefore take up to 24 hours to update. The counters at the top of the page for cases and deaths update very frequently and use different sources.</p>
         </section>
         <section class="qa-block">
             <p class="question">Can I use your data/How did you make this/is there a GitHub repo?</p>

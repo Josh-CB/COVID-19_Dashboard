@@ -46,3 +46,23 @@ module.exports.fetchData = function() {
 
     return [data, dates, lastUpdate, counterDataJSON]
 }
+
+module.exports.cases = () => {
+    counterData = fs.readFileSync('./data/counterData.json', (err, data) => {
+        if(err) throw err;
+        return data
+    })
+    counterDataJSON = JSON.parse(counterData)
+    counterDataJSON['cases'] = counterDataJSON['cases'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    return counterDataJSON['cases']
+}
+
+module.exports.deaths = () => {
+    counterData = fs.readFileSync('./data/counterData.json', (err, data) => {
+        if(err) throw err;
+        return data
+    })
+    counterDataJSON = JSON.parse(counterData)
+    counterDataJSON['deaths'] = counterDataJSON['deaths'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    return counterDataJSON['deaths']
+}
