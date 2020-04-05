@@ -120,8 +120,8 @@
                 <option value="deaths">Deaths</option>
                 <option value="cases">Cases</option>
             </select>
-            <canvas id="casesChart" height="600"></canvas>
-            <canvas id="deathChart" height="600"></canvas>
+            <canvas id="casesChart" height="800"></canvas>
+            <canvas id="deathChart" height="800"></canvas>
         </div>
         
     <script>
@@ -217,7 +217,7 @@
                     },
                     type: 'logarithmic',
                     ticks: {
-                        min: 75, //minimum tick
+                        min: 0, //minimum tick
                         max: 10000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
@@ -225,6 +225,7 @@
                     },
                     afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
                         chartObj.ticks = [];
+                        chartObj.ticks.push(0);
                         chartObj.ticks.push(100);
                         chartObj.ticks.push(500);
                         chartObj.ticks.push(1000);
@@ -240,7 +241,7 @@
                     },
                     type: 'logarithmic',
                     ticks: {
-                        min: 100, //minimum tick
+                        min: 0, //minimum tick
                         max: 50000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
@@ -248,6 +249,7 @@
                     },
                     afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
                         chartObj.ticks = [];
+                        chartObj.ticks.push(0);
                         chartObj.ticks.push(100);
                         chartObj.ticks.push(1000);
                         chartObj.ticks.push(10000);
@@ -352,7 +354,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 100, //minimum tick
-                        max: 100000, //maximum tick
+                        max: 500000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -365,6 +367,7 @@
                         chartObj.ticks.push(5000);
                         chartObj.ticks.push(10000);
                         chartObj.ticks.push(100000);
+                        chartObj.ticks.push(500000);
                     }
                 }],
                 xAxes: [{
