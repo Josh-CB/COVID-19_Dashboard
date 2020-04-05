@@ -27,7 +27,6 @@
     </script>
     <head>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-</head>
     <script>
         $(document).ready(function(){
             setInterval(updateCases,10000);
@@ -36,13 +35,6 @@
             setInterval(updateDeaths,10000);
         });
     </script>
-</head>
-
-
-<body>
-    <header>
-        {{> header}}
-    </header>
     <script>
         function updateCases() {
             var xhttp = new XMLHttpRequest();
@@ -67,6 +59,15 @@
             xhttp.send();
         }
     </script>
+    
+</head>
+
+
+<body>
+    <header>
+        {{> header}}
+    </header>
+    
     <div class="container" style="padding-top: 20px;">
         <div class="row">
             <div class="col-md leftCard">
@@ -91,6 +92,35 @@
         <br>
         <div class="row">
             <p style="font-size: 12px;">Tip: Click a country's name on the legend below to remove the country from the graph.</p>
+            <!---<canvas id="deathChart" height="600"></canvas>--->
+        </div>
+        <div class="row">
+        
+        <script>  
+        $(document).ready(function(){
+            $('#deathChart').show();
+            $('#casesChart').hide()
+            $('#chartselector').on('change', function() {
+                if ( this.value == 'cases') {
+                    $("#casesChart").show();
+                }
+                else {
+                    $("#casesChart").hide();
+                }
+                if ( this.value == 'deaths') {
+                    $("#deathChart").show();
+                }
+                else {
+                    $("#deathChart").hide();
+                }
+            });
+        });
+        </script>
+            <select id="chartselector">
+                <option value="deaths">Deaths</option>
+                <option value="cases">Cases</option>
+            </select>
+            <canvas id="casesChart" height="600"></canvas>
             <canvas id="deathChart" height="600"></canvas>
         </div>
         
@@ -99,42 +129,51 @@
         var deathChart = new Chart(ctx, {
             type: 'line',
             data: {
-                datasets: [/*{
-                    label: 'China',
-                    backgroundColor: 'rgba(255,0,0,0.4)',
-                    borderColor: 'rgba(255,0,0,0.4)',
-                    data: {{{json CHNdata }}},
-                    fill: false
-                },*/ {
+                datasets: [
+                {
                     label: 'United Kingdom',
-                    data: {{{json UKdata}}},
-                    fill: false
+                    data: {{{json dUKdata}}},
+                    fill: false,
+                    lineTension: 0.5,
                 }, {
                     label: 'Italy',
-                    data: {{{json ITAdata}}},
-                    fill: false
+                    data: {{{json dITAdata}}},
+                    fill: false,
+                    lineTension: 0.5,
                 }, {
                     label: 'Spain',
-                    data: {{{json ESPdata}}},
-                    fill: false
+                    data: {{{json dESPdata}}},
+                    fill: false,
+                    lineTension: 0.5,
                 }, {
                     label: 'United States',
-                    data: {{{json USAdata}}},
-                    fill: false
-                }, {
+                    data: {{{json dUSAdata}}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true
+                }, /*{
                     label: 'South Korea',
-                    data: {{{json KORdata}}},
-                    fill: false
-                }, {
+                    data: {{{json dKORdata}}},
+                    fill: false,
+                    lineTension: 0.5,
+                },*/ {
                     label: 'Germany',
-                    data: {{{json DEUdata}}},
-                    fill: false
+                    data: {{{json dDEUdata}}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true
                 }, /*{
                     label: 'Japan',
-                    data: {{{json JPNdata}}},
-                    fill: false
-                }*/],
-            labels: {{{json dates}}}
+                    data: {{{json dJPNdata}}},
+                    fill: false,
+                    lineTension: 0.5,
+                },*/{
+                    label: 'China',
+                    data: {{{json dCHNdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
+                }, ],
             },
             options: {
                 plugins: {
@@ -160,7 +199,8 @@
                                 'Spain': 'ESP',
                                 'United States': 'USA',
                                 'South Korea': 'KOR',
-                                'Germany': 'DEU'
+                                'Germany': 'DEU',
+                                'China': 'CHN'
                             }
                             var countryCode = dateObj[data.datasets[toolTipItem[0].datasetIndex].label]
                             return dates[countryCode][toolTipItem[0].index]
@@ -173,11 +213,11 @@
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Weekly confirmed deaths'
+                        labelString: 'Weekly confirmed deaths (logarithmic)'
                     },
                     type: 'logarithmic',
                     ticks: {
-                        min: 10, //minimum tick
+                        min: 75, //minimum tick
                         max: 10000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
@@ -185,9 +225,10 @@
                     },
                     afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
                         chartObj.ticks = [];
-                        chartObj.ticks.push(10);
                         chartObj.ticks.push(100);
+                        chartObj.ticks.push(500);
                         chartObj.ticks.push(1000);
+                        chartObj.ticks.push(5000);
                         chartObj.ticks.push(10000);
                         chartObj.ticks.push(100000);
                     }
@@ -195,7 +236,7 @@
                 xAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Total confirmed deaths'
+                        labelString: 'Total confirmed deaths (logarithmic)'
                     },
                     type: 'logarithmic',
                     ticks: {
@@ -211,6 +252,143 @@
                         chartObj.ticks.push(1000);
                         chartObj.ticks.push(10000);
                         chartObj.ticks.push(50000);
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+    <script>
+        var ctx = document.getElementById('casesChart').getContext('2d');
+        var casesChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: [
+                {
+                    label: 'United Kingdom',
+                    data: {{{json cUKdata}}},
+                    fill: false,
+                    lineTension: 0.5,
+                }, {
+                    label: 'Italy',
+                    data: {{{json cITAdata}}},
+                    fill: false,
+                    lineTension: 0.5,
+                }, {
+                    label: 'Spain',
+                    data: {{{json cESPdata}}},
+                    fill: false,
+                    lineTension: 0.5,
+                }, {
+                    label: 'United States',
+                    data: {{{json cUSAdata}}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true
+                }, /*{
+                    label: 'South Korea',
+                    data: {{{json cKORdata}}},
+                    fill: false,
+                    lineTension: 0.5,
+                },*/ {
+                    label: 'Germany',
+                    data: {{{json cDEUdata}}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true
+                }, /*{
+                    label: 'Japan',
+                    data: {{{json cJPNdata}}},
+                    fill: false,
+                    lineTension: 0.5,
+                },*/{
+                    label: 'China',
+                    data: {{{json cCHNdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
+                }, ],
+            },
+            options: {
+                plugins: {
+                    colorschemes: {
+                        fillAlpha: 0.8,
+                        scheme: 'brewer.SetOne9',                      
+                    },
+                },
+                tooltips: {
+                    enabled: true,
+                    callbacks: {
+                        beforeTitle: function(toolTipItem, data) {
+                            return 'Total confirmed cases: '
+                        },
+                        beforeBody: function(toolTipItem, data) {
+                            return 'Weekly confirmed cases: '
+                        },
+                        footer: function(toolTipItem, data) {
+                            var dates = {{{json dates}}}
+                            var dateObj = {
+                                'United Kingdom': 'GBR',
+                                'Italy': 'ITA',
+                                'Spain': 'ESP',
+                                'United States': 'USA',
+                                'South Korea': 'KOR',
+                                'Germany': 'DEU',
+                                'China': 'CHN'
+                            }
+                            var countryCode = dateObj[data.datasets[toolTipItem[0].datasetIndex].label]
+                            return dates[countryCode][toolTipItem[0].index]
+                        }
+                    }
+            },  
+            responsive: false,
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Weekly confirmed cases (logarithmic)'
+                    },
+                    type: 'logarithmic',
+                    ticks: {
+                        min: 100, //minimum tick
+                        max: 100000, //maximum tick
+                        callback: function (value, index, values) {
+                            return Number(value.toString());//pass tick values as a string into Number function
+                        }
+                    },
+                    afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
+                        chartObj.ticks = [];
+                        chartObj.ticks.push(100);
+                        chartObj.ticks.push(500);
+                        chartObj.ticks.push(1000);
+                        chartObj.ticks.push(5000);
+                        chartObj.ticks.push(10000);
+                        chartObj.ticks.push(100000);
+                    }
+                }],
+                xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Total confirmed cases (logarithmic)'
+                    },
+                    type: 'logarithmic',
+                    ticks: {
+                        min: 100, //minimum tick
+                        max: 1000000, //maximum tick
+                        callback: function (value, index, values) {
+                            return Number(value.toString());//pass tick values as a string into Number function
+                        }
+                    },
+                    afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
+                        chartObj.ticks = [];
+                        chartObj.ticks.push(100);
+                        chartObj.ticks.push(1000);
+                        chartObj.ticks.push(10000);
+                        chartObj.ticks.push(50000);
+                        chartObj.ticks.push(100000);
+                        chartObj.ticks.push(500000);
+                        chartObj.ticks.push(1000000);
                     }
                 }]
             }

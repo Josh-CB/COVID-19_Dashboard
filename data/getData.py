@@ -42,28 +42,36 @@ for record in data:
     if record["countryterritoryCode"] in countriesToInclude:
         country = record["countryterritoryCode"]
         newDeaths = int(record["deaths"])
+        newCases = int(record["cases"])
         if record["countryterritoryCode"] in toWrite_raw.keys():
-            toWrite_raw[record["countryterritoryCode"]][record["dateRep"]] = {"newDeaths": newDeaths}
+            toWrite_raw[record["countryterritoryCode"]][record["dateRep"]] = {"newDeaths": newDeaths, "newCases": newCases}
         else:
-            toWrite_raw[record["countryterritoryCode"]] = {record["dateRep"]: {"newDeaths": newDeaths}}
+            toWrite_raw[record["countryterritoryCode"]] = {record["dateRep"]: {"newDeaths": newDeaths, "newCases": newCases}}
 
 for country in countriesToInclude:
     totalDeaths = 0
+    totalCases = 0
     listDates = list(toWrite_raw[country].items())
     listDates.sort(key=lambda x: datetime.datetime.strptime(x[0], '%d/%m/%Y'))
     for pair in listDates:
         date = pair[0]
         dateDict = pair[1]
         totalDeaths = totalDeaths + dateDict["newDeaths"]
+        totalCases = totalCases + dateDict["newCases"]
         toWrite_raw[country][date]["totalDeathsToDate"] = totalDeaths
+        toWrite_raw[country][date]["totalCasesToDate"] = totalCases
 
 for country in toWrite_raw:
     for date in toWrite_raw[country]:
         deathsUpToToday = toWrite_raw[country][date]["totalDeathsToDate"]
+        casesUpToToday = toWrite_raw[country][date]["totalCasesToDate"]
         dateWeekAgo = getDateAWeekAgo(date)
         deathsAWeekAgo = toWrite_raw[country][dateWeekAgo]["totalDeathsToDate"]
+        casesAWeekAgo = toWrite_raw[country][dateWeekAgo]["totalCasesToDate"]
         weeklyDeaths = deathsUpToToday - deathsAWeekAgo
+        weeklyCases = casesUpToToday - casesAWeekAgo
         toWrite_raw[country][date]["totalDeathsInLastWeek"] = weeklyDeaths
+        toWrite_raw[country][date]["totalCasesInLastWeek"] = weeklyCases
 
 toWrite = json.dumps(toWrite_raw)
 

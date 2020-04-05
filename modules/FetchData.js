@@ -20,13 +20,15 @@ module.exports.fetchData = function() {
         return data
     })
 
-    let data = {} 
+    let deathData = {} 
+    let caseData = {}
 
     readDataJSON = JSON.parse(readData)
 
     dates = {}
     for(const country in readDataJSON){
-        data[country] = []
+        deathData[country] = []
+        caseData[country] =[]
         dates[country] = []
         for(const date in readDataJSON[country]){
             if(readDataJSON[country][date]["totalDeathsToDate"] < 100){
@@ -34,7 +36,15 @@ module.exports.fetchData = function() {
             }
             else {
                 dates[country].push(date)
-                data[country].push({x: readDataJSON[country][date]["totalDeathsToDate"], y: readDataJSON[country][date]["totalDeathsInLastWeek"]})
+                deathData[country].push({x: readDataJSON[country][date]["totalDeathsToDate"], y: readDataJSON[country][date]["totalDeathsInLastWeek"]})
+            }
+        }
+        for(const date in readDataJSON[country]){
+            if(readDataJSON[country][date]["totalCasesToDate"] < 100){
+                continue
+            }
+            else {
+                caseData[country].push({x: readDataJSON[country][date]["totalCasesToDate"], y: readDataJSON[country][date]["totalCasesInLastWeek"]})
             }
         }
     }
@@ -44,7 +54,7 @@ module.exports.fetchData = function() {
     counterDataJSON['deaths'] = counterDataJSON['deaths'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 
 
-    return [data, dates, lastUpdate, counterDataJSON]
+    return [deathData, dates, lastUpdate, counterDataJSON, caseData]
 }
 
 module.exports.cases = () => {
