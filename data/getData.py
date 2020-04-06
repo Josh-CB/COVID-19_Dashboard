@@ -35,7 +35,7 @@ toWrite_raw = {}
 
 totalWorldDeaths = 0
 totalWorldCases = 0
-countriesToInclude = ["GBR", "CHN", "ITA", "USA", "ESP", "KOR", "DEU", "JPN"]
+countriesToInclude = ["GBR", "CHN", "ITA", "USA", "ESP", "KOR", "DEU", "JPN", "SWE"]
 for record in data:
     totalWorldDeaths = totalWorldDeaths + int(record["deaths"])
     totalWorldCases = totalWorldCases + int(record["cases"])

@@ -16,6 +16,7 @@ module.exports.home = async(ctx) => {
         dKORdata: data.KOR,
         dDEUdata: data.DEU,
         dJPNdata: data.JPN,
+        dSWEdata: data.SWE,
         cUKdata: caseData.GBR,
         cCHNdata: caseData.CHN,
         cITAdata: caseData.ITA,
@@ -24,6 +25,7 @@ module.exports.home = async(ctx) => {
         cKORdata: caseData.KOR,
         cDEUdata: caseData.DEU,
         cJPNdata: caseData.JPN,
+        cSWEdata: caseData.SWE,
         dates: dates,
         lastUpdate: lastUpdated,
         counterdata: counterdata

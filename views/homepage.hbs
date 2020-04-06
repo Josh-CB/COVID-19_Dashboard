@@ -18,6 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162603226-1"></script>
+    <script data-ad-client="ca-pub-2275435046137289" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -173,6 +174,12 @@
                     fill: false,
                     lineTension: 0.5,
                     hidden: true,
+                }, {
+                    label: 'Sweden',
+                    data: {{{json dSWEdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
                 }, ],
             },
             options: {
@@ -309,7 +316,13 @@
                     fill: false,
                     lineTension: 0.5,
                     hidden: true,
-                }, ],
+                }, {
+                    label: 'Sweden',
+                    data: {{{json cSWEdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
+                },],
             },
             options: {
                 plugins: {
