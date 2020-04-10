@@ -35,7 +35,7 @@ toWrite_raw = {}
 
 totalWorldDeaths = 0
 totalWorldCases = 0
-countriesToInclude = ["GBR", "CHN", "ITA", "USA", "ESP", "KOR", "DEU", "JPN", "SWE"]
+countriesToInclude = ["GBR", "CHN", "ITA", "USA", "ESP", "KOR", "DEU", "JPN", "SWE", "CHE", "FRA", "IRL", "NLD", "CAN", "RUS"]
 for record in data:
     totalWorldDeaths = totalWorldDeaths + int(record["deaths"])
     totalWorldCases = totalWorldCases + int(record["cases"])
@@ -66,6 +66,8 @@ for country in toWrite_raw:
         deathsUpToToday = toWrite_raw[country][date]["totalDeathsToDate"]
         casesUpToToday = toWrite_raw[country][date]["totalCasesToDate"]
         dateWeekAgo = getDateAWeekAgo(date)
+        print(country)
+        
         deathsAWeekAgo = toWrite_raw[country][dateWeekAgo]["totalDeathsToDate"]
         casesAWeekAgo = toWrite_raw[country][dateWeekAgo]["totalCasesToDate"]
         weeklyDeaths = deathsUpToToday - deathsAWeekAgo

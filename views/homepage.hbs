@@ -121,12 +121,21 @@
                 <option value="deaths">Deaths</option>
                 <option value="cases">Cases</option>
             </select>
-            <canvas id="casesChart" height="800"></canvas>
-            <canvas id="deathChart" height="800"></canvas>
         </div>
-        
+            <div class="row" style="margin-top: 20px; background-color: #f7f7f7; padding-top: 10px; border-radius: 10px;">
+            <canvas id="casesChart" height="800"></canvas>
+            <canvas id="deathChart" height="800" ></canvas>
+            <section style="width: 100%;">
+            <p style="float: left;"> Data: <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">European Centre for Disease Control</a></p>
+            <p class="graphupdate" style="text-align:right;">Last checked for update: {{{lastUpdate}}}</p>
+            </section>
+            </div>
     <script>
-        var ctx = document.getElementById('deathChart').getContext('2d');
+        Chart.defaults.global.defaultFontFamily = 'Arial'
+        Chart.defaults.global.defaultFontColor = '#000000'
+        Chart.defaults.global.defaultFontSize = 14
+        var ctx = document.getElementById('deathChart'); 
+
         var deathChart = new Chart(ctx, {
             type: 'line',
             data: {
@@ -152,12 +161,13 @@
                     fill: false,
                     lineTension: 0.5,
                     hidden: true
-                }, /*{
+                }, {
                     label: 'South Korea',
                     data: {{{json dKORdata}}},
                     fill: false,
                     lineTension: 0.5,
-                },*/ {
+                    hidden: true
+                }, {
                     label: 'Germany',
                     data: {{{json dDEUdata}}},
                     fill: false,
@@ -168,6 +178,7 @@
                     data: {{{json dJPNdata}}},
                     fill: false,
                     lineTension: 0.5,
+                    hidden: true
                 },*/{
                     label: 'China',
                     data: {{{json dCHNdata }}},
@@ -180,13 +191,43 @@
                     fill: false,
                     lineTension: 0.5,
                     hidden: true,
-                }, ],
+                },{
+                    label: 'Switzerland',
+                    data: {{{json dCHEdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
+                }, {
+                    label: 'France',
+                    data: {{{json dFRAdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
+                },{
+                    label: 'Netherlands',
+                    data: {{{json dNLDdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
+                },{
+                    label: 'Canada',
+                    data: {{{json dCANdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
+                },/*{
+                    label: 'Russia',
+                    data: {{{json dRUSdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
+                },*/],
             },
             options: {
                 plugins: {
                     colorschemes: {
                         fillAlpha: 0.8,
-                        scheme: 'brewer.SetOne9',                      
+                        scheme: 'brewer.SetThree12',                      
                     },
                 },
                 tooltips: {
@@ -209,6 +250,13 @@
                                 'Germany': 'DEU',
                                 'China': 'CHN',
                                 'Sweden': 'SWE',
+                                'Switzerland': 'CHE',
+                                'France': 'FRA',
+                                'Japan': 'JPN',
+                                'Ireland': 'IRL',
+                                'Netherlands': 'NLD',
+                                'Canada': 'CAN',
+                                'Russia': 'RUS',
                             }
                             var countryCode = dateObj[data.datasets[toolTipItem[0].datasetIndex].label]
                             return dates[countryCode][toolTipItem[0].index]
@@ -226,7 +274,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 0, //minimum tick
-                        max: 10000, //maximum tick
+                        max: 100000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -235,10 +283,14 @@
                         chartObj.ticks = [];
                         chartObj.ticks.push(0);
                         chartObj.ticks.push(100);
+                        chartObj.ticks.push(200);
                         chartObj.ticks.push(500);
                         chartObj.ticks.push(1000);
+                        chartObj.ticks.push(2000);
                         chartObj.ticks.push(5000);
                         chartObj.ticks.push(10000);
+                        chartObj.ticks.push(20000);
+                        chartObj.ticks.push(50000);
                         chartObj.ticks.push(100000);
                     }
                 }],
@@ -249,7 +301,7 @@
                     },
                     type: 'logarithmic',
                     ticks: {
-                        min: 0, //minimum tick
+                        min: 100, //minimum tick
                         max: 50000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
@@ -257,10 +309,14 @@
                     },
                     afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
                         chartObj.ticks = [];
-                        chartObj.ticks.push(0);
                         chartObj.ticks.push(100);
+                        chartObj.ticks.push(200);
+                        chartObj.ticks.push(500);
                         chartObj.ticks.push(1000);
+                        chartObj.ticks.push(2000);
+                        chartObj.ticks.push(5000);
                         chartObj.ticks.push(10000);
+                        chartObj.ticks.push(20000);
                         chartObj.ticks.push(50000);
                     }
                 }]
@@ -295,23 +351,25 @@
                     fill: false,
                     lineTension: 0.5,
                     hidden: true
-                }, /*{
+                }, {
                     label: 'South Korea',
                     data: {{{json cKORdata}}},
                     fill: false,
                     lineTension: 0.5,
-                },*/ {
+                    hidden: true
+                }, {
                     label: 'Germany',
                     data: {{{json cDEUdata}}},
                     fill: false,
                     lineTension: 0.5,
                     hidden: true
-                }, /*{
+                }, {
                     label: 'Japan',
                     data: {{{json cJPNdata}}},
                     fill: false,
                     lineTension: 0.5,
-                },*/{
+                    hidden: true
+                },{
                     label: 'China',
                     data: {{{json cCHNdata }}},
                     fill: false,
@@ -323,13 +381,43 @@
                     fill: false,
                     lineTension: 0.5,
                     hidden: true,
+                },{
+                    label: 'Switzerland',
+                    data: {{{json cCHEdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
+                }, {
+                    label: 'France',
+                    data: {{{json cFRAdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
+                },{
+                    label: 'Netherlands',
+                    data: {{{json cNLDdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
+                },{
+                    label: 'Canada',
+                    data: {{{json cCANdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
+                },{
+                    label: 'Russia',
+                    data: {{{json cRUSdata }}},
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: true,
                 },],
             },
             options: {
                 plugins: {
                     colorschemes: {
                         fillAlpha: 0.8,
-                        scheme: 'brewer.SetOne9',                      
+                        scheme: 'tableau.Classic20',                      
                     },
                 },
                 tooltips: {
@@ -351,7 +439,14 @@
                                 'South Korea': 'KOR',
                                 'Germany': 'DEU',
                                 'China': 'CHN',
-                                'Sweden': 'SWE'
+                                'Sweden': 'SWE',
+                                'Switzerland': 'CHE',
+                                'France': 'FRA',
+                                'Japan': 'JPN',
+                                'Ireland': 'IRL',
+                                'Netherlands': 'NLD',
+                                'Canada': 'CAN',
+                                'Russia': 'RUS',
                             }
                             var countryCode = dateObj[data.datasets[toolTipItem[0].datasetIndex].label]
                             return dates[countryCode][toolTipItem[0].index]
@@ -377,11 +472,15 @@
                     afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
                         chartObj.ticks = [];
                         chartObj.ticks.push(100);
+                        chartObj.ticks.push(200);
                         chartObj.ticks.push(500);
                         chartObj.ticks.push(1000);
+                        chartObj.ticks.push(2000);
                         chartObj.ticks.push(5000);
                         chartObj.ticks.push(10000);
+                        chartObj.ticks.push(20000);
                         chartObj.ticks.push(100000);
+                        chartObj.ticks.push(200000);
                         chartObj.ticks.push(500000);
                     }
                 }],
@@ -401,10 +500,16 @@
                     afterBuildTicks: function (chartObj) { //Build ticks labelling as per your need
                         chartObj.ticks = [];
                         chartObj.ticks.push(100);
+                        chartObj.ticks.push(200);
+                        chartObj.ticks.push(500);
                         chartObj.ticks.push(1000);
+                        chartObj.ticks.push(2000);
+                        chartObj.ticks.push(5000);
                         chartObj.ticks.push(10000);
+                        chartObj.ticks.push(20000);
                         chartObj.ticks.push(50000);
                         chartObj.ticks.push(100000);
+                        chartObj.ticks.push(200000);
                         chartObj.ticks.push(500000);
                         chartObj.ticks.push(1000000);
                     }
@@ -413,8 +518,7 @@
         }
     });
     </script>
-    <p style="float: left;"> Data: <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">European Centre for Disease Control</a></p>
-    <p class="graphupdate" style="text-align:right;">Last checked for update: {{{lastUpdate}}}</p>
+    <div class="row">
     <br>
     <section class="faq">
         <section class="qa-block">
