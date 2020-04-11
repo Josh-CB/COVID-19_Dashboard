@@ -66,12 +66,14 @@ for country in toWrite_raw:
         deathsUpToToday = toWrite_raw[country][date]["totalDeathsToDate"]
         casesUpToToday = toWrite_raw[country][date]["totalCasesToDate"]
         dateWeekAgo = getDateAWeekAgo(date)
-        print(country)
         
-        deathsAWeekAgo = toWrite_raw[country][dateWeekAgo]["totalDeathsToDate"]
-        casesAWeekAgo = toWrite_raw[country][dateWeekAgo]["totalCasesToDate"]
-        weeklyDeaths = deathsUpToToday - deathsAWeekAgo
-        weeklyCases = casesUpToToday - casesAWeekAgo
+        try:
+            deathsAWeekAgo = toWrite_raw[country][dateWeekAgo]["totalDeathsToDate"]
+            casesAWeekAgo = toWrite_raw[country][dateWeekAgo]["totalCasesToDate"]
+            weeklyDeaths = deathsUpToToday - deathsAWeekAgo
+            weeklyCases = casesUpToToday - casesAWeekAgo
+        except:
+            continue
         toWrite_raw[country][date]["totalDeathsInLastWeek"] = weeklyDeaths
         toWrite_raw[country][date]["totalCasesInLastWeek"] = weeklyCases
 
