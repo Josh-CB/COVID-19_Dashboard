@@ -21,7 +21,7 @@ worldometers['deaths'] = int(counters[1].find('span').text.replace(',',''))
 
 URL = 'https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vR30F8lYP3jG7YOq8es0PBpJIE5yvRVZffOyaqC0GgMBN6yt0Q-NI8pxS7hd1F9dYXnowSC6zpZmW9D/pubhtml/sheet?headers=false&gid=0&range=A1:I207'
 page = requests.get(URL)
-counters = BeautifulSoup(page.content, 'html.parser').findAll('td', attrs={'class':'s6'})
+counters = BeautifulSoup(page.content, 'html.parser').findAll('td', attrs={'class':'s7'})
 bno = {}
 bno['source'] = 'BNO News'
 bno['last-updated'] = lastUpdated
