@@ -1,14 +1,29 @@
-/* Style the header with a grey background and some padding */
+
 .header {
     overflow: hidden;
-    background-color: #333333;
+    background-color: #273045;
     padding: 15px 10px;
+    
   }
+
+.sub-header {
+  height: 40px;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  background-color: white;
+}
+
+.sh-text {
+  padding-top: 10px;
+}
+.sub-header p {
+  text-align: center;
+  vertical-align: middle;
+}
   
 /* Style the header links */
 .header a {
     float: left;
-    color: #e7e7e7;
+    color: white;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -18,18 +33,21 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
 .header a.logo {
     font-size: 25px;
+    padding-left: 230px;
   }
 
   
-/* Float the link section to the right */
 .header-right {
     float: right;
   }
   
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+.body {
+  background-color: gray;
+}
+
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -41,10 +59,10 @@
   }
 }
 
-.chartwrapper {
-  width: 75%;
-  margin-right:auto;
-  margin-left:auto;
+.chart {
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 10px;
 }
 
 .question {
@@ -58,7 +76,6 @@
 
 .worldCard {
   text-align: center;
-  background-color: rgb(255, 255, 255); 
   border-radius: 15px;
 }
 
@@ -85,7 +102,7 @@
   padding-left: 0px;
 }
 
-/* On screens that are 992px or less, set the background color to blue */
+
 @media screen and (max-width: 992px) {
   .col-md.leftCard {
     padding-left: 0px;
@@ -98,7 +115,7 @@
   }
 }
 
-/* On screens that are 600px or less, set the background color to olive */
+
 @media screen and (max-width: 600px) {
   .col-md.leftCard {
     padding-left: 0px;

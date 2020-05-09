@@ -68,6 +68,14 @@
     <header>
         {{> header}}
     </header>
+    <header>
+        <div class="sub-header">
+            <div class="sh-text">
+                <p>Welcome to this COVID-19 data dashboard. This page will be updated regularly with new features added, so make sure you come back soon!</p>
+            </div>
+        </div>
+    </header>
+    
     
     <div class="container" style="padding-top: 20px;">
         <div class="row">
@@ -91,12 +99,8 @@
         <p class="update" style="float: left; font-size: 15px; color:darkgrey;">Checking for updates</p>
         <p style="text-align: right;">Source: <a href="https://www.worldometers.info/coronavirus/">Worldometers</a>, <a href="https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/">BNO News</a></p>
         <br>
+        
         <div class="row">
-            <p style="font-size: 12px;">Tip: Click a country's name on the legend below to remove the country from the graph.</p>
-            <!---<canvas id="deathChart" height="600"></canvas>--->
-        </div>
-        <div class="row">
-        <p style="color: red; font-weight: bold;">Please note: UK deaths on weekends face significant reporting delays, sometimes of up to a week. The UK's curve may show signs of a quicker flattening on certain days and a reverse of that flattening on others. This is due to the DHSCs data and is unavoidable unfortunately.</p>
         <script>  
         $(document).ready(function(){
             $('#deathChart').show();
@@ -122,7 +126,10 @@
                 <option value="cases">Cases</option>
             </select>
         </div>
-            <div class="row" style="margin-top: 20px; background-color: #f7f7f7; padding-top: 10px; border-radius: 10px;">
+        <div class="row" style="margin-top: 5px;">
+            <p style="font-size: 12px;">Tip: Click a country's name on the legend below to remove the country from the graph.</p>
+        </div>
+            <div class="row chart" style="padding-top: 10px;">
             <canvas id="casesChart" height="800"></canvas>
             <canvas id="deathChart" height="800" ></canvas>
             <section style="width: 100%;">
