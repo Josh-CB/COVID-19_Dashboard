@@ -1,14 +1,17 @@
+.dataTables_wrapper {
+  width:100%
+}
 
 .header {
     overflow: hidden;
-    background-color: #273045;
+    background-color: #2C3E50;
     padding: 15px 10px;
     
   }
 
 .sub-header {
   height: 40px;
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
   background-color: white;
 }
 
@@ -152,6 +155,15 @@
   -o-animation: 1.5s blink ease infinite;
   animation: 1.5s blink ease infinite;
   
+}
+
+footer {
+  padding-bottom: 2%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
 
 @keyframes "blink" {

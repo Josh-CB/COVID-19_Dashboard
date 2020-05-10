@@ -30,11 +30,34 @@ bno['cases'] = int(counters[0].text.replace(',',''))
 bno['deaths'] = int(counters[1].text.replace(',',''))
 
 f = open('{}/counterData.json'.format(dir_path), 'w')
+countryDataFile = open('{}/countryData.json'.format(dir_path), 'w')
 if bno['cases'] > worldometers['cases']:
     data = json.dumps(bno)
     print("Counters updated. Most recent data: BNO News")
 else:
+    URL = 'https://www.worldometers.info/coronavirus/'
+    page = requests.get(URL)
+    table = BeautifulSoup(page.content, 'html.parser').find('table', attrs={'id':'main_table_countries_today'})
+    rows = table.find_all('tr')
+    countryData = {}
+    counter=0
+    for tr in rows:
+        td = tr.find_all('td')
+        row = [i.text for i in td]
+        print(row)
+        if len(row) != 13:
+            continue
+        if '\n' in row[0] or 'Total' in row[0] or 'World' in row[0]:
+            continue
+        else:
+            country = row[0]
+            countryData[counter] = {'country': country, 'cases': row[1], 'new_cases': row[2], 'deaths': row[3], 'new_deaths': row[4]}
+            counter = counter + 1
+    print(countryData)
     data = json.dumps(worldometers)
+    countriesJSON = json.dumps(countryData)
     print("Counters updated. Most recent data: Worldometers")
 f.write(data)
 f.close()
+countryDataFile.write(countriesJSON)
+countryDataFile.close()

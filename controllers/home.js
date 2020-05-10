@@ -7,6 +7,8 @@ module.exports.home = async(ctx) => {
     var lastUpdated = fetchedData[2]
     var counterdata = fetchedData[3]
     let caseData = fetchedData[4]
+    let countryDataBuf = fetchedData[5]
+    let countryData = JSON.parse(countryDataBuf.toString('utf-8'))
     await ctx.render('./homepage', {
         dUKdata: data.GBR,
         dCHNdata: data.CHN,
@@ -38,6 +40,7 @@ module.exports.home = async(ctx) => {
         cRUSdata: caseData.RUS,
         dates: dates,
         lastUpdate: lastUpdated,
-        counterdata: counterdata
+        counterdata: counterdata,
+        countryData: countryData
     })
 }

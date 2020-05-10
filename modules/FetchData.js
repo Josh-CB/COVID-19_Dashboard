@@ -20,6 +20,11 @@ module.exports.fetchData = function() {
         return data
     })
 
+    countryData = fs.readFileSync('./data/countryData.json', (err, data) => {
+        if(err) throw err;
+        return JSON.parse(data)
+    })
+
     let deathData = {} 
     let caseData = {}
 
@@ -54,7 +59,7 @@ module.exports.fetchData = function() {
     counterDataJSON['deaths'] = counterDataJSON['deaths'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 
 
-    return [deathData, dates, lastUpdate, counterDataJSON, caseData]
+    return [deathData, dates, lastUpdate, counterDataJSON, caseData, countryData]
 }
 
 module.exports.cases = () => {
@@ -75,4 +80,13 @@ module.exports.deaths = () => {
     counterDataJSON = JSON.parse(counterData)
     counterDataJSON['deaths'] = counterDataJSON['deaths'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     return counterDataJSON['deaths']
+}
+
+module.exports.countries = () => {
+    countryData = fs.readFileSync('./data/countryData.json', (err, data) => {
+        if(err) throw err;
+        return data
+    })
+    countryDataJSON = JSON.parse(countryData)
+    return countryDataJSON
 }

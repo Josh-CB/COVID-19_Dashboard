@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
     
     
     <title>COVID-19 Dashboard</title>
+    <link rel="icon" type="image/png"  href="/favicon.png">
     <meta name="description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in major countries."/>
     <meta name="og:title" property="og:title" content="COVID-19 Dashoard"/>
     <meta name="twitter:card" content="summary" />
@@ -14,8 +16,15 @@
     <meta property="og:image" content="ogimage.png" />
     <meta property="og:url" content="http://coviddash.digital" />
     <meta name="twitter:image" content="ogimage.png" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes"></script>
+    
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162603226-1"></script>
     <script data-ad-client="ca-pub-2275435046137289" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -60,6 +69,15 @@
             xhttp.send();
         }
     </script>
+    <script>
+        $(document).ready( function () {
+            $.noConflict();
+    var table = $('#countryTable').DataTable({
+        "pageLength": -1,
+        "lengthMenu": [[50,100,200,-1],[50,100,200,"All"]]
+    });
+} );
+    </script>
     
 </head>
 
@@ -97,7 +115,7 @@
             <circle cx="10" cy="10" r="5" fill="red" />
         </svg>
         <p class="update" style="float: left; font-size: 15px; color:darkgrey;">Checking for updates</p>
-        <p style="text-align: right;">Source: <a href="https://www.worldometers.info/coronavirus/">Worldometers</a>, <a href="https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/">BNO News</a></p>
+        <p style="text-align: right;">Source: <a href="https://www.worldometers.info/coronavirus/">Worldometers</a><!---, <a href="https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/">BNO News</a>---></p>
         <br>
         
         <div class="row">
@@ -527,34 +545,59 @@
         }
     });
     </script>
-    <div class="row">
     <br>
-    <section class="faq">
-        <section class="qa-block">
-            <p class="question">What is this?</p>
-            <p class="answer">This is a dashboard of information relating to the 2019/2020 COVID-19 pandemic. The counters at the top show the latest worldwide cases and deaths, and the graph shows the confirmed deaths of COVID-19 in some major countries against the total confirmed deaths for each country. The diagonal line that most countries follow is the period of exponential growth. Italy and Spain appear to be approaching their peaks. Note that this means they are having the same amount of weekly deaths. As the line for China shows, as a country starts reporting less weekly cases, it will drop dramatically. This is when a country has reached its peak daily deaths.</p>
-        </section>
-        <!---<section class="qa-block">
-            <p class="question">China's data is rubbish!!! Why are you showing it?</p>
-            <p class="answer">Because there is simply no way of knowing. It's quite hard to hide an epidemic and there is no evidence suggesting their death figures are completely wrong. Their data may or may not be correct, but I've plotted them anyway. I may remove it in the future. Other countries will be added an removed as the situation changes. </p>
-        </section>--->
-        <section class="qa-block">
-            <p class="question">Why's this different from the other graphs I've seen?</p>
-            <p class="answer">It probably shows the same trend - countries roughly following the same trajectory. Most graphs I've seen plot a measure of cases or deaths against a time (e.g. days since nth death). The approach on this web page is in my opinion better as it ignores time.</p>
-        </section>
-         <section class="qa-block">
-            <p class="question">What's that massive spike for the UK and China's deaths?</p>
-            <p class="answer">China announced some deaths that were not intitially included in their daily death counts before, and didn't give the dates these deaths occurred. The UK announced it would include deaths in carehomes from 29th April. We are working on adding these death numbers to the dates they occurred or were initially reported, but this may take some time to verify them. For now, they're displayed as a big spike as they were all added by the ECDC at once. A similar but less significant spike occurred for France.</p>
-        </section>
-        <section class="qa-block">
-            <p class="question">How often is this updated?</p>
-            <p class="answer">The counters check for updates every two minutes. You don't need to refresh the page, they will update automatically if new data is available. The graph uses ECDC data which is updated every morning (UTC), which could be up to 24 hours after a country has released it. The graph may therefore take up to 24 hours to update. The counters at the top of the page for cases and deaths update very frequently and use different sources.</p>
-        </section>
-        <section class="qa-block">
-            <p class="question">Can I use your data/How did you make this/is there a GitHub repo?</p>
-            <p class="answer">All code, including for the web app, is available on GitHub <a href="https://github.com/josh-cb/COVID-19_Dashboard">here</a>.</p>
-        </section>
-    </section>
+    <div class="row" >
+        <h4 style="float: none">How many deaths and cases in each country?</h4>
     </div>
+    <div class="row">
+        <!---<input type="text" id="searchbox" onkeyup="search()" placeholder="Search for a country">--->
+        <table class="display" id="countryTable" style="width:100%;">
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Cases</th>
+                    <th>New Cases</th>
+                    <th>Deaths</th>
+                    <th>New Deaths</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each countryData}}
+                    <tr>
+                        <td>{{this.country}}</td>
+                        <td>{{this.cases}}</td>
+                        <td>{{this.new_cases}}</td>
+                        <td>{{this.deaths}}</td>
+                        <td>{{this.new_deaths}}</td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <!---<script>
+        function search() {
+           var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchbox");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("countryTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+      }
+    }       
+  } 
+        }
+    </script>--->
+    <p>Source: <a href="https://www.worldometers.info/coronavirus/">Worldometers</a></p>
+    </div>    
+    <footer >
+            <a href="mailto:contact@coviddash.digital">Contact</a>
+    </footer>
 </body>
+
 </html>
