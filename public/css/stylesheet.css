@@ -25,18 +25,14 @@
     float: left;
     color: white;
     text-align: center;
-    padding: 12px;
     text-decoration: none;
     font-size: 18px;
-    line-height: 25px;
-    border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
   }
   
 
 .header a.logo {
     font-size: 25px;
-    padding-left: 230px;
   }
 
   
