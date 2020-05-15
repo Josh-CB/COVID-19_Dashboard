@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+    
+    
+    <title>COVID-19 Dashboard</title>
+    <link rel="icon" type="image/png"  href="/favicon.png">
+    <meta name="description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in major countries."/>
+    <meta name="og:title" property="og:title" content="COVID-19 Dashoard"/>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@limitless_josh" />
+    <meta property="og:description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in major countries." />
+    <meta property="og:image" content="ogimage.png" />
+    <meta property="og:url" content="http://coviddash.digital" />
+    <meta name="twitter:image" content="ogimage.png" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes"></script>
+    
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162603226-1"></script>
+    <script data-ad-client="ca-pub-2275435046137289" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-162603226-1');
+    </script>
+    <head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
+</head>
+
+
+<body>
+    <header>
+        {{> header}}
+    </header>
+    <header>
+        <div class="sub-header">
+            <div class="sh-text">
+                <p>Welcome to this COVID-19 data dashboard. This page will be updated regularly with new features added, so make sure you come back soon! <b>Coming soon: country-specific data!</b></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="padding-top: 20px;">
+        <div class="row">
+            <h1>{{name}}</h1>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="worldCard card">
+                            <p class="cardtitle">Confirmed cases</p>
+                            <p class="data" id="cases">{{thousandSeparate caseData.0.y}}</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="worldCard card">
+                            <p class="cardtitle">Confirmed deaths</p>
+                            <p class="data" id="cases">{{thousandSeparate deathData.0.y}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="row chart">
+                    <canvas id="casesChart" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+    <footer >
+            <a href="mailto:contact@coviddash.digital">Contact</a>
+    </footer>
+    <script>
+        var timeFormat = 'DD/MM/YYYY'
+        var ctx = document.getElementById('casesChart').getContext('2d');
+        var casesChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: [
+                {
+                    label: 'Cases',
+                    data: {{{json caseData}}},
+                    borderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 3,
+                    fill: false,
+                    lineTension: 0.5,
+                    borderColor: 'rgb(8,69,148)',
+                    pointBorderColor: 'rgb(8,69,148)',
+                    pointBackgroundColor: 'rgb(8,69,148)'
+                },
+                {
+                    label: 'Deaths',
+                    data: {{{json deathData}}},
+                    borderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 3,
+                    fill: false,
+                    lineTension: 0.5,
+                    borderColor: 'red',
+                    pointBorderColor: 'red',
+                    pointBackgroundColor: 'red'
+                }
+                ]
+                },
+            responsive: false,
+            maintainAspectRatio: false,
+            options: {
+                scales: {
+                    xAxes: [{
+                        type: 'time',
+                        time: {
+                            parser: timeFormat,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Date'
+                        }
+                    }],
+                    yAxes: [{
+                        scaleLabel: {
+                            display:     true,
+                            labelString: 'Number of confirmed cases'
+                        }
+                    }]
+                }
+            }
+        }
+    );
+    </script>
+</body>
+
+</html>

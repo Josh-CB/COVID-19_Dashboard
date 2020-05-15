@@ -20,7 +20,7 @@ module.exports.fetchData = function() {
         return data
     })
 
-    countryData = fs.readFileSync('./data/countryData.json', (err, data) => {
+    countryData = fs.readFileSync('./data/countryTableData.json', (err, data) => {
         if(err) throw err;
         return JSON.parse(data)
     })

@@ -48,6 +48,48 @@ for record in data:
         else:
             toWrite_raw[record["countryterritoryCode"]] = {record["dateRep"]: {"newDeaths": newDeaths, "newCases": newCases}}
 
+allCountriesRaw = {}
+for record in data:
+    country = record['countriesAndTerritories']
+    newDeaths = int(record['deaths'])
+    newCases = int(record['cases'])
+    if record['countriesAndTerritories'] in allCountriesRaw.keys():
+        allCountriesRaw[record['countriesAndTerritories']][record['dateRep']] = {"newDeaths": newDeaths, "newCases": newCases}
+    else:
+        allCountriesRaw[record['countriesAndTerritories']] = {record["dateRep"]: {"newDeaths": newDeaths, "newCases": newCases}}
+
+counter = 0
+tableData = {}
+for country in allCountriesRaw:
+    totalDeaths = 0
+    totalCases = 0
+    listDates = list(allCountriesRaw[country].items())
+    listDates.sort(key=lambda x: datetime.datetime.strptime(x[0], '%d/%m/%Y'))
+    for pair in listDates:
+        date = pair[0]
+        dateDict = pair[1]
+        totalDeaths = totalDeaths + dateDict["newDeaths"]
+        totalCases = totalCases + dateDict["newCases"]
+        allCountriesRaw[country][date]["totalDeathsToDate"] = totalDeaths
+        allCountriesRaw[country][date]["totalCasesToDate"] = totalCases
+        if date == datetime.date.today().strftime("%d/%m/%Y"):
+            newCases = dateDict["newCases"]
+            newDeaths = dateDict["newDeaths"]
+            tableData[counter] = {'country': country, 'cases': f"{totalCases:,d}", 'new_cases': f"{newCases:,d}", 'deaths': f"{totalDeaths:,d}", 'new_deaths': f"{newDeaths:,d}"}
+            counter = counter + 1
+allCountriesJSON = json.dumps(allCountriesRaw)
+f = open("{}/countryGraphData.json".format(dir_path), "w")
+f.write(allCountriesJSON)
+f.close()
+
+tableDataJSON = json.dumps(tableData)
+tableFile = open("{}/countryTableData.json".format(dir_path), "w")
+tableFile.write(tableDataJSON)
+tableFile.close()
+
+
+
+
 for country in countriesToInclude:
     totalDeaths = 0
     totalCases = 0

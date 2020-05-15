@@ -29,8 +29,7 @@ bno['url'] = 'https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases
 bno['cases'] = int(counters[0].text.replace(',',''))
 bno['deaths'] = int(counters[1].text.replace(',',''))
 
-f = open('{}/counterData.json'.format(dir_path), 'w')
-countryDataFile = open('{}/countryData.json'.format(dir_path), 'w')
+
 if bno['cases'] > worldometers['cases']:
     data = json.dumps(bno)
     print("Counters updated. Most recent data: BNO News")
@@ -57,6 +56,11 @@ else:
     data = json.dumps(worldometers)
     countriesJSON = json.dumps(countryData)
     print("Counters updated. Most recent data: Worldometers")
+
+
+
+f = open('{}/counterData.json'.format(dir_path), 'w')
+countryDataFile = open('{}/countryData.json'.format(dir_path), 'w')
 f.write(data)
 f.close()
 countryDataFile.write(countriesJSON)

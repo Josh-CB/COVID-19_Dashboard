@@ -648,7 +648,7 @@
             <tbody>
                 {{#each countryData}}
                     <tr>
-                        <td>{{this.country}}</td>
+                        <td><a href="/country/{{this.country}}">{{convert this.country}}</a></td>
                         <td>{{this.cases}}</td>
                         <td>{{this.new_cases}}</td>
                         <td>{{this.deaths}}</td>

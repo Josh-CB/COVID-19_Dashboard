@@ -16,6 +16,9 @@ const router = new Router()
 
 const Home = require('./controllers/home')
 const Counters = require('./controllers/counters')
+const Country = require('./controllers/country')
+
+const Convert = require('./modules/Convert')
 
 app.keys = ['darkSecret']
 app.use(staticDir('public'))
@@ -48,6 +51,11 @@ router.get('/counters/deaths', async ctx => {
 	await ctx.render('counter', {count: Counters.deaths()})
 })
 
+router.get('/country/:id', async ctx => {
+	console.log("routed to country", ctx.params.id)
+	await Country.country(ctx)
+})
+
 app.use(router.routes())
 module.exports = app.listen(port, async() =>
 	console.log(`listening on port ${port}`)
@@ -56,3 +64,11 @@ module.exports = app.listen(port, async() =>
 handlebars.registerHelper('json', function (content) {
     return JSON.stringify(content);
 });
+
+handlebars.registerHelper('convert', function (content) {
+	return Convert.convert(content)
+});
+
+handlebars.registerHelper('thousandSeparate', function (content) {
+	return content.toLocaleString();
+})
