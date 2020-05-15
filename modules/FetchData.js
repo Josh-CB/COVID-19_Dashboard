@@ -68,8 +68,8 @@ module.exports.cases = () => {
         return data
     })
     counterDataJSON = JSON.parse(counterData)
-    counterDataJSON['cases'] = counterDataJSON['cases'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-    return counterDataJSON['cases']
+    const cases = counterDataJSON['cases'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    return cases
 }
 
 module.exports.deaths = () => {

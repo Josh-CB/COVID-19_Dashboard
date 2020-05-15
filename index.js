@@ -44,11 +44,11 @@ router.get('/', async ctx => {
 })
 
 router.get('/counters/cases', async ctx => {
-	await ctx.render('counter', {count: Counters.cases()})
+	await Counters.cases(ctx)
 })
 
 router.get('/counters/deaths', async ctx => {
-	await ctx.render('counter', {count: Counters.deaths()})
+	await Counters.deaths(ctx)
 })
 
 router.get('/country/:id', async ctx => {
