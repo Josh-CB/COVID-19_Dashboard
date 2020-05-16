@@ -58,6 +58,21 @@ for record in data:
     else:
         allCountriesRaw[record['countriesAndTerritories']] = {record["dateRep"]: {"newDeaths": newDeaths, "newCases": newCases}}
 
+
+def dateLoop(listDates, totalCases, totalDeaths):
+    for pair in listDates:
+        
+        date = pair[0]
+        dateDict = pair[1]
+        totalDeaths = totalDeaths + dateDict["newDeaths"]
+        totalCases = totalCases + dateDict["newCases"]
+        allCountriesRaw[country][date]["totalDeathsToDate"] = totalDeaths
+        allCountriesRaw[country][date]["totalCasesToDate"] = totalCases
+        if date == (datetime.date.today()-datetime.timedelta(days=1)).strftime("%d/%m/%Y") or date==(datetime.date.today()-datetime.timedelta(days=2)).strftime("%d/%m/%Y"):
+            newCases = dateDict["newCases"]
+            newDeaths = dateDict["newDeaths"]
+            return{'country': country, 'cases': f"{totalCases:,d}", 'new_cases': f"{newCases:,d}", 'deaths': f"{totalDeaths:,d}", 'new_deaths': f"{newDeaths:,d}"}
+
 counter = 0
 tableData = {}
 for country in allCountriesRaw:
@@ -65,18 +80,10 @@ for country in allCountriesRaw:
     totalCases = 0
     listDates = list(allCountriesRaw[country].items())
     listDates.sort(key=lambda x: datetime.datetime.strptime(x[0], '%d/%m/%Y'))
-    for pair in listDates:
-        date = pair[0]
-        dateDict = pair[1]
-        totalDeaths = totalDeaths + dateDict["newDeaths"]
-        totalCases = totalCases + dateDict["newCases"]
-        allCountriesRaw[country][date]["totalDeathsToDate"] = totalDeaths
-        allCountriesRaw[country][date]["totalCasesToDate"] = totalCases
-        if date == datetime.date.today().strftime("%d/%m/%Y") or date == (datetime.date.today()-datetime.timedelta(days=1)).strftime("%d/%m/%Y"):
-            newCases = dateDict["newCases"]
-            newDeaths = dateDict["newDeaths"]
-            tableData[counter] = {'country': country, 'cases': f"{totalCases:,d}", 'new_cases': f"{newCases:,d}", 'deaths': f"{totalDeaths:,d}", 'new_deaths': f"{newDeaths:,d}"}
-            counter = counter + 1
+    tableData[counter] = dateLoop(listDates, totalCases, totalDeaths)
+    counter = counter + 1
+    continue
+    
 allCountriesJSON = json.dumps(allCountriesRaw)
 f = open("{}/countryGraphData.json".format(dir_path), "w")
 f.write(allCountriesJSON)
