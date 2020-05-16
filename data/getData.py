@@ -72,7 +72,7 @@ for country in allCountriesRaw:
         totalCases = totalCases + dateDict["newCases"]
         allCountriesRaw[country][date]["totalDeathsToDate"] = totalDeaths
         allCountriesRaw[country][date]["totalCasesToDate"] = totalCases
-        if date == datetime.date.today().strftime("%d/%m/%Y"):
+        if date == datetime.date.today().strftime("%d/%m/%Y") or date == (datetime.date.today()-datetime.timedelta(days=1)).strftime("%d/%m/%Y"):
             newCases = dateDict["newCases"]
             newDeaths = dateDict["newDeaths"]
             tableData[counter] = {'country': country, 'cases': f"{totalCases:,d}", 'new_cases': f"{newCases:,d}", 'deaths': f"{totalDeaths:,d}", 'new_deaths': f"{newDeaths:,d}"}

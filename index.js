@@ -70,5 +70,9 @@ handlebars.registerHelper('convert', function (content) {
 });
 
 handlebars.registerHelper('thousandSeparate', function (content) {
-	return content.toLocaleString();
+	try {
+		return content.toLocaleString('en-GB');
+	} catch {
+		return
+	}
 })
