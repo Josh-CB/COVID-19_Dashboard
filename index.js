@@ -52,7 +52,6 @@ router.get('/counters/deaths', async ctx => {
 })
 
 router.get('/country/:id', async ctx => {
-	console.log("routed to country", ctx.params.id)
 	await Country.country(ctx)
 })
 

@@ -11,7 +11,6 @@ module.exports.country = async (ctx) => {
     let id = ctx.params.id
     let cases = GraphCountryData.cases(readData[id])
     let deaths = GraphCountryData.deaths(readData[id])
-    console.log(deaths)
     await ctx.render('./country', {
         id: ctx.params.id, 
         name: Convert.convert(id),
