@@ -8,7 +8,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 lastUpdated = datetime.datetime.now().strftime("%d/%m/%Y %H:%M") + " UTC"
 
 URL = 'https://www.worldometers.info/coronavirus/'
-page = requests.get(URL)
+page = requests.get(URL, timeout=5)
 
 soup = BeautifulSoup(page.content, 'html.parser')
 counters = soup.findAll('div', attrs={'class':'maincounter-number'})
@@ -20,7 +20,7 @@ worldometers['cases'] = int(counters[0].find('span').text.replace(',', ''))
 worldometers['deaths'] = int(counters[1].find('span').text.replace(',',''))
 
 URL = 'https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vR30F8lYP3jG7YOq8es0PBpJIE5yvRVZffOyaqC0GgMBN6yt0Q-NI8pxS7hd1F9dYXnowSC6zpZmW9D/pubhtml/sheet?headers=false&gid=0&range=A1:I207'
-page = requests.get(URL)
+page = requests.get(URL, timeout=5)
 counters = BeautifulSoup(page.content, 'html.parser').findAll('td', attrs={'class':'s7'})
 bno = {}
 bno['source'] = 'BNO News'
@@ -35,7 +35,7 @@ if bno['cases'] > worldometers['cases']:
     print("Counters updated. Most recent data: BNO News")
 else:
     URL = 'https://www.worldometers.info/coronavirus/'
-    page = requests.get(URL)
+    page = requests.get(URL, timeout=5)
     table = BeautifulSoup(page.content, 'html.parser').find('table', attrs={'id':'main_table_countries_today'})
     rows = table.find_all('tr')
     countryData = {}

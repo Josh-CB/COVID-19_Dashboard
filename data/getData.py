@@ -19,7 +19,7 @@ def getDateAWeekAgo(date):
 
 try:
     url = "https://opendata.ecdc.europa.eu/covid19/casedistribution/json/"
-    data = requests.get(url)
+    data = requests.get(url, timeout=8)
     f = open("{}/raw_data.json".format(dir_path), "w")
     f.write(data.text)
     f.close()
