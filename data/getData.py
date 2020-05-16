@@ -61,14 +61,13 @@ for record in data:
 
 def dateLoop(listDates, totalCases, totalDeaths):
     for pair in listDates:
-        
         date = pair[0]
         dateDict = pair[1]
         totalDeaths = totalDeaths + dateDict["newDeaths"]
         totalCases = totalCases + dateDict["newCases"]
         allCountriesRaw[country][date]["totalDeathsToDate"] = totalDeaths
         allCountriesRaw[country][date]["totalCasesToDate"] = totalCases
-        if date == (datetime.date.today()-datetime.timedelta(days=1)).strftime("%d/%m/%Y") or date==(datetime.date.today()-datetime.timedelta(days=2)).strftime("%d/%m/%Y"):
+        if date == datetime.date.today().strftime("%d/%m/%Y") or date==(datetime.date.today()-datetime.timedelta(days=1)).strftime("%d/%m/%Y"):
             newCases = dateDict["newCases"]
             newDeaths = dateDict["newDeaths"]
             return{'country': country, 'cases': f"{totalCases:,d}", 'new_cases': f"{newCases:,d}", 'deaths': f"{totalDeaths:,d}", 'new_deaths': f"{newDeaths:,d}"}
