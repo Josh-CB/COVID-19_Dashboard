@@ -73,6 +73,6 @@ handlebars.registerHelper('thousandSeparate', function (content) {
 	try {
 		return content.toLocaleString('en-GB');
 	} catch {
-		return
+		return content
 	}
 })
