@@ -13,13 +13,13 @@ module.exports.cases = function(countryData) {
 
 module.exports.deaths = function(countryData) {
     /*Array of objects: [{x: x, y: y},]*/
-    let caseGraphData = []
+    let deathGraphData = []
     for(date in countryData) {
         let y = countryData[date]['totalDeathsToDate']
         if(y<=0) {
             continue
         }
-        caseGraphData.push({t: date, y: y})
+        deathGraphData.push({t: date, y: y})
     }
-    return caseGraphData
+    return deathGraphData
 }

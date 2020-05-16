@@ -61,13 +61,21 @@
                     <div class="col">
                         <div class="worldCard card">
                             <p class="cardtitle">Confirmed cases</p>
+                            {{#if caseData.0.y}}
                             <p class="data" id="cases">{{thousandSeparate caseData.0.y}}</p>
+                            {{else}}
+                            <p class="data" id="cases">0</p>
+                            {{/if}}
                         </div>
                     </div>
                     <div class="col">
                         <div class="worldCard card">
                             <p class="cardtitle">Confirmed deaths</p>
-                            <p class="data" id="cases">{{thousandSeparate deathData.0.y}}</p>
+                            {{#if deathData.0.y}}
+                            <p class="data" id="deaths">{{thousandSeparate deathData.0.y}}</p>
+                            {{else}}
+                            <p class="data" id="deaths">0</p>
+                            {{/if}}
                         </div>
                     </div>
                 </div>
@@ -83,6 +91,9 @@
             <a href="mailto:contact@coviddash.digital">Contact</a>
     </footer>
     <script>
+        Chart.defaults.global.defaultFontFamily = 'Arial'
+        Chart.defaults.global.defaultFontColor = '#000000'
+        Chart.defaults.global.defaultFontSize = 12
         var timeFormat = 'DD/MM/YYYY'
         var ctx = document.getElementById('casesChart').getContext('2d');
         var casesChart = new Chart(ctx, {
@@ -123,6 +134,7 @@
                         type: 'time',
                         time: {
                             parser: timeFormat,
+                            unit: 'day'
                         },
                         scaleLabel: {
                             display: true,
@@ -133,6 +145,9 @@
                         scaleLabel: {
                             display:     true,
                             labelString: 'Number of confirmed cases'
+                        },
+                        ticks: {
+                            callback: function(value) {if (value % 1 === 0) {return value.toLocaleString('en-gb');}}
                         }
                     }]
                 }

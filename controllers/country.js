@@ -6,12 +6,16 @@ module.exports.country = async (ctx) => {
         if(err) throw err;
         return data
     })
+    
     readData = JSON.parse(readDataBuf.toString('utf-8'))
     let id = ctx.params.id
+    let cases = GraphCountryData.cases(readData[id])
+    let deaths = GraphCountryData.deaths(readData[id])
+    console.log(deaths)
     await ctx.render('./country', {
         id: ctx.params.id, 
         name: Convert.convert(id),
-        caseData: GraphCountryData.cases(readData[id]),
-        deathData: GraphCountryData.deaths(readData[id])
+        caseData: cases,
+        deathData: deaths
     })
 }
