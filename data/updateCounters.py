@@ -43,7 +43,6 @@ else:
     for tr in rows:
         td = tr.find_all('td')
         row = [i.text for i in td]
-        print(len(row))
         if len(row) != 15:
             continue
         if '\n' in row[1] or 'Total' in row[1] or 'World' in row[1]:
@@ -52,7 +51,6 @@ else:
             country = row[1]
             countryData[counter] = {'country': country, 'cases': row[2], 'new_cases': row[3], 'deaths': row[4], 'new_deaths': row[5]}
             counter = counter + 1
-    print(countryData)
     data = json.dumps(worldometers)
     countriesJSON = json.dumps(countryData)
     print("Counters updated. Most recent data: Worldometers")
