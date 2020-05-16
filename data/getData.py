@@ -23,9 +23,9 @@ try:
     f = open("{}/raw_data.json".format(dir_path), "w")
     f.write(data.text)
     f.close()
-    print("retrieved and saved.")
+    print(datetime.datetime.now(), "retrieved and saved.")
 except Exception as e:
-    print("Exception: ", e)
+    print(datetime.datetime.now(), "Exception: ", e)
 
 f = open("{}/raw_data.json".format(dir_path), "r")
 raw_data = f.read()

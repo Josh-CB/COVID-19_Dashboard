@@ -32,7 +32,7 @@ bno['deaths'] = int(counters[1].text.replace(',',''))
 
 if bno['cases'] > worldometers['cases']:
     data = json.dumps(bno)
-    print("Counters updated. Most recent data: BNO News")
+    print(datetime.datetime.now(), "Counters updated. Most recent data: BNO News")
 else:
     URL = 'https://www.worldometers.info/coronavirus/'
     page = requests.get(URL, timeout=5)
@@ -53,7 +53,7 @@ else:
             counter = counter + 1
     data = json.dumps(worldometers)
     countriesJSON = json.dumps(countryData)
-    print("Counters updated. Most recent data: Worldometers")
+    print(datetime.datetime.now(), "Counters updated. Most recent data: Worldometers")
 
 
 
