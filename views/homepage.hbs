@@ -633,7 +633,6 @@
         <h4 style="float: none">How many deaths and cases in each country?</h4>
     </div>
     <div class="row">
-        <!---<input type="text" id="searchbox" onkeyup="search()" placeholder="Search for a country">--->
         <table class="display" id="countryTable" style="width:100%;">
             <thead>
                 <tr>
@@ -656,27 +655,8 @@
                 {{/each}}
             </tbody>
         </table>
-        <!---<script>
-        function search() {
-           var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById("searchbox");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("countryTable");
-            tr = table.getElementsByTagName("tr");
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0];
-                if (td) {
-                    txtValue = td.textContent || td.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-      }
-    }       
-  } 
-        }
-    </script>--->
-    <p>Source: <a href="https://www.worldometers.info/coronavirus/">Worldometers</a></p>
+
+    <p>Data: <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">European Centre for Disease Prevention and Control</a></p>
     </div>    
     <footer >
             <a href="mailto:contact@coviddash.digital">Contact</a>
