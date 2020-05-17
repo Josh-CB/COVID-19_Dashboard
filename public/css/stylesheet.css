@@ -19,8 +19,13 @@
 .sub-header p {
   text-align: center;
 }
+
+@media (max-width: 991px) {
+  .column-margin {
+    margin: 1rem 0;
+  }
+}
   
-/* Style the header links */
 .header a {
     float: left;
     color: white;
