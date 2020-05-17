@@ -90,3 +90,12 @@ module.exports.countries = () => {
     countryDataJSON = JSON.parse(countryData)
     return countryDataJSON
 }
+
+module.exports.countryTableData = () => {
+    countryTabData = fs.readFileSync('./data/countryTableData.json', (err,data) => {
+        if(err) throw err;
+        return data
+    })
+    countryTableDataJSON = JSON.parse(countryTabData)
+    return countryTableDataJSON
+}

@@ -6,13 +6,13 @@
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
     
     
-    <title>COVID-19 Dashboard</title>
+    <title>{{name}} | COVID-19 Dashboard</title>
     <link rel="icon" type="image/png"  href="/favicon.png">
-    <meta name="description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in major countries."/>
+    <meta name="description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in {{name}}."/>
     <meta name="og:title" property="og:title" content="COVID-19 Dashoard"/>
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@limitless_josh" />
-    <meta property="og:description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in major countries." />
+    <meta property="og:description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in {{name}}." />
     <meta property="og:image" content="ogimage.png" />
     <meta property="og:url" content="http://coviddash.digital" />
     <meta name="twitter:image" content="ogimage.png" />
@@ -21,8 +21,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes"></script>
-    
-    
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162603226-1"></script>
@@ -34,8 +32,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-162603226-1');
     </script>
-    <head>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
 </head>
 
 
@@ -45,7 +42,7 @@
     </header>
     <header>
         <div class="sub-header">
-            <div class="sh-text">
+            <div class="sh-text" style="display: none;">
                 <p>Welcome to this COVID-19 data dashboard. This page will be updated regularly with new features added, so make sure you come back soon! <b>Coming soon: country-specific data!</b></p>
             </div>
         </div>
