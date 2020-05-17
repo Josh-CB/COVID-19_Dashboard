@@ -63,6 +63,8 @@
                             <p class="cardtitle">Confirmed cases</p>
                             {{#if caseData.0.y}}
                             <p class="data" id="cases">{{thousandSeparate caseData.0.y}}</p>
+                            {{else if caseData.1.y}}
+                            <p class="data" id="cases">{{thousandSeparate caseData.1.y}}</p>
                             {{else}}
                             <p class="data" id="cases">0</p>
                             {{/if}}
@@ -73,6 +75,8 @@
                             <p class="cardtitle">Confirmed deaths</p>
                             {{#if deathData.0.y}}
                             <p class="data" id="deaths">{{thousandSeparate deathData.0.y}}</p>
+                            {{else if deathData.1.y}}
+                            <p class="data" id="deaths">{{thousandSeparate deathData.1.y}}</p>
                             {{else}}
                             <p class="data" id="deaths">0</p>
                             {{/if}}
