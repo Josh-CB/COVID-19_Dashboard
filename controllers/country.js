@@ -7,16 +7,23 @@ module.exports.country = async (ctx) => {
         if(err) throw err;
         return data
     })
-    let countryTabData = FetchData.countryTableData()
+    const countryTabData = FetchData.countryTableData()
     readData = JSON.parse(readDataBuf.toString('utf-8'))
-    let id = ctx.params.id
-    let cases = GraphCountryData.cases(readData[id])
-    let deaths = GraphCountryData.deaths(readData[id])
+    const id = ctx.params.id
+    const cases = GraphCountryData.cases(readData[id])
+    const casesCumulative = cases[0]
+    const casesDaily = cases[1]
+    const deaths = GraphCountryData.deaths(readData[id])
+    const deathsCumulative = deaths[0]
+    const deathsDaily = deaths[1]
+
     await ctx.render('./country', {
         id: ctx.params.id, 
         name: Convert.convert(id),
-        caseData: cases,
-        deathData: deaths,
+        caseData: casesCumulative,
+        caseDailyData: casesDaily,
+        deathData: deathsCumulative,
+        deathDailyData: deathsDaily,
         countryData: countryTabData
     })
 }

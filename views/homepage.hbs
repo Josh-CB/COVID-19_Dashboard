@@ -368,7 +368,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 100, //minimum tick
-                        max: 100000, //maximum tick
+                        max: 200000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -385,6 +385,7 @@
                         chartObj.ticks.push(20000);
                         chartObj.ticks.push(50000);
                         chartObj.ticks.push(100000);
+                        chartObj.ticks.push(200000);
                     }
                 }]
             }
@@ -601,7 +602,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 100, //minimum tick
-                        max: 2000000, //maximum tick
+                        max: 500000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -620,8 +621,7 @@
                         chartObj.ticks.push(100000);
                         chartObj.ticks.push(200000);
                         chartObj.ticks.push(500000);
-                        chartObj.ticks.push(1000000);
-                        chartObj.ticks.push(2000000);
+
                     }
                 }]
             }

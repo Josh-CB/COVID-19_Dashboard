@@ -114,6 +114,11 @@
                     pointBackgroundColor: 'rgb(8,69,148)'
                 },
                 {
+                    label: 'Daily cases',
+                    type: 'bar',
+                    data: {{{json caseDailyData}}}
+                },
+                {
                     label: 'Deaths',
                     data: {{{json deathData}}},
                     borderWidth: 2,
@@ -124,7 +129,13 @@
                     borderColor: 'red',
                     pointBorderColor: 'red',
                     pointBackgroundColor: 'red'
-                }
+                },
+                {
+                    label: 'Daily deaths',
+                    type: 'bar',
+                    backgroundColor: 'rgba(242, 94, 94)',
+                    data: {{{json deathDailyData}}}
+                },
                 ]
                 },
             responsive: false,
