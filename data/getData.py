@@ -24,7 +24,7 @@ def getDateAWeekAgo(date):
 toWrite_raw = {}
 totalWorldDeaths = 0
 totalWorldCases = 0
-countriesToInclude = ["GBR", "CHN", "ITA", "USA", "ESP", "KOR", "DEU", "JPN", "SWE", "CHE", "FRA", "IRL", "NLD", "CAN", "RUS"]
+countriesToInclude = ["GBR", "CHN", "ITA", "USA", "ESP", "KOR", "DEU", "JPN", "SWE", "CHE", "FRA", "IRL", "NLD", "CAN", "RUS", "BRA", "IND"]
 
 url = urllib.request.urlopen("https://opendata.ecdc.europa.eu/covid19/casedistribution/json/")
 data = ijson.items(url, 'records.item')
