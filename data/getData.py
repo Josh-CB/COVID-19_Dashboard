@@ -25,6 +25,7 @@ toWrite_raw = {}
 totalWorldDeaths = 0
 totalWorldCases = 0
 countriesToInclude = ["GBR", "CHN", "ITA", "USA", "ESP", "KOR", "DEU", "JPN", "SWE", "CHE", "FRA", "IRL", "NLD", "CAN", "RUS", "BRA", "IND"]
+allCountriesRaw = {}
 
 url = urllib.request.urlopen("https://opendata.ecdc.europa.eu/covid19/casedistribution/json/")
 data = ijson.items(url, 'records.item')
@@ -39,9 +40,6 @@ for record in data:
             toWrite_raw[record["countryterritoryCode"]][record["dateRep"]] = {"newDeaths": newDeaths, "newCases": newCases}
         else:
             toWrite_raw[record["countryterritoryCode"]] = {record["dateRep"]: {"newDeaths": newDeaths, "newCases": newCases}}
-
-allCountriesRaw = {}
-for record in data:
     country = record['countriesAndTerritories']
     newDeaths = int(record['deaths'])
     newCases = int(record['cases'])
