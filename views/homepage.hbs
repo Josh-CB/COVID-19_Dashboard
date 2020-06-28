@@ -188,6 +188,7 @@
                     pointHitRadius: 5,
                     fill: false,
                     lineTension: 0.5,
+                    hidden: true
                 }, {
                     label: 'United States',
                     data: {{{json dUSAdata}}},
@@ -196,7 +197,7 @@
                     pointHitRadius: 5,
                     fill: false,
                     lineTension: 0.5,
-                    hidden: true
+                    hidden: false
                 }, {
                     label: 'South Korea',
                     data: {{{json dKORdata}}},
@@ -278,16 +279,34 @@
                     fill: false,
                     lineTension: 0.5,
                     hidden: true,
-                },/*{
+                },{
                     label: 'Russia',
                     data: {{{json dRUSdata }}},
-                   borderWidth: 2,
+                    borderWidth: 2,
                     pointRadius: 2,
                     pointHitRadius: 5,
                     fill: false,
                     lineTension: 0.5,
-                    hidden: true,
-                },*/],
+                    hidden: false,
+                },{
+                    label: 'Brazil',
+                    data: {{{json dBRAdata }}},
+                    borderWidth: 2,
+                    pointRadius: 2,
+                    pointHitRadius: 5,
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: false,
+                },{
+                    label: 'India',
+                    data: {{{json dINDdata }}},
+                    borderWidth: 2,
+                    pointRadius: 2,
+                    pointHitRadius: 5,
+                    fill: false,
+                    lineTension: 0.5,
+                    hidden: false,
+                },],
             },
             options: {
                 plugins: {
@@ -323,6 +342,8 @@
                                 'Netherlands': 'NLD',
                                 'Canada': 'CAN',
                                 'Russia': 'RUS',
+                                'Brazil': 'BRA',
+                                'India': 'IND'
                             }
                             var countryCode = dateObj[data.datasets[toolTipItem[0].datasetIndex].label]
                             return dates[countryCode][toolTipItem[0].index]
@@ -422,6 +443,7 @@
                     pointRadius: 2,
                     pointHitRadius: 5,
                     lineTension: 0.5,
+                    hidden: true
                 }, {
                     label: 'United States',
                     data: {{{json cUSAdata}}},
@@ -430,7 +452,7 @@
                     pointRadius: 2,
                     pointHitRadius: 5,
                     lineTension: 0.5,
-                    hidden: true
+                    hidden: false
                 }, {
                     label: 'South Korea',
                     data: {{{json cKORdata}}},
@@ -520,7 +542,25 @@
                     pointRadius: 2,
                     pointHitRadius: 5,
                     lineTension: 0.5,
-                    hidden: true,
+                    hidden: false,
+                },{
+                    label: 'Brazil',
+                    data: {{{json cBRAdata }}},
+                    fill: false,
+                    borderWidth: 2,
+                    pointRadius: 2,
+                    pointHitRadius: 5,
+                    lineTension: 0.5,
+                    hidden: false,
+                },{
+                    label: 'India',
+                    data: {{{json cINDdata }}},
+                    fill: false,
+                    borderWidth: 2,
+                    pointRadius: 2,
+                    pointHitRadius: 5,
+                    lineTension: 0.5,
+                    hidden: false,
                 },],
             },
             options: {
@@ -557,6 +597,8 @@
                                 'Netherlands': 'NLD',
                                 'Canada': 'CAN',
                                 'Russia': 'RUS',
+                                'Brazil': 'BRA',
+                                'India': 'IND'
                             }
                             var countryCode = dateObj[data.datasets[toolTipItem[0].datasetIndex].label]
                             return dates[countryCode][toolTipItem[0].index]
@@ -602,7 +644,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 100, //minimum tick
-                        max: 500000, //maximum tick
+                        max: 5000000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -621,6 +663,9 @@
                         chartObj.ticks.push(100000);
                         chartObj.ticks.push(200000);
                         chartObj.ticks.push(500000);
+                        chartObj.ticks.push(1000000);
+                        chartObj.ticks.push(2000000);
+                        chartObj.ticks.push(5000000);
 
                     }
                 }]
