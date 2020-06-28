@@ -26,7 +26,6 @@ totalWorldDeaths = 0
 totalWorldCases = 0
 countriesToInclude = ["GBR", "CHN", "ITA", "USA", "ESP", "KOR", "DEU", "JPN", "SWE", "CHE", "FRA", "IRL", "NLD", "CAN", "RUS"]
 
-print("Requesting ECDC data...")
 url = urllib.request.urlopen("https://opendata.ecdc.europa.eu/covid19/casedistribution/json/")
 data = ijson.items(url, 'records.item')
 for record in data:
