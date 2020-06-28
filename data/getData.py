@@ -1,11 +1,15 @@
 '''This python script retrieves new data from the ECDC, saves it to a file
    and then open the file, reads data and creates a new file of required data for the
    web app. It's scuffed but works.
+   Changelog:
+   28/6/20: Fixed an issue where memory ran out on AWS instance due to loading of the large JSON file, which only became an issue as time went on. Now uses ijson to read file as a stream rather than all at once.
 '''
 import requests
 import json
 import datetime
 import os 
+import ijson
+import urllib.request
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 def getDateAWeekAgo(date):
@@ -17,25 +21,14 @@ def getDateAWeekAgo(date):
     stringSevenDaysAgo = datetimeSevenDaysAgo.strftime("%d/%m/%Y")
     return stringSevenDaysAgo
 
-try:
-    url = "https://opendata.ecdc.europa.eu/covid19/casedistribution/json/"
-    data = requests.get(url, timeout=8)
-    f = open("{}/raw_data.json".format(dir_path), "w")
-    f.write(data.text)
-    f.close()
-    print(datetime.datetime.now(), "retrieved and saved.")
-except Exception as e:
-    print(datetime.datetime.now(), "Exception: ", e)
-
-f = open("{}/raw_data.json".format(dir_path), "r")
-raw_data = f.read()
-data = json.loads(raw_data)["records"]
-f.close()
 toWrite_raw = {}
-
 totalWorldDeaths = 0
 totalWorldCases = 0
 countriesToInclude = ["GBR", "CHN", "ITA", "USA", "ESP", "KOR", "DEU", "JPN", "SWE", "CHE", "FRA", "IRL", "NLD", "CAN", "RUS"]
+
+print("Requesting ECDC data...")
+url = urllib.request.urlopen("https://opendata.ecdc.europa.eu/covid19/casedistribution/json/")
+data = ijson.items(url, 'records.item')
 for record in data:
     totalWorldDeaths = totalWorldDeaths + int(record["deaths"])
     totalWorldCases = totalWorldCases + int(record["cases"])
