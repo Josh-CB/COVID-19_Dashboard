@@ -12,6 +12,7 @@ import ijson
 import urllib.request
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
+print(str(datetime.datetime.now()) + " Starting ECDC data fetch...")
 def getDateAWeekAgo(date):
     datetimeDate = datetime.datetime.strptime(date, '%d/%m/%Y')
     datetimeSevenDaysAgo = datetimeDate - datetime.timedelta(days=7)
@@ -134,3 +135,5 @@ worlddata = json.dumps(worlddata)
 f=open("{}/worlddata.json".format(dir_path), "w")
 f.write(worlddata)
 f.close()
+
+print(str(datetime.datetime.now()) + " Finished updated graph and country data")
