@@ -361,7 +361,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 0, //minimum tick
-                        max: 100000, //maximum tick
+                        max: 50000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -378,7 +378,6 @@
                         chartObj.ticks.push(10000);
                         chartObj.ticks.push(20000);
                         chartObj.ticks.push(50000);
-                        chartObj.ticks.push(100000);
                     }
                 }],
                 xAxes: [{
@@ -389,7 +388,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 100, //minimum tick
-                        max: 200000, //maximum tick
+                        max: 500000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -407,6 +406,7 @@
                         chartObj.ticks.push(50000);
                         chartObj.ticks.push(100000);
                         chartObj.ticks.push(200000);
+                        chartObj.ticks.push(500000);
                     }
                 }]
             }
@@ -616,7 +616,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 100, //minimum tick
-                        max: 500000, //maximum tick
+                        max: 1000000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -634,6 +634,7 @@
                         chartObj.ticks.push(100000);
                         chartObj.ticks.push(200000);
                         chartObj.ticks.push(500000);
+                        chartObj.ticks.push(1000000);
                     }
                 }],
                 xAxes: [{
@@ -644,7 +645,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 100, //minimum tick
-                        max: 5000000, //maximum tick
+                        max: 10000000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -666,6 +667,7 @@
                         chartObj.ticks.push(1000000);
                         chartObj.ticks.push(2000000);
                         chartObj.ticks.push(5000000);
+                        chartObj.ticks.push(10000000);
 
                     }
                 }]

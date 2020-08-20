@@ -48,7 +48,6 @@ for record in data:
     else:
         allCountriesRaw[record['countriesAndTerritories']] = {record["dateRep"]: {"newDeaths": newDeaths, "newCases": newCases}}
 
-
 def dateLoop(listDates, totalCases, totalDeaths):
     for pair in listDates:
         date = pair[0]
@@ -57,7 +56,8 @@ def dateLoop(listDates, totalCases, totalDeaths):
         totalCases = totalCases + dateDict["newCases"]
         allCountriesRaw[country][date]["totalDeathsToDate"] = totalDeaths
         allCountriesRaw[country][date]["totalCasesToDate"] = totalCases
-        if date == datetime.date.today().strftime("%d/%m/%Y") or date==(datetime.date.today()-datetime.timedelta(days=1)).strftime("%d/%m/%Y"):
+        if date == datetime.date.today().strftime("%d/%m/%Y") or date==(datetime.date.today()-datetime.timedelta(days=1)).strftime("%d/%m/%Y"): # stops today's total cases and deaths from appearing
+            #perhaps check if next date is today, if not then it can return. It currently just returns as soon as it hits yesterday's date, irrespective of when data is from.
             newCases = dateDict["newCases"]
             newDeaths = dateDict["newDeaths"]
             return{'country': country, 'cases': f"{totalCases:,d}", 'new_cases': f"{newCases:,d}", 'deaths': f"{totalDeaths:,d}", 'new_deaths': f"{newDeaths:,d}"}
