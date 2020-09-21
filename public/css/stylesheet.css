@@ -25,6 +25,14 @@
     margin: 1rem 0;
   }
 }
+
+.info-box {
+  border-radius: 15px;
+  padding: 20px;
+  background-color:#72e0a0; /* Red */
+  color: white;
+  
+}
   
 .header a {
     float: left;
