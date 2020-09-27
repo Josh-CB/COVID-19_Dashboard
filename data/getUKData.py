@@ -1,4 +1,5 @@
-import requests, json, os
+import requests, json, os, datetime
+
 dir_path = os.path.dirname(os.path.realpath(__file__))
 endpoint = 'https://api.coronavirus.data.gov.uk/v1/data?'
 
@@ -32,10 +33,12 @@ api_params = {
     "structure": json.dumps(structure, separators=(",", ":")),
 }
 
+print(str(datetime.datetime.now()) + " requesting UK data")
 response = json.loads(requests.get(endpoint, params=api_params, timeout=10).text)
 ukFile = open("{}/ukOverview.json".format(dir_path), "w")
 ukFile.write(json.dumps(response['data']))
 ukFile.close()
+print(str(datetime.datetime.now()) + " finished requesting and writing UK data")
 
 '''FETCH ENG DATA'''
 def fetchCountryData(country):
@@ -75,5 +78,7 @@ def fetchCountryData(country):
     countryFile.close()
 
 for country in ["England", "Scotland", "Wales", "Northern Ireland"]:
-    print("fetching data for ", country)
+    print(str(datetime.datetime.now()) + " requesting " + country + " data")
     fetchCountryData(country)
+
+print(str(datetime.datetime.now()) + " finished updating all UK & national data.")
