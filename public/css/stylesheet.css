@@ -13,11 +13,22 @@
   height: auto;
   box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
   background-color: white;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  margin: auto;
+  text-align: center;
 }
 
-.sub-header p {
-  text-align: center;
+.sub-header .country-button {
+  background-color: white;
+  border: none;
+  box-shadow: none;
+  padding-right: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.menu-flag {
+  height: 20px;
 }
 
 @media (max-width: 991px) {
@@ -71,7 +82,26 @@
 .chart {
   background-color: white;
   border: 1px solid rgba(0,0,0,.125);
-  border-radius: 10px;
+  height: 400px;
+  width:100%;
+  margin-bottom: 20px;
+}
+
+.UKchart {
+  height: 500px;
+  width:100%;
+  margin-bottom: 20px;
+}
+
+#ukMap {
+  height: 800px;
+}
+
+div.stickySidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  
 }
 
 .question {
@@ -81,6 +111,41 @@
 
 .answer {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  margin-bottom: 10px;
+  height: 80px;
+  white-space: nowrap;
+}
+
+
+.card .container {
+  margin: auto;
+}
+
+.card p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.card .cardTitle {
+  text-align: center;
+}
+
+.card .data {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card h5 {
+  text-align: center;
+}
+
+.card-subtitle {
+  color: gray;
+  font-size: 12px;
+  font-style: italic;
 }
 
 .worldCard {
@@ -109,6 +174,32 @@
 .col-md.rightCard {
   padding-right: 250px;
   padding-left: 0px;
+}
+
+#regBtnCon {
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+}
+
+.regionalBtn {
+  background-color: #47A8F5; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.regionalBtn:hover {
+  background-color: #2d97eb; 
+  cursor: pointer;
+}
+
+.regionalBtn:focus {
+  outline: none;
 }
 
 
@@ -149,9 +240,15 @@
   width: 100%
 }
 
+#lastUpdatedDiv {
+  text-align: center;
+  margin: auto;
+}
 
-.cardTitle {
-  font-weight: bold;
+#lastUpdatedDiv p {
+  text-align: center;
+  margin: auto;
+  font-style: italic;
 }
 
 .update {
@@ -216,3 +313,4 @@ footer {
     opacity: 1;
   }
 }
+

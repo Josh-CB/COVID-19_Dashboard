@@ -17,6 +17,8 @@ const router = new Router()
 const Home = require('./controllers/home')
 const Counters = require('./controllers/counters')
 const Country = require('./controllers/country')
+const UKSpecific = require('./controllers/ukspecific')
+const UKHomepage = require('./controllers/ukhomepage')
 
 const Convert = require('./modules/Convert')
 
@@ -38,6 +40,16 @@ app.use(hbsKoa({
 
 const defaultPort = 8080
 const port = process.env.PORT || defaultPort
+
+router.get('/uk/:country', async ctx => {
+	const acceptableCountries = ['wales', 'northern-ireland', 'scotland', 'england']
+	if(!acceptableCountries.includes(ctx.params.country)) ctx.throw('That\'s not a valid country in the UK.', 404)
+	await UKSpecific(ctx)
+})
+
+router.get('/uk', async ctx => {
+	await UKHomepage(ctx)
+})
 
 router.get('/', async ctx => {
 		await Home.home(ctx)
@@ -74,4 +86,15 @@ handlebars.registerHelper('thousandSeparate', function (content) {
 	} catch {
 		return content
 	}
+})
+
+handlebars.registerHelper('addition', function (element1, element2) {
+	return element1 + element2
+})
+
+handlebars.registerHelper('formatDate', function (dateString) {
+	console.log(dateString)
+	const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
+	console.log(new Date(dateString).toLocaleDateString('en-GB', options))
+	return new Date(dateString).toLocaleDateString('en-GB', options)
 })

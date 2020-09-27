@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+       
+    <title>{{name}} | COVID-19 UK Dashboard</title>
+    <link rel="icon" type="image/png"  href="/favicon-uk.png">
+    <meta name="description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in the UK."/>
+    <meta name="og:title" property="og:title" content="COVID-19 UK Dashboard"/>
+    <meta property="og:description" content="A data dashboard to track the novel coronavirus COVID-19 cases and deaths in the UK." />
+    <meta property="og:image" content="ogimage.png" />
+    <meta property="og:url" content="http://coviddash.digital" />
+    <meta name="twitter:image" content="ogimage.png" />
+    
+    
+    <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+
+
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="//cdn.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/geodata/ukCountriesHigh.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162603226-1"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-162603226-1');
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        function changePage(page) {
+            if (page===undefined) {
+                page = ''
+            }
+            var domain = window.location.host
+            var currentPath = window.location.pathname.split('/')[1]
+            window.location = 'http://' + domain + '/' + currentPath + '/' + page;
+        }
+    </script>
+</head>
+
+
+<body>
+    <header>
+        {{> ukheader}}
+    </header>
+    <header>
+        <div class="sub-header">
+            <div class="container">
+                <span class="country-button" onclick='changePage()'>
+                    <img class="menu-flag" src="/img/flags/gb.png">
+                    <a>United Kingdom</a>
+                </span>
+                <span class="country-button" onclick='changePage("england")'>
+                    <img class="menu-flag" src="/img/flags/eng.png">
+                    <a>England</a>
+                </span>
+                <span class="country-button" onclick='changePage("scotland")'>
+                    <img class="menu-flag" src="/img/flags/sco.png">
+                    <a>Scotland</a>
+                </span>
+                <span class="country-button" onclick='changePage("wales")'>
+                    <img class="menu-flag" src="/img/flags/wal.png">
+                    <a>Wales</a>
+                </span>
+                <span class="country-button" onclick='changePage("northern-ireland")'>
+                    <img class="menu-flag" src="/img/flags/ni.png">
+                    <a>Northern Ireland</a>
+                </span>
+            </div>
+        </div>
+    </header>
+    
+    
+    <div class="container" style="padding-top: 20px;">
+        <h2>{{name}}</h2>
+        <div class="row">
+            <div class="col-md-4 col-xs-6 ">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="container">
+                                <p class="cardTitle"> Total Cases</p> 
+                                <p class="data">{{thousandSeparate overviewData.0.cases.cumulative}}</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="container">
+                                <p class="cardTitle">Total Deaths</p>
+                                <p class="data">{{thousandSeparate overviewData.0.deaths.cumulative}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="container">
+                                <p class="cardTitle">New Cases</p>
+                                <p class="data">{{thousandSeparate overviewData.0.cases.daily}}</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="container">
+                                <p class="cardTitle">New Deaths</p> 
+                                <p class="data">{{thousandSeparate overviewData.0.deaths.daily}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="lastUpdatedDiv" style="overflow: hidden;">
+                        <p style="float: left;">Last updated:&nbsp;</p>
+                        <p id="lastUpdated" style="float: right;">{{overviewData.0.date}}</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <div class="card">
+                        <p style="font-size: 28px; margin:auto">UK nation, regional, UTLA and LTLA graphs & more data are coming soon!</p>
+                    </div>
+                <div class="row">
+                    <div class="UKchart" id="casesChart"></div>
+                    
+                </div>
+                <div class="row">
+                    <div class="UKchart" id="deathsChart"></div>
+                </div>
+                <div class="row">
+                    <div class="UKchart" id="testChart"></div>
+                </div>
+                <div class="row">
+                    <div class="UKchart" id="ukMap"></div>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer >
+            <a href="mailto:contact@coviddash.digital">Contact</a>
+    </footer>
+
+<script async>
+    $( document ).ready(function() {
+        var date = document.getElementById("lastUpdated").innerHTML
+        const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
+        document.getElementById("lastUpdated").innerHTML = new Date(date).toLocaleDateString('en-GB', options)
+        return
+    });
+</script>
+<!---
+<script>
+am4core.ready(function() {
+        var caseChartContainer = am4core.create("casesChart", am4core.Container)
+        caseChartContainer.width = am4core.percent(100);
+        caseChartContainer.height = am4core.percent(100);
+        caseChartContainer.background.stroke = am4core.color("rgb(223,223,223)")
+        caseChartContainer.background.strokeWidth = 2
+        caseChartContainer.background.strokeOpacity = 1
+        var chart = caseChartContainer.createChild(am4charts.XYChart);
+        caseChartContainer.logo.disabled = true
+        let title = chart.titles.create();
+        //title
+        title.text = "Daily Cases";
+        title.fontSize = 18;
+        title.fontWeight = 600;
+        //chart design
+        chart.colors.list = [
+            am4core.color("#2a7ac9"),
+            am4core.color("#0b2b8c")
+        ];
+        //data
+        chart.dateFormatter.inputDateFormat = "yyyy-MM-dd";
+        chart.data = [ {{#each casesGraphData}} 
+        {"date": "{{this.date}}", "dailyCases": {{this.dailyCases}}, "cumulativeCases": {{this.cumulativeCases}}, "smaVal": {{this.smaVal}} }, 
+        {{/each}} ]
+        //define axes
+        var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+        dateAxis.dataFields.Date = "date";
+        dateAxis.title.text = "Date";
+        dateAxis.renderer.minGridDistance = 50
+        dateAxis.dateFormats.setKey("day", "d MMM");
+        dateAxis.periodChangeDateFormats.setKey("day", "d MMM"); 
+        var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+        //define cases column series
+        var series = chart.series.push(new am4charts.ColumnSeries());
+        series.name = "Daily confirmed cases"
+        series.dataFields.valueY = "dailyCases";
+        series.dataFields.dateX = "date";
+        valueAxis.title.text = "Daily confirmed cases";
+        series.columns.template.tooltipText = `[bold]{dateX}[/] 
+        New cases: {dailyCases}
+        7-day Moving average of cases: {smaVal}
+        Cumulative cases: {cumulativeCases}`;
+        series.tooltip.getFillFromObject = false
+        series.tooltip.background.fill = am4core.color("#ffffff")
+        series.tooltip.autoTextColor = false;
+        series.tooltip.label.fill = am4core.color("#212529");
+        //define sma line series
+        var sma = chart.series.push(new am4charts.LineSeries());
+        sma.dataFields.valueY = "smaVal";
+        sma.dataFields.dateX = "date";
+        sma.smooting = "bezier"
+        sma.strokeWidth = 2
+        sma.name = "7-day moving average of daily cases"
+        //column design
+        var columnTemplate = series.columns.template;
+        columnTemplate.strokeWidth = 0.5;
+        columnTemplate.fillOpacity = 1;
+        //scrollbar
+        chart.scrollbarX = new am4core.Scrollbar();
+        chart.scrollbarX.startGrip.icon.disabled = true;
+        chart.scrollbarX.endGrip.icon.disabled = true;
+        //legend
+        chart.legend = new am4charts.Legend();
+    });
+</script>
+
+<script>
+am4core.ready(function() {
+        var deathChartContainer = am4core.create("deathsChart", am4core.Container)
+        deathChartContainer.width = am4core.percent(100);
+        deathChartContainer.height = am4core.percent(100);
+        deathChartContainer.background.stroke = am4core.color("rgb(223,223,223)")
+        deathChartContainer.background.strokeWidth = 2
+        deathChartContainer.background.strokeOpacity = 1
+        var chart = deathChartContainer.createChild(am4charts.XYChart);
+        deathChartContainer.logo.disabled = true
+        let title = chart.titles.create();
+        //title
+        title.text = "Daily Deaths";
+        title.fontSize = 18;
+        title.fontWeight = 600;
+        //chart design
+        
+        chart.colors.list = [
+            am4core.color("#2a7ac9"),
+            am4core.color("#0b2b8c")
+        ];
+        
+        //data
+        chart.dateFormatter.inputDateFormat = "yyyy-MM-dd";
+        chart.data = [ {{#each deathsGraphData}} 
+        {"date": "{{this.date}}", "dailyDeaths": {{this.dailyDeaths}}, "cumulativeDeaths": {{this.cumulativeDeaths}}, "smaVal": {{this.smaVal}} }, 
+        {{/each}} ]
+        //define axes
+        var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+        dateAxis.dataFields.Date = "date";
+        dateAxis.title.text = "Date";
+        dateAxis.renderer.minGridDistance = 50
+        dateAxis.dateFormats.setKey("day", "d MMM");
+        dateAxis.periodChangeDateFormats.setKey("day", "d MMM"); 
+        var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+        //define cases column series
+        var series = chart.series.push(new am4charts.ColumnSeries());
+        series.name = "Daily confirmed deaths"
+        series.dataFields.valueY = "dailyDeaths";
+        series.dataFields.dateX = "date";
+        valueAxis.title.text = "Daily confirmed deaths";
+        series.columns.template.tooltipText = `[bold]{dateX}[/] 
+        New deaths: {dailyDeaths}
+        7-day Moving average of deaths: {smaVal}
+        Cumulative deaths: {cumulativeDeaths}`;
+        series.tooltip.getFillFromObject = false
+        series.tooltip.background.fill = am4core.color("#ffffff")
+        series.tooltip.autoTextColor = false;
+        series.tooltip.label.fill = am4core.color("#212529");
+        //define sma line series
+        var sma = chart.series.push(new am4charts.LineSeries());
+        sma.dataFields.valueY = "smaVal";
+        sma.dataFields.dateX = "date";
+        sma.smooting = "bezier"
+        sma.strokeWidth = 2
+        sma.name = "7-day moving average of daily deaths"
+        //column design
+        var columnTemplate = series.columns.template;
+        columnTemplate.strokeWidth = 0.5;
+        columnTemplate.fillOpacity = 1;
+        //scrollbar
+        chart.scrollbarX = new am4core.Scrollbar();
+        chart.scrollbarX.startGrip.icon.disabled = true;
+        chart.scrollbarX.endGrip.icon.disabled = true;
+        //legend
+        chart.legend = new am4charts.Legend();
+    });
+</script>
+
+<script>
+am4core.ready(function() {
+    var container = am4core.create("testChart", am4core.Container);
+    container.width = am4core.percent(100);
+    container.height = am4core.percent(100);
+    container.background.stroke = am4core.color("rgb(223,223,223)")
+    container.background.strokeWidth = 2
+    container.background.strokeOpacity = 1
+    container.logo.disabled = true;
+    
+    // Create chart instance
+    var chart = container.createChild(am4charts.XYChart);
+    let title = chart.titles.create();
+        //title
+        title.text = "Daily Tests by Pillar";
+        title.tooltipText = `Pillar 1: PCR tests in PHE labs and NHS hospitals for patients and healthcare workers.
+        Pillar 2: PCR tests carried out by private providers under the government testingprogramme
+        Pillar 3: Antibody tests to show if someone has antibodies from having had COVID-19 (only available from 1st June 2020)
+        Pillar 4: Surveillance testing (PCR and antibody) for national surveillance carried our by PHE, ONS and others to learn about spread of virus in communities.`
+        title.fontSize = 18;
+        title.fontWeight = 600;
+    // Create axes
+    chart.dateFormatter.inputDateFormat = "yyyy-MM-dd";
+    chart.data = [ {{#each testsGraphData}} 
+    {"date": "{{this.date}}", "pillarOne": {{this.pillarOne}}, "pillarTwo": {{this.pillarTwo}}, "pillarThree": {{this.pillarThree}}, "pillarFour": {{this.pillarFour}} }, 
+    {{/each}} ]
+    var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+    dateAxis.dataFields.date = "date";
+    dateAxis.renderer.grid.template.location = 0;
+    var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+    valueAxis.title.text = "Daily tests";
+
+    // Create series
+    function createSeries(field, name) {
+    // Set up series
+    var series = chart.series.push(new am4charts.ColumnSeries());
+    series.name = name;
+    series.dataFields.valueY = field;
+    series.dataFields.dateX = "date";
+    series.tooltip.getFillFromObject = false
+    series.tooltip.background.fill = am4core.color("#ffffff")
+    series.tooltip.autoTextColor = false;
+    series.tooltip.label.fill = am4core.color("#212529");
+    
+    // Make it stacked
+    series.stacked = true;
+    
+    // Configure columns
+    series.columns.template.width = am4core.percent(60);
+    series.columns.template.tooltipText = `[bold]{date}[/]
+    Pillar 1 tests: {pillarOne}
+    Pillar 2 tests: {pillarTwo}
+    Pillar 3 tests: {pillarThree}
+    Pillar 4 tests: {pillarFour}
+    `;
+    return series;
+    }
+
+    createSeries("pillarOne", "Pillar 1");
+    createSeries("pillarTwo", "Pillar 2");
+    createSeries("pillarThree", "Pillar 3");
+    createSeries("pillarFour", "Pillar 4");
+
+    chart.legend = new am4charts.Legend();
+    chart.scrollbarX = new am4core.Scrollbar();
+        chart.scrollbarX.startGrip.icon.disabled = true;
+        chart.scrollbarX.endGrip.icon.disabled = true;
+
+    });
+</script>
+
+<script>
+    am4core.ready(function() {
+        var mapContainer = am4core.create("ukMap", am4core.Container);
+        mapContainer.width = am4core.percent(100);
+        mapContainer.height = am4core.percent(100);
+        mapContainer.background.stroke = am4core.color("rgb(223,223,223)")
+        mapContainer.background.strokeWidth = 2
+        mapContainer.background.strokeOpacity = 1
+        mapContainer.logo.disabled = true;
+
+        var map = mapContainer.createChild(am4maps.MapChart)
+        //title
+       // map.colors.list = [am4core.color("#2a7ac9")]
+        let title = map.titles.create();
+        title.text = "UK Breakdown";
+        title.fontSize = 18;
+        title.fontWeight = 600;
+        title.paddingTop = 15
+        title.tooltipText = "Nations are shaded by number of daily cases. Hover over a country to see more.";
+        map.projection = new am4maps.projections.Miller();
+        map.geodata = am4geodata_ukCountriesHigh;
+        
+        // Create map polygon series
+        var polygonSeries = map.series.push(new am4maps.MapPolygonSeries());
+        polygonSeries.useGeodata = true;
+        polygonSeries.exclude = ["IE","IM","GG","JE"];
+        // Configure series
+        polygonSeries.data = [
+            {id: "GB-ENG", value: {{json engData.cases.daily}}, cumuCases: {{json engData.cases.cumulative}}, dailyDeaths: {{json engData.deaths.daily}}, cumuDeaths: {{json engData.deaths.cumulative}} },
+            {id: "GB-SCT", value: {{json scoData.cases.daily}}, cumuCases: {{json scoData.cases.cumulative}}, dailyDeaths: {{json scoData.deaths.daily}}, cumuDeaths: {{json scoData.deaths.cumulative}} },
+            {id: "GB-WLS", value: {{json walData.cases.daily}}, cumuCases: {{json walData.cases.cumulative}}, dailyDeaths: {{json walData.deaths.daily}}, cumuDeaths: {{json walData.deaths.cumulative}} },
+            {id: "GB-NIR", value: {{json niData.cases.daily}},  cumuCases: {{json niData.cases.cumulative}}, dailyDeaths: {{json niData.deaths.daily}}, cumuDeaths: {{json niData.deaths.cumulative}} },
+        ]
+
+
+        var polygonTemplate = polygonSeries.mapPolygons.template;
+        polygonTemplate.tooltipText = `[bold]{name}[/]
+        Daily cases: {value}
+        Cumulative cases: {cumuCases}
+        Daily deaths: {dailyDeaths}
+        Cumulative deaths: {cumuDeaths}`;
+        polygonSeries.heatRules.push({
+            property: "fill",
+            target: polygonSeries.mapPolygons.template,
+            min: map.colors.getIndex(1).brighten(1),
+            max: map.colors.getIndex(1).brighten(-0.3),
+        });
+        
+
+        var hs = polygonTemplate.states.create("hover");
+        hs.properties.fill = am4core.color("#2863bd");
+    });
+</script>
+--->
+</body>
+
+</html>
