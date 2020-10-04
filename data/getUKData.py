@@ -12,7 +12,9 @@ structure = {
     "date": "date",
     "cases": {
         "daily": "newCasesByPublishDate",
-        "cumulative": "cumCasesByPublishDate"
+        "dailySpec": "newCasesBySpecimenDate",
+        "cumulative": "cumCasesByPublishDate",
+        "cumulativeSpec": "cumCasesBySpecimenDate"
     },
     "deaths": {
         "daily": "newDeaths28DaysByPublishDate",
@@ -50,7 +52,9 @@ def fetchCountryData(country):
         "date": "date",
         "cases": {
             "daily": "newCasesByPublishDate",
-            "cumulative": "cumCasesByPublishDate"
+            "dailySpec": "newCasesBySpecimenDate",
+            "cumulative": "cumCasesByPublishDate",
+            "cumulativeSpec": "cumCasesBySpecimenDate"
         },
         "deaths": {
             "daily": "newDeaths28DaysByPublishDate",

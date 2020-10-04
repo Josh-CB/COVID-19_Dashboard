@@ -34,8 +34,7 @@ module.exports.UK = function() {
 
     //cases graph data
     for(var date = 0; date<parsedData.length; date++) {
-        let casesSMAVal, deathsSMAVal = 0
-        let errCount = 0
+        let casesSMAVal, deathsSMAVal, casesSpecSMAVal = 0
         if(date > 2 && date < parsedData.length-3) {
             const sumFutureCases = parsedData[date-1].cases.daily + parsedData[date-2].cases.daily + parsedData[date-3].cases.daily
             const sumPastCases = parsedData[date+1].cases.daily + parsedData[date+2].cases.daily + parsedData[date+3].cases.daily
@@ -43,13 +42,20 @@ module.exports.UK = function() {
             const sumFutureDeaths = parsedData[date-1].deaths.daily + parsedData[date-2].deaths.daily + parsedData[date-3].deaths.daily
             const sumPastDeaths = parsedData[date+1].deaths.daily + parsedData[date+2].deaths.daily + parsedData[date+3].deaths.daily
             deathsSMAVal = Math.round(((sumFutureDeaths + parsedData[date].deaths.daily + sumPastDeaths) / 7))
+            const sumFutureSpecCases = parsedData[date-1].cases.daily + parsedData[date-2].cases.daily + parsedData[date-3].cases.dailySpec
+            const sumPastSpecCases = parsedData[date+1].cases.daily + parsedData[date+2].cases.daily + parsedData[date+3].cases.dailySpec
+            casesSpecSMAVal = Math.round(((sumFutureSpecCases + parsedData[date].cases.dailySpec + sumPastSpecCases) / 7))
         } else {
             casesSMAVal = "null"
             deathsSMAVal = "null"
+            casesSpecSMAVal = "null"
         }         
         if(parsedData[date].cases.cumulative<=0) continue //track all metrics from day of first case
         casesGraphData.push({date: parsedData[date].date, 
             dailyCases: parsedData[date].cases.daily,
+            dailySpecCases: parsedData[date].cases.dailySpec||"null",
+            smaSpecVal: casesSpecSMAVal,
+            cumulativeSpecCases: parsedData[date].cases.cumulativeSpec||"null",
             cumulativeCases: parsedData[date].cases.cumulative,
             smaVal: casesSMAVal
         })

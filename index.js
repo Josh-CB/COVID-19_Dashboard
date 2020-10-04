@@ -8,7 +8,6 @@ const bodyParser = require('koa-bodyparser')
 const koaBody = require('koa-body')({ multipart: true, uploadDir: '.' })
 const handlebars = require('handlebars');
 const hbsKoa = require("koa-handlebars");
-const https = require('https');
 
 
 const app = new Koa()

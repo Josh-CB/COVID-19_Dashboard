@@ -167,6 +167,9 @@
                     <div class="UKchart" id="casesChart"></div>
                 </div>
                 <div class="row">
+                    <div class="UKchart" id="casesSpecChart"></div>
+                </div>
+                <div class="row">
                     <div class="UKchart" id="deathsChart"></div>
                 </div>
                 <div class="row">
@@ -205,7 +208,7 @@ am4core.ready(function() {
         caseChartContainer.logo.disabled = true
         let title = chart.titles.create();
         //title
-        title.text = "Daily Cases";
+        title.text = "Daily Cases by Date Reported";
         title.fontSize = 18;
         title.fontWeight = 600;
         //chart design
@@ -228,14 +231,14 @@ am4core.ready(function() {
         var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
         //define cases column series
         var series = chart.series.push(new am4charts.ColumnSeries());
-        series.name = "Daily confirmed cases"
+        series.name = "Daily confirmed cases by date reported"
         series.dataFields.valueY = "dailyCases";
         series.dataFields.dateX = "date";
         valueAxis.title.text = "Daily confirmed cases";
         series.columns.template.tooltipText = `[bold]{dateX}[/] 
-        New cases: {dailyCases}
-        7-day Moving average of cases: {smaVal}
-        Cumulative cases: {cumulativeCases}`;
+        New cases by date reported: {dailyCases}
+        7-day Moving average of cases by date reported: {smaVal}
+        Cumulative cases by date reported: {cumulativeCases}`;
         series.tooltip.getFillFromObject = false
         series.tooltip.background.fill = am4core.color("#ffffff")
         series.tooltip.autoTextColor = false;
@@ -246,7 +249,74 @@ am4core.ready(function() {
         sma.dataFields.dateX = "date";
         sma.smooting = "bezier"
         sma.strokeWidth = 2
-        sma.name = "7-day moving average of daily cases"
+        sma.name = "7-day moving average of daily cases by date reported"
+        //column design
+        var columnTemplate = series.columns.template;
+        columnTemplate.strokeWidth = 0.5;
+        columnTemplate.fillOpacity = 1;
+        //scrollbar
+        chart.scrollbarX = new am4core.Scrollbar();
+        chart.scrollbarX.startGrip.icon.disabled = true;
+        chart.scrollbarX.endGrip.icon.disabled = true;
+        //legend
+        chart.legend = new am4charts.Legend();
+    });
+</script>
+
+<script>
+am4core.ready(function() {
+        var caseChartContainer = am4core.create("casesSpecChart", am4core.Container)
+        caseChartContainer.width = am4core.percent(100);
+        caseChartContainer.height = am4core.percent(100);
+        caseChartContainer.background.stroke = am4core.color("rgb(223,223,223)")
+        caseChartContainer.background.strokeWidth = 2
+        caseChartContainer.background.strokeOpacity = 1
+        var chart = caseChartContainer.createChild(am4charts.XYChart);
+        caseChartContainer.logo.disabled = true
+        let title = chart.titles.create();
+        //title
+        title.text = "Daily Cases by Date of Specimen";
+        title.fontSize = 18;
+        title.fontWeight = 600;
+        //chart design
+        chart.colors.list = [
+            am4core.color("#2a7ac9"),
+            am4core.color("#0b2b8c")
+        ];
+        //data
+        chart.dateFormatter.inputDateFormat = "yyyy-MM-dd";
+        chart.data = [ {{#each casesGraphData}} 
+        {"date": "{{this.date}}", "dailySpecCases": {{this.dailySpecCases}}, "smaVal": {{this.smaSpecVal}}, "cumulativeSpecCases": {{this.cumulativeSpecCases}} }, 
+        {{/each}} ]
+        //define axes
+        var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+        dateAxis.dataFields.Date = "date";
+        dateAxis.title.text = "Date";
+        dateAxis.renderer.minGridDistance = 50
+        dateAxis.dateFormats.setKey("day", "d MMM");
+        dateAxis.periodChangeDateFormats.setKey("day", "d MMM"); 
+        var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+        //define cases column series
+        var series = chart.series.push(new am4charts.ColumnSeries());
+        series.name = "Daily confirmed cases by date of specimen"
+        series.dataFields.valueY = "dailySpecCases";
+        series.dataFields.dateX = "date";
+        valueAxis.title.text = "Daily confirmed cases";
+        series.columns.template.tooltipText = `[bold]{dateX}[/] 
+        New cases by specimen date: {dailySpecCases}
+        7-day Moving average of cases by specimen date: {smaVal}
+        Cumulative cases by specimen date: {cumulativeSpecCases}`;
+        series.tooltip.getFillFromObject = false
+        series.tooltip.background.fill = am4core.color("#ffffff")
+        series.tooltip.autoTextColor = false;
+        series.tooltip.label.fill = am4core.color("#212529");
+        //define sma line series
+        var sma = chart.series.push(new am4charts.LineSeries());
+        sma.dataFields.valueY = "smaVal";
+        sma.dataFields.dateX = "date";
+        sma.smooting = "bezier"
+        sma.strokeWidth = 2
+        sma.name = "7-day moving average of daily cases by specimen date"
         //column design
         var columnTemplate = series.columns.template;
         columnTemplate.strokeWidth = 0.5;
