@@ -11,5 +11,6 @@ module.exports = async (ctx) => {
         walData: data[5],
         niData: data[6],
         testsGraphData: data[7],
+        hospitalGraphData: data[8]
     })
 }

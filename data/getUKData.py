@@ -29,6 +29,11 @@ structure = {
         "newPillarFourTestsByPublishDate":"newPillarFourTestsByPublishDate",
         "plannedCapacityByPublishDate":"plannedCapacityByPublishDate"
     },
+    "hospital": {
+        "newAdmissions": "newAdmissions",
+        "cumAdmissions": "cumAdmissions",
+        "totalInHospital": "hospitalCases"
+    }
 }
 api_params = {
     "filters": str.join(";", filters),
