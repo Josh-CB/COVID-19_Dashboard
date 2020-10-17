@@ -32,11 +32,10 @@ module.exports.UK = function() {
     const deathsGraphData = []
     const testsGraphData = []
     const hospitalGraphData = []
-
-    //cases graph data
+    //graph data
     for(var date = 0; date<parsedData.length; date++) {
         let casesSMAVal, deathsSMAVal, casesSpecSMAVal, admissionsSMAVal, inHospitalSMAVal = 0
-        if(date > 2 && date < parsedData.length-3) {
+        if(date > 2 && date < parsedData.length-3) { //for case and death data (reported daily)
             const sumFutureCases = parsedData[date-1].cases.daily + parsedData[date-2].cases.daily + parsedData[date-3].cases.daily
             const sumPastCases = parsedData[date+1].cases.daily + parsedData[date+2].cases.daily + parsedData[date+3].cases.daily
             casesSMAVal = Math.round(((sumFutureCases + parsedData[date].cases.daily + sumPastCases) / 7))
@@ -45,20 +44,26 @@ module.exports.UK = function() {
             deathsSMAVal = Math.round(((sumFutureDeaths + parsedData[date].deaths.daily + sumPastDeaths) / 7))
             const sumFutureSpecCases = parsedData[date-1].cases.daily + parsedData[date-2].cases.daily + parsedData[date-3].cases.dailySpec
             const sumPastSpecCases = parsedData[date+1].cases.daily + parsedData[date+2].cases.daily + parsedData[date+3].cases.dailySpec
-            casesSpecSMAVal = Math.round(((sumFutureSpecCases + parsedData[date].cases.dailySpec + sumPastSpecCases) / 7))
-            const sumFutureHospitalAdmissions = parsedData[date-1].hospital.newAdmissions + parsedData[date-2].hospital.newAdmissions + parsedData[date-3].hospital.newAdmissions
-            const sumPastHospitalAdmissions = parsedData[date+1].hospital.newAdmissions + parsedData[date+2].hospital.newAdmissions + parsedData[date+3].hospital.newAdmissions
-            admissionsSMAVal = Math.round(((sumFutureHospitalAdmissions + parsedData[date].hospital.newAdmissions + sumPastHospitalAdmissions) / 7))
-            const sumFutureTotalInHospital = parsedData[date-1].hospital.totalInHospital + parsedData[date-2].hospital.totalInHospital + parsedData[date-3].hospital.totalInHospital
-            const sumPastTotalInHospital = parsedData[date+1].hospital.totalInHospital + parsedData[date+2].hospital.totalInHospital + parsedData[date+3].hospital.totalInHospital
-            inHospitalSMAVal = Math.round(((sumFutureTotalInHospital + parsedData[date].hospital.totalInHospital + sumPastTotalInHospital) / 7))
+            casesSpecSMAVal = Math.round(((sumFutureSpecCases + parsedData[date].cases.dailySpec + sumPastSpecCases) / 7))     
+            if (parsedData[date-1].hospital.newAdmissions && parsedData[date-2].hospital.newAdmissions && parsedData[date-3].hospital.newAdmissions &&
+                parsedData[date+1].hospital.newAdmissions && parsedData[date+2].hospital.newAdmissions && parsedData[date+3].hospital.newAdmissions) {    // for hospital admission data ()        
+                const sumFutureHospitalAdmissions = parsedData[date-1].hospital.newAdmissions + parsedData[date-2].hospital.newAdmissions + parsedData[date-3].hospital.newAdmissions
+                const sumPastHospitalAdmissions = parsedData[date+1].hospital.newAdmissions + parsedData[date+2].hospital.newAdmissions + parsedData[date+3].hospital.newAdmissions
+                admissionsSMAVal = Math.round(((sumFutureHospitalAdmissions + parsedData[date].hospital.newAdmissions + sumPastHospitalAdmissions) / 7))
+                const sumFutureTotalInHospital = parsedData[date-1].hospital.totalInHospital + parsedData[date-2].hospital.totalInHospital + parsedData[date-3].hospital.totalInHospital
+                const sumPastTotalInHospital = parsedData[date+1].hospital.totalInHospital + parsedData[date+2].hospital.totalInHospital + parsedData[date+3].hospital.totalInHospital
+                inHospitalSMAVal = Math.round(((sumFutureTotalInHospital + parsedData[date].hospital.totalInHospital + sumPastTotalInHospital) / 7))
+            } else {
+                admissionsSMAVal = "null"
+                inHospitalSMAVal = "null"
+            }
         } else {
             casesSMAVal = "null"
             deathsSMAVal = "null"
-            casesSpecSMAVal = "null"
-            admissionsSMAVal = "null"
-            inHospitalSMAVal = "null"
-        }         
+            casesSpecSMAVal = "null"      
+               
+        }   
+        
         if(parsedData[date].cases.cumulative<=0) continue //track all metrics from day of first case
         casesGraphData.push({date: parsedData[date].date, 
             dailyCases: parsedData[date].cases.daily,
