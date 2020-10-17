@@ -494,7 +494,7 @@ am4core.ready(function() {
         ];
         //data
         chart.dateFormatter.inputDateFormat = "yyyy-MM-dd";
-        chart.data = [ {{#each hospitalGraphData}} 
+        chart.data = [ {{#each inHospitalGraphData}} 
         {"date": "{{this.date}}", "totalInHospital": {{this.totalInHospital}}, "smaVal": {{this.totalInHospSmaVal}} }, 
         {{/each}} ]
         //define axes

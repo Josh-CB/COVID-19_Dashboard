@@ -31,7 +31,8 @@ module.exports.UK = function() {
     const casesGraphData = []
     const deathsGraphData = []
     const testsGraphData = []
-    const hospitalGraphData = []
+    const hospAdmissionsGraphData = []
+    const inHospitalGraphData = []
     //graph data
     for(var date = 0; date<parsedData.length; date++) {
         let casesSMAVal, deathsSMAVal, casesSpecSMAVal, admissionsSMAVal, inHospitalSMAVal = 0
@@ -46,22 +47,25 @@ module.exports.UK = function() {
             const sumPastSpecCases = parsedData[date+1].cases.daily + parsedData[date+2].cases.daily + parsedData[date+3].cases.dailySpec
             casesSpecSMAVal = Math.round(((sumFutureSpecCases + parsedData[date].cases.dailySpec + sumPastSpecCases) / 7))     
             if (parsedData[date-1].hospital.newAdmissions && parsedData[date-2].hospital.newAdmissions && parsedData[date-3].hospital.newAdmissions &&
-                parsedData[date+1].hospital.newAdmissions && parsedData[date+2].hospital.newAdmissions && parsedData[date+3].hospital.newAdmissions) {    // for hospital admission data ()        
+                parsedData[date+1].hospital.newAdmissions && parsedData[date+2].hospital.newAdmissions && parsedData[date+3].hospital.newAdmissions) {    // for hospital admission data (check for +3 days and -3 days)        
                 const sumFutureHospitalAdmissions = parsedData[date-1].hospital.newAdmissions + parsedData[date-2].hospital.newAdmissions + parsedData[date-3].hospital.newAdmissions
                 const sumPastHospitalAdmissions = parsedData[date+1].hospital.newAdmissions + parsedData[date+2].hospital.newAdmissions + parsedData[date+3].hospital.newAdmissions
                 admissionsSMAVal = Math.round(((sumFutureHospitalAdmissions + parsedData[date].hospital.newAdmissions + sumPastHospitalAdmissions) / 7))
+            } else {
+                admissionsSMAVal = "null"
+            }
+            if (parsedData[date-1].hospital.totalInHospital && parsedData[date-2].hospital.totalInHospital && parsedData[date-3].hospital.totalInHospital &&
+                parsedData[date+1].hospital.totalInHospital && parsedData[date+2].hospital.totalInHospital && parsedData[date+3].hospital.totalInHospital) { // for total in hospital (check for +3 days and -3 days) 
                 const sumFutureTotalInHospital = parsedData[date-1].hospital.totalInHospital + parsedData[date-2].hospital.totalInHospital + parsedData[date-3].hospital.totalInHospital
                 const sumPastTotalInHospital = parsedData[date+1].hospital.totalInHospital + parsedData[date+2].hospital.totalInHospital + parsedData[date+3].hospital.totalInHospital
                 inHospitalSMAVal = Math.round(((sumFutureTotalInHospital + parsedData[date].hospital.totalInHospital + sumPastTotalInHospital) / 7))
             } else {
-                admissionsSMAVal = "null"
                 inHospitalSMAVal = "null"
             }
         } else {
             casesSMAVal = "null"
             deathsSMAVal = "null"
             casesSpecSMAVal = "null"      
-               
         }   
         
         if(parsedData[date].cases.cumulative<=0) continue //track all metrics from day of first case
@@ -95,19 +99,23 @@ module.exports.UK = function() {
             })
         }
         if(parsedData[date].hospital.newAdmissions!=undefined) {
-            hospitalGraphData.push({date: parsedData[date].date,
+            hospAdmissionsGraphData.push({date: parsedData[date].date,
                 newAdmissions: parsedData[date].hospital.newAdmissions,
                 cumAdmissions: parsedData[date].hospital.cumAdmissions,
+                admissionsSmaVal: admissionsSMAVal
+            })
+        }
+        if(parsedData[date].hospital.totalInHospital!=undefined) {
+            inHospitalGraphData.push({date: parsedData[date].date,
                 totalInHospital: parsedData[date].hospital.totalInHospital||"null",
-                admissionsSmaVal: admissionsSMAVal,
-                totalInHospSmaVal: inHospitalSMAVal
+                totalInHospSmaVal: inHospitalSMAVal||"null"
             })
         }
         
 }
     revCasesGraphData = Object.assign([], casesGraphData).reverse();
     revDeathsGraphData = Object.assign([], deathsGraphData).reverse();
-    return([latestOverviewData, revCasesGraphData, revDeathsGraphData, parsedEngData, parsedScoData, parsedWalData, parsedNiData, testsGraphData, hospitalGraphData])
+    return([latestOverviewData, revCasesGraphData, revDeathsGraphData, parsedEngData, parsedScoData, parsedWalData, parsedNiData, testsGraphData, hospAdmissionsGraphData, inHospitalGraphData])
 }
 
 module.exports.country = function(country) {
