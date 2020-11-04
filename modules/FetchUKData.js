@@ -101,7 +101,7 @@ module.exports.UK = function() {
         if(parsedData[date].hospital.newAdmissions!=undefined) {
             hospAdmissionsGraphData.push({date: parsedData[date].date,
                 newAdmissions: parsedData[date].hospital.newAdmissions,
-                cumAdmissions: parsedData[date].hospital.cumAdmissions,
+                cumAdmissions: parsedData[date].hospital.cumAdmissions||"null",
                 admissionsSmaVal: admissionsSMAVal
             })
         }

@@ -47,7 +47,7 @@ ukFile.write(json.dumps(response['data']))
 ukFile.close()
 print(str(datetime.datetime.now()) + " finished requesting and writing UK data")
 
-'''FETCH ENG DATA'''
+'''FETCH NATION DATA'''
 def fetchCountryData(country):
     filters = [
         "areaType=nation",
