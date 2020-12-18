@@ -20,6 +20,7 @@
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-colorschemes"></script>
+
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162603226-1"></script>
@@ -114,6 +115,15 @@
         <p style="text-align: right;">Source: <a href="https://www.worldometers.info/coronavirus/">Worldometers</a><!---, <a href="https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/">BNO News</a>---></p>
         <br>
         
+        <div class="row">
+            <div class="error">
+                The ECDC recently switched from reporting cases and deaths for each country daily to weekly without warning, which broke my data processing scripts. As such, the data in the graph
+                is now outdated and only goes up to 14th December. The table below the graph is completely broken. I'm working on a fix using a different, more reliable data source and will have this 
+                updated ASAP. Sorry for the inconvenience.
+            </div>
+        </div>
+
+
         <div class="row">
         <script>  
         $(document).ready(function(){
