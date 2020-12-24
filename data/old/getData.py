@@ -1,4 +1,5 @@
-'''This python script retrieves new data from the ECDC, saves it to a file
+'''DEPRECATED - REFER TO getGraphData and getTableData scripts.
+   This python script retrieves new data from the ECDC, saves it to a file
    and then open the file, reads data and creates a new file of required data for the
    web app. It's scuffed but works.
    Changelog:

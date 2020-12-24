@@ -9,7 +9,7 @@ module.exports.country = async (ctx) => {
     })
     const countryTabData = FetchData.countryTableData()
     readData = JSON.parse(readDataBuf.toString('utf-8'))
-    const id = ctx.params.id
+    const id = ctx.params.id.replace(/-/g, ' ')
     const cases = GraphCountryData.cases(readData[id])
     const casesCumulative = cases[0]
     const casesDaily = cases[1]
@@ -19,7 +19,7 @@ module.exports.country = async (ctx) => {
 
     await ctx.render('./country', {
         id: ctx.params.id, 
-        name: Convert.convert(id),
+        name: id.replace(/-/g, ' '),
         caseData: casesCumulative,
         caseDailyData: casesDaily,
         deathData: deathsCumulative,

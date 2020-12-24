@@ -240,7 +240,7 @@
                     fill: false,
                     lineTension: 0.5,
                     hidden: true
-                },*/{
+                },{
                     label: 'China',
                     data: {{{json dCHNdata }}},
                     borderWidth: 2,
@@ -249,7 +249,7 @@
                     fill: false,
                     lineTension: 0.5,
                     hidden: true,
-                }, {
+                }, */{
                     label: 'Sweden',
                     data: {{{json dSWEdata }}},
                     borderWidth: 2,
@@ -285,7 +285,7 @@
                     fill: false,
                     lineTension: 0.5,
                     hidden: true,
-                },{
+                },/*{
                     label: 'Canada',
                     data: {{{json dCANdata }}},
                     borderWidth: 2,
@@ -294,7 +294,7 @@
                     fill: false,
                     lineTension: 0.5,
                     hidden: true,
-                },{
+                },*/{
                     label: 'Russia',
                     data: {{{json dRUSdata }}},
                     borderWidth: 2,
@@ -342,23 +342,23 @@
                         footer: function(toolTipItem, data) {
                             var dates = {{{json dates}}}
                             var dateObj = {
-                                'United Kingdom': 'GBR',
-                                'Italy': 'ITA',
-                                'Spain': 'ESP',
-                                'United States': 'USA',
-                                'South Korea': 'KOR',
-                                'Germany': 'DEU',
-                                'China': 'CHN',
-                                'Sweden': 'SWE',
-                                'Switzerland': 'CHE',
-                                'France': 'FRA',
-                                'Japan': 'JPN',
-                                'Ireland': 'IRL',
-                                'Netherlands': 'NLD',
-                                'Canada': 'CAN',
-                                'Russia': 'RUS',
-                                'Brazil': 'BRA',
-                                'India': 'IND'
+                                'United Kingdom': 'United Kingdom',
+                                'Italy': 'Italy',
+                                'Spain': 'Spain',
+                                'United States': 'US',
+                                'South Korea': 'Korea, South',
+                                'Germany': 'Germany',
+                                'China': 'China',
+                                'Sweden': 'Sweden',
+                                'Switzerland': 'Switzerland',
+                                'France': 'France',
+                                'Japan': 'Japan',
+                                'Ireland': 'Ireland',
+                                'Netherlands': 'Netherlands',
+                                'Canada': 'Canada',
+                                'Russia': 'Russia',
+                                'Brazil': 'Brazil',
+                                'India': 'India'
                             }
                             var countryCode = dateObj[data.datasets[toolTipItem[0].datasetIndex].label]
                             return dates[countryCode][toolTipItem[0].index]
@@ -469,7 +469,7 @@
                     lineTension: 0.5,
                     hidden: false
                 }, {
-                    label: 'South Korea',
+                    label: 'Korea, South',
                     data: {{{json cKORdata}}},
                     fill: false,
                     borderWidth: 2,
@@ -495,7 +495,7 @@
                     pointHitRadius: 5,
                     lineTension: 0.5,
                     hidden: true
-                },{
+                },/*{
                     label: 'China',
                     data: {{{json cCHNdata }}},
                     fill: false,
@@ -504,7 +504,7 @@
                     pointHitRadius: 5,
                     lineTension: 0.5,
                     hidden: true,
-                }, {
+                },*/ {
                     label: 'Sweden',
                     data: {{{json cSWEdata }}},
                     fill: false,
@@ -540,7 +540,7 @@
                     pointHitRadius: 5,
                     lineTension: 0.5,
                     hidden: true,
-                },{
+                },/*{
                     label: 'Canada',
                     data: {{{json cCANdata }}},
                     fill: false,
@@ -549,7 +549,7 @@
                     pointHitRadius: 5,
                     lineTension: 0.5,
                     hidden: true,
-                },{
+                },*/{
                     label: 'Russia',
                     data: {{{json cRUSdata }}},
                     fill: false,
@@ -597,23 +597,23 @@
                         footer: function(toolTipItem, data) {
                             var dates = {{{json dates}}}
                             var dateObj = {
-                                'United Kingdom': 'GBR',
-                                'Italy': 'ITA',
-                                'Spain': 'ESP',
-                                'United States': 'USA',
-                                'South Korea': 'KOR',
-                                'Germany': 'DEU',
-                                'China': 'CHN',
-                                'Sweden': 'SWE',
-                                'Switzerland': 'CHE',
-                                'France': 'FRA',
-                                'Japan': 'JPN',
-                                'Ireland': 'IRL',
-                                'Netherlands': 'NLD',
-                                'Canada': 'CAN',
-                                'Russia': 'RUS',
-                                'Brazil': 'BRA',
-                                'India': 'IND'
+                                'United Kingdom': 'United Kingdom',
+                                'Italy': 'Italy',
+                                'Spain': 'Spain',
+                                'United States': 'US',
+                                'South Korea': 'Korea, South',
+                                'Germany': 'Germany',
+                                'China': 'China',
+                                'Sweden': 'Sweden',
+                                'Switzerland': 'Switzerland',
+                                'France': 'France',
+                                'Japan': 'Japan',
+                                'Ireland': 'Ireland',
+                                'Netherlands': 'Netherlands',
+                                'Canada': 'Canada',
+                                'Russia': 'Russia',
+                                'Brazil': 'Brazil',
+                                'India': 'India'
                             }
                             var countryCode = dateObj[data.datasets[toolTipItem[0].datasetIndex].label]
                             return dates[countryCode][toolTipItem[0].index]
@@ -631,7 +631,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 100, //minimum tick
-                        max: 1000000, //maximum tick
+                        max: 2000000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -650,6 +650,7 @@
                         chartObj.ticks.push(200000);
                         chartObj.ticks.push(500000);
                         chartObj.ticks.push(1000000);
+                        chartObj.ticks.push(2000000);
                     }
                 }],
                 xAxes: [{
@@ -660,7 +661,7 @@
                     type: 'logarithmic',
                     ticks: {
                         min: 100, //minimum tick
-                        max: 10000000, //maximum tick
+                        max: 50000000, //maximum tick
                         callback: function (value, index, values) {
                             return Number(value.toString());//pass tick values as a string into Number function
                         }
@@ -683,6 +684,7 @@
                         chartObj.ticks.push(2000000);
                         chartObj.ticks.push(5000000);
                         chartObj.ticks.push(10000000);
+                        chartObj.ticks.push(50000000);
 
                     }
                 }]
@@ -708,11 +710,11 @@
             <tbody>
                 {{#each countryData}}
                     <tr>
-                        <td><a href="/country/{{this.country}}">{{convert this.country}}</a></td>
-                        <td>{{this.cases}}</td>
-                        <td>{{this.new_cases}}</td>
-                        <td>{{this.deaths}}</td>
-                        <td>{{this.new_deaths}}</td>
+                        <td><a href="/country/{{urlsafe-country @key}}">{{@key}}</a></td>
+                        <td>{{thousandSeparate this.cases}}</td>
+                        <td>{{thousandSeparate this.new_cases}}</td>
+                        <td>{{thousandSeparate this.deaths}}</td>
+                        <td>{{thousandSeparate this.new_deaths}}</td>
                     </tr>
                 {{/each}}
             </tbody>

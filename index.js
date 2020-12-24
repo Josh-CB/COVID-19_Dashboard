@@ -97,3 +97,13 @@ handlebars.registerHelper('formatDate', function (dateString) {
 	console.log(new Date(dateString).toLocaleDateString('en-GB', options))
 	return new Date(dateString).toLocaleDateString('en-GB', options)
 })
+
+handlebars.registerHelper('urlsafe-country', function (country) {//, string2) {
+	country = country.replace(/\s/g, '-')
+	return country
+})
+
+handlebars.registerHelper('rev-urlsafe-country', function (country) {//, string2) {
+	country = country.replace(/-/g, ' ')
+	return country
+})

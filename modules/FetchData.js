@@ -1,16 +1,11 @@
 var fs = require('fs');
 module.exports.fetchData = function() {
-    readData = fs.readFileSync('./data/data.json', (err, data) => {
+    readData = fs.readFileSync('./data/graphData.json', (err, data) => {
         if(err) throw err;
         return data
     })
     
     lastUpdate = fs.readFileSync('./data/lastUpdate.txt', (err, data) => {
-        if(err) throw err;
-        return data
-    })
-
-    worldData = fs.readFileSync('./data/worlddata.json', (err, data) => {
         if(err) throw err;
         return data
     })
