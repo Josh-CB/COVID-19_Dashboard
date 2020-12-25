@@ -99,11 +99,6 @@ handlebars.registerHelper('formatDate', function (dateString) {
 })
 
 handlebars.registerHelper('urlsafe-country', function (country) {//, string2) {
-	country = country.replace(/\s/g, '-')
-	return country
-})
-
-handlebars.registerHelper('rev-urlsafe-country', function (country) {//, string2) {
-	country = country.replace(/-/g, ' ')
+	country = country.replace(/\s/g, '_')
 	return country
 })

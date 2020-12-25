@@ -86,7 +86,7 @@
     <header>
         <div class="sub-header">
             <div class="sh-text">
-                <p><b>New</b> (27 September): <a href="/uk">view specific data for the UK and its nations</a></p>
+                <p>24th December: <b>The issue caused by the ECDC moving to weekly data from daily updates has now been resolved.</b> We now use data from the WHO and OWID instead. Sorry for the inconvenience.</a></p>
             </div>
         </div>
     </header>
@@ -114,15 +114,6 @@
         <p class="update" style="float: left; font-size: 15px; color:darkgrey;">Checking for updates</p>
         <p style="text-align: right;">Source: <a href="https://www.worldometers.info/coronavirus/">Worldometers</a><!---, <a href="https://bnonews.com/index.php/2020/04/the-latest-coronavirus-cases/">BNO News</a>---></p>
         <br>
-        
-        <div class="row">
-            <div class="error">
-                The ECDC recently switched from reporting cases and deaths for each country daily to weekly without warning, which broke my data processing scripts. As such, the data in the graph
-                is now outdated and only goes up to 14th December. The table below the graph is completely broken. I'm working on a fix using a different, more reliable data source and will have this 
-                updated ASAP. Sorry for the inconvenience.
-            </div>
-        </div>
-
 
         <div class="row">
         <script>  
@@ -165,7 +156,7 @@
             <canvas id="casesChart" height="800"></canvas>
             <canvas id="deathChart" height="800" ></canvas>
             <section style="width: 100%;">
-            <p style="float: left;"> Data: <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">European Centre for Disease Prevention and Control</a></p>
+            <p style="float: left;"> Data: <a href="https://github.com/CSSEGISandData/COVID-19/">JHU CSSE COVID-19 Data</a></p>
             <p class="graphupdate" style="text-align:right;">Last checked for update: {{{lastUpdate}}}</p>
             </section>
             </div>
@@ -720,7 +711,7 @@
             </tbody>
         </table>
 
-    <p>Data: <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">European Centre for Disease Prevention and Control</a></p>
+    <p>Data: <a href="https://ourworldindata.org/coronavirus-source-data">Our World in Data</a> and <a href="https://github.com/CSSEGISandData/COVID-19">JHU CSSE COVID-19 Data</a></p>
     </div>    
     <footer >
             <a href="mailto:contact@coviddash.digital">Contact</a>

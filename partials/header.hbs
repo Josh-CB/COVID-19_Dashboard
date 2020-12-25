@@ -13,14 +13,14 @@
           <input list="countries" name="country" id="country" class="form-control mr-sm-2" type="search" placeholder="Select a country" aria-label="Search">
           
           <datalist id="countries">
-            {{#each countryData}}
-            <option value="{{convert this.country}}">
+            {{#each countries}}
+            <option value="{{this}}">
             {{/each}}
           </datalist>
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-        <form action="/uk">
-          <button style="margin-left: 10px;" class="btn btn-outline-success my-2 my-sm-0" type="submit">Go to UK data</button>
+        <form>
+          <button style="margin-left: 10px;" class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="location.href='/uk'">Go to UK data</button>
         </form>
     </div>
   </div>

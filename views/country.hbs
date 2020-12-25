@@ -47,30 +47,42 @@
         <div class="row">
             <div class="col-md-4 col-xs-6 column-margin">
                 <div class="row">
-                    <!--CHANGE COUNTRY CARDS TO USE TABLE DATA INSTEAD-->
                     <div class="col">
                         <div class="worldCard card">
                             <p class="cardtitle">Confirmed cases</p>
-                            {{#if caseData.0.y}}
-                            <p class="data" id="cases">{{thousandSeparate caseData.0.y}}</p>
-                            {{else if caseData.1.y}}
-                            <p class="data" id="cases">{{thousandSeparate caseData.1.y}}</p>
-                            {{else}}
-                            <p class="data" id="cases">0</p>
-                            {{/if}}
+                            <p class="data" id="cases">{{thousandSeparate countryData.cases}}</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="worldCard card">
                             <p class="cardtitle">Confirmed deaths</p>
-                            {{#if deathData.0.y}}
-                            <p class="data" id="deaths">{{thousandSeparate deathData.0.y}}</p>
-                            {{else if deathData.1.y}}
-                            <p class="data" id="deaths">{{thousandSeparate deathData.1.y}}</p>
-                            {{else}}
-                            <p class="data" id="deaths">0</p>
-                            {{/if}}
+                            <p class="data" id="deaths">{{thousandSeparate countryData.deaths}}</p>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="worldCard card">
+                            <p class="cardtitle">New cases</p>
+                            <p class="data" id="cases">{{thousandSeparate countryData.new_cases}}</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="worldCard card">
+                            <p class="cardtitle">New deaths</p>
+                            <p class="data" id="deaths">{{thousandSeparate countryData.new_deaths}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="lastUpdatedDiv" style="overflow: hidden;">
+                        <p style="float: left;">Last updated:&nbsp;</p>
+                        <p id="lastUpdated" style="float: right;">{{lastUpdate}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="lastUpdatedDiv" style="overflow: hidden;">
+                        <p style="float: left;">Source: <a href="https://ourworldindata.org/coronavirus-source-data">Our World in Data</a> and <a href="https://github.com/CSSEGISandData/COVID-19">JHU CSSE COVID-19 Data</a></p>
                     </div>
                 </div>
             </div>

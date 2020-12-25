@@ -8,6 +8,9 @@ from contextlib import closing
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
+currentTableDataFile = open("{}/countryTableData.json".format(dir_path), "r")
+currentTableData = json.loads(currentTableDataFile.read())
+
 def fixNull(val):
     if val=='':
         return 0
@@ -22,7 +25,7 @@ countryGraph = {}
 
 with closing(requests.get('https://covid.ourworldindata.org/data/owid-covid-data.csv', stream=True)) as owidResponse:
     '''
-    Fetch deaths data from JHU's CSSE COVID-19 data repository (https://github.com/CSSEGISandData/COVID-19/). Lines in CSV file are retrieved iteratively to conserve memory.
+    Fetch table data from Our World in Data. This data is used on the homepage in a table of headline figures for every country.
     '''
     reader = csv.reader(codecs.iterdecode(owidResponse.iter_lines(), 'utf-8'), delimiter=',')
     line = 0
@@ -60,4 +63,12 @@ f = open("{}/countryGraphData.json".format(dir_path), "w")
 f.write(countryGraphJSON)
 f.close()
 
-print(str(datetime.datetime.now()) + " Finished updated table data")
+if currentTableData != tableData:
+    print("new update!")
+    f = open("{}/lastUpdatedTable.txt".format(dir_path), "w")
+    f.write(datetime.datetime.now().strftime("%d/%m/%Y %H:%M") + " UTC")
+    f.close()
+else:
+    print("no update.")
+
+print(str(datetime.datetime.now()) + " Finished updating table data")

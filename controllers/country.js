@@ -7,15 +7,25 @@ module.exports.country = async (ctx) => {
         if(err) throw err;
         return data
     })
-    const countryTabData = FetchData.countryTableData()
+    
     readData = JSON.parse(readDataBuf.toString('utf-8'))
-    const id = ctx.params.id.replace(/-/g, ' ')
+    const id = ctx.params.id.replace(/_/g, ' ')
+    const countryTabData = FetchData.countryTableData()
     const cases = GraphCountryData.cases(readData[id])
     const casesCumulative = cases[0]
     const casesDaily = cases[1]
     const deaths = GraphCountryData.deaths(readData[id])
     const deathsCumulative = deaths[0]
     const deathsDaily = deaths[1]
+    const countries = Object.keys(countryTabData)
+    if(!countries.includes(id)) {
+        ctx.body = 'Invalid country name.';
+        return
+    }
+    lastUpdate = fs.readFileSync('./data/lastUpdatedTable.txt', (err, data) => {
+        if(err) throw err;
+        return data
+    })
 
     await ctx.render('./country', {
         id: ctx.params.id, 
@@ -24,6 +34,8 @@ module.exports.country = async (ctx) => {
         caseDailyData: casesDaily,
         deathData: deathsCumulative,
         deathDailyData: deathsDaily,
-        countryData: countryTabData
+        countryData: countryTabData[id],
+        countries: countries,
+        lastUpdate: lastUpdate
     })
 }

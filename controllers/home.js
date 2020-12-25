@@ -41,6 +41,7 @@ module.exports.home = async(ctx) => {
         dates: dates,
         lastUpdate: lastUpdated,
         counterdata: counterdata,
-        countryData: countryData
+        countryData: countryData,
+        countries: Object.keys(countryData),
     })
 }
