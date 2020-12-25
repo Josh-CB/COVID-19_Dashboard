@@ -10,6 +10,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 currentTableDataFile = open("{}/countryTableData.json".format(dir_path), "r")
 currentTableData = json.loads(currentTableDataFile.read())
+currentTableDataFile.close()
 
 def fixNull(val):
     if val=='':
