@@ -209,6 +209,7 @@
 
 <script>
 am4core.ready(function() {
+        am4core.options.onlyShowOnViewport = true;
         var caseChartContainer = am4core.create("casesChart", am4core.Container)
         caseChartContainer.width = am4core.percent(100);
         caseChartContainer.height = am4core.percent(100);
