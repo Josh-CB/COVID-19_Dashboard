@@ -32,7 +32,13 @@ structure = {
     "hospital": {
         "newAdmissions": "newAdmissions",
         "cumAdmissions": "cumAdmissions",
-        "totalInHospital": "hospitalCases"
+        "totalInHospital": "hospitalCases",
+        "cumAdmissionsByAge":"cumAdmissionsByAge",
+        "covidOccupiedMVBeds": "covidOccupiedMVBeds"
+    },
+    "vaccines": {
+        "cumPeopleReceivingFirstDose":"cumPeopleReceivingFirstDose",
+        "cumPeopleReceivingSecondDose":"cumPeopleReceivingSecondDose"
     }
 }
 api_params = {
@@ -74,7 +80,6 @@ def fetchCountryData(country):
         "healthcare": {
             "newAdmissions": "newAdmissions",
             "cumAdmissions": "cumAdmissions",
-            "cumAdmissionsByAge":"cumAdmissionsByAge"
         }
     }
     api_params = {
@@ -89,5 +94,7 @@ def fetchCountryData(country):
 for country in ["England", "Scotland", "Wales", "Northern Ireland"]:
     print(str(datetime.datetime.now()) + " requesting " + country + " data")
     fetchCountryData(country)
+
+
 
 print(str(datetime.datetime.now()) + " finished updating all UK & national data.")

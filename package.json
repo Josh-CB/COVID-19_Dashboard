@@ -4,7 +4,8 @@
   "description": "A web app which will first show a graph of new COVID-19 deaths against total deaths, and will later be a more comprehensive data viz dashboard",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --config nodemon.json"
   },
   "author": "Joshua Hills",
   "license": "ISC",

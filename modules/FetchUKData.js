@@ -1,26 +1,5 @@
 var fs = require('fs');
 module.exports.UK = function() {
-    const engData = fs.readFileSync('./data/EnglandData.json',(err, data) => {
-        if(err) throw err;
-        return JSON.parse(JSON.parse(data.toString('utf-8')))
-    })
-    const parsedEngData = JSON.parse(engData.toString('utf-8'))[0]
-    const scoData = fs.readFileSync('./data/ScotlandData.json',(err, data) => {
-        if(err) throw err;
-        return JSON.parse(JSON.parse(data.toString('utf-8')))
-    })
-    const parsedScoData = JSON.parse(scoData.toString('utf-8'))[0]
-    const walData = fs.readFileSync('./data/WalesData.json',(err, data) => {
-        if(err) throw err;
-        return JSON.parse(JSON.parse(data.toString('utf-8')))
-    })
-    const parsedWalData = JSON.parse(walData.toString('utf-8'))[0]
-    const niData = fs.readFileSync('./data/NorthernIrelandData.json',(err, data) => {
-        if(err) throw err;
-        return JSON.parse(JSON.parse(data.toString('utf-8')))
-    })
-    const parsedNiData = JSON.parse(niData.toString('utf-8'))[0]
-
     const ukData = fs.readFileSync('./data/ukOverview.json',(err, data) => {
         if(err) throw err;
         return JSON.parse(JSON.parse(data.toString('utf-8')))
@@ -28,14 +7,25 @@ module.exports.UK = function() {
     const parsedData = JSON.parse(ukData.toString('utf-8'))
     const latestOverviewData = [parsedData[0], parsedData[1], parsedData[2]]
 
+    const latestVaccineData = {}
+
     const casesGraphData = []
     const deathsGraphData = []
     const testsGraphData = []
     const hospAdmissionsGraphData = []
     const inHospitalGraphData = []
+    const mvBedsGraphData = []
+    //latest vaccine data (published weekly)
+    for(var date=0; date<parsedData.length; date++) {
+        if(parsedData[date].vaccines.cumPeopleReceivingFirstDose!=null) {
+            latestVaccineData.cumPeopleReceivingFirstDose = parsedData[date].vaccines.cumPeopleReceivingFirstDose;
+            latestVaccineData.cumPeopleReceivingSecondDose = parsedData[date].vaccines.cumPeopleReceivingSecondDose;
+            break
+        }
+    }
     //graph data
     for(var date = 0; date<parsedData.length; date++) {
-        let casesSMAVal, deathsSMAVal, casesSpecSMAVal, admissionsSMAVal, inHospitalSMAVal = 0
+        let casesSMAVal, deathsSMAVal, casesSpecSMAVal, admissionsSMAVal, inHospitalSMAVal, mvBedsSMAVal = 0
         if(date > 2 && date < parsedData.length-3) { //for case and death data (reported daily)
             const sumFutureCases = parsedData[date-1].cases.daily + parsedData[date-2].cases.daily + parsedData[date-3].cases.daily
             const sumPastCases = parsedData[date+1].cases.daily + parsedData[date+2].cases.daily + parsedData[date+3].cases.daily
@@ -61,6 +51,14 @@ module.exports.UK = function() {
                 inHospitalSMAVal = Math.round(((sumFutureTotalInHospital + parsedData[date].hospital.totalInHospital + sumPastTotalInHospital) / 7))
             } else {
                 inHospitalSMAVal = "null"
+            }
+            if (parsedData[date-1].hospital.covidOccupiedMVBeds && parsedData[date-2].hospital.covidOccupiedMVBeds && parsedData[date-3].hospital.covidOccupiedMVBeds &&
+                parsedData[date+1].hospital.covidOccupiedMVBeds && parsedData[date+2].hospital.covidOccupiedMVBeds && parsedData[date+3].hospital.covidOccupiedMVBeds) { // for patients in mv beds (check for +3 days and -3 days) 
+                const sumFutureTotalInMvBeds = parsedData[date-1].hospital.covidOccupiedMVBeds + parsedData[date-2].hospital.covidOccupiedMVBeds + parsedData[date-3].hospital.covidOccupiedMVBeds
+                const sumPastTotalInMvBeds = parsedData[date+1].hospital.covidOccupiedMVBeds + parsedData[date+2].hospital.covidOccupiedMVBeds + parsedData[date+3].hospital.covidOccupiedMVBeds
+                mvBedsSMAVal = Math.round(((sumFutureTotalInMvBeds + parsedData[date].hospital.covidOccupiedMVBeds + sumPastTotalInMvBeds) / 7))
+            } else {
+                mvBedsSMAVal = "null"
             }
         } else {
             casesSMAVal = "null"
@@ -110,12 +108,17 @@ module.exports.UK = function() {
                 totalInHospital: parsedData[date].hospital.totalInHospital||"null",
                 totalInHospSmaVal: inHospitalSMAVal||"null"
             })
-        }
-        
+        } 
+        if(parsedData[date].hospital.covidOccupiedMVBeds!=undefined) {
+            mvBedsGraphData.push({date: parsedData[date].date,
+                totalInMvBeds: parsedData[date].hospital.covidOccupiedMVBeds||"null",
+                totalInMvBedsSmaVal: mvBedsSMAVal||"null"
+            })
+        } 
 }
     revCasesGraphData = Object.assign([], casesGraphData).reverse();
     revDeathsGraphData = Object.assign([], deathsGraphData).reverse();
-    return([latestOverviewData, revCasesGraphData, revDeathsGraphData, parsedEngData, parsedScoData, parsedWalData, parsedNiData, testsGraphData, hospAdmissionsGraphData, inHospitalGraphData])
+    return([latestOverviewData, revCasesGraphData, revDeathsGraphData, testsGraphData, hospAdmissionsGraphData, inHospitalGraphData, latestVaccineData, mvBedsGraphData])
 }
 
 module.exports.country = function(country) {
