@@ -119,13 +119,9 @@
                                 <p class="cardTitle">New Tests</p>
                                 <p class="card-subtitle">(pillar 1 and 2)</p>
                                 {{#if overviewData.0.tests.newPillarOneTestsByPublishDate}}
-                                <p class="data">{{thousandSeparate (addition overviewData.0.tests.newPillarOneTestsByPublishDate overviewData.0.tests.newPillarTwoTestsByPublishDate)}}</p> 
+                                    <p class="data">{{thousandSeparate (addition overviewData.0.tests.newPillarOneTestsByPublishDate overviewData.0.tests.newPillarTwoTestsByPublishDate)}}</p> 
                                 {{else}}
-                                    {{#if overviewData.1.tests.newPillarOneTestsByPublishDate}}
-                                    <p class="data">{{thousandSeparate (addition overviewData.1.tests.newPillarOneTestsByPublishDate overviewData.1.tests.newPillarTwoTestsByPublishDate)}}</p>
-                                    {{else}}
-                                    <p class="data">{{thousandSeparate (addition overviewData.2.tests.newPillarOneTestsByPublishDate overviewData.2.tests.newPillarTwoTestsByPublishDate)}}</p>
-                                    {{/if}}
+                                    <p class="data">No data</p>
                                 {{/if}}
                             </div>
                         </div>
@@ -136,13 +132,9 @@
                                 <p class="cardTitle">Testing Capacity</p>
                                 <p class="card-subtitle">(all pillars - estimated)</p>
                                 {{#if overviewData.0.tests.plannedCapacityByPublishDate}}
-                                <p class="data">{{thousandSeparate overviewData.0.tests.plannedCapacityByPublishDate}}</p> 
+                                    <p class="data">{{thousandSeparate overviewData.0.tests.plannedCapacityByPublishDate}}</p> 
                                 {{else}}
-                                    {{#if overviewData.1.tests.plannedCapacityByPublishDate}}
-                                    <p class="data">{{thousandSeparate overviewData.1.tests.plannedCapacityByPublishDate}}</p>
-                                    {{else}}
-                                    <p class="data">{{thousandSeparate overviewData.2.tests.plannedCapacityByPublishDate}}</p>
-                                    {{/if}}
+                                    <p class="data">No data</p>
                                 {{/if}}
                             </div>
                         </div>

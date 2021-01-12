@@ -8,6 +8,7 @@ module.exports.UK = function() {
     const latestOverviewData = [parsedData[0], parsedData[1], parsedData[2]]
 
     const latestVaccineData = {}
+    const latestTestingData = {}
 
     const casesGraphData = []
     const deathsGraphData = []
@@ -23,6 +24,7 @@ module.exports.UK = function() {
             break
         }
     }
+
     //graph data
     for(var date = 0; date<parsedData.length; date++) {
         let casesSMAVal, deathsSMAVal, casesSpecSMAVal, admissionsSMAVal, inHospitalSMAVal, mvBedsSMAVal = 0

@@ -37,8 +37,8 @@ structure = {
         "covidOccupiedMVBeds": "covidOccupiedMVBeds"
     },
     "vaccines": {
-        "cumPeopleReceivingFirstDose":"cumPeopleReceivingFirstDose",
-        "cumPeopleReceivingSecondDose":"cumPeopleReceivingSecondDose"
+        "cumPeopleReceivingFirstDose":"cumPeopleVaccinatedFirstDoseByPublishDate",
+        "cumPeopleReceivingSecondDose":"cumPeopleVaccinatedSecondDoseByPublishDate"
     }
 }
 api_params = {
