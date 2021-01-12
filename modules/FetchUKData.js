@@ -24,7 +24,16 @@ module.exports.UK = function() {
             break
         }
     }
-
+    //latest test data
+    for(var date=0; date<parsedData.length; date++) {
+        if(parsedData[date].tests.newPillarOneTestsByPublishDate!=null) {
+            latestTestingData.newPillarOneTestsByPublishDate = parsedData[date].tests.newPillarOneTestsByPublishDate;
+            latestTestingData.newPillarTwoTestsByPublishDate = parsedData[date].tests.newPillarTwoTestsByPublishDate;
+            latestTestingData.plannedPCRCapacityByPublishDate = parsedData[date].tests.plannedPCRCapacityByPublishDate;
+            latestTestingData.newPCRTestsByPublishDate = parsedData[date].tests.newPCRTestsByPublishDate;
+            break
+        }
+    }
     //graph data
     for(var date = 0; date<parsedData.length; date++) {
         let casesSMAVal, deathsSMAVal, casesSpecSMAVal, admissionsSMAVal, inHospitalSMAVal, mvBedsSMAVal = 0
@@ -120,7 +129,7 @@ module.exports.UK = function() {
 }
     revCasesGraphData = Object.assign([], casesGraphData).reverse();
     revDeathsGraphData = Object.assign([], deathsGraphData).reverse();
-    return([latestOverviewData, revCasesGraphData, revDeathsGraphData, testsGraphData, hospAdmissionsGraphData, inHospitalGraphData, latestVaccineData, mvBedsGraphData])
+    return([latestOverviewData, revCasesGraphData, revDeathsGraphData, testsGraphData, hospAdmissionsGraphData, inHospitalGraphData, latestVaccineData, mvBedsGraphData, latestTestingData])
 }
 
 module.exports.country = function(country) {

@@ -10,6 +10,7 @@ module.exports = async (ctx) => {
         hospitalGraphData: data[4],
         inHospitalGraphData: data[5],
         vaccineData: data[6],
-        mvBedsGraphData: data[7]
+        mvBedsGraphData: data[7],
+        testData: data[8]
     })
 }

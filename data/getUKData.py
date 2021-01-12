@@ -27,7 +27,8 @@ structure = {
         "newPillarTwoTestsByPublishDate":"newPillarTwoTestsByPublishDate",
         "newPillarThreeTestsByPublishDate":"newPillarThreeTestsByPublishDate",
         "newPillarFourTestsByPublishDate":"newPillarFourTestsByPublishDate",
-        "plannedCapacityByPublishDate":"plannedCapacityByPublishDate"
+        "plannedPCRCapacityByPublishDate":"plannedPCRCapacityByPublishDate",
+        "newPCRTestsByPublishDate": "newPCRTestsByPublishDate"
     },
     "hospital": {
         "newAdmissions": "newAdmissions",

@@ -116,13 +116,9 @@
                     <div class="col">
                         <div class="card">
                             <div class="container">
-                                <p class="cardTitle">New Tests</p>
-                                <p class="card-subtitle">(pillar 1 and 2)</p>
-                                {{#if overviewData.0.tests.newPillarOneTestsByPublishDate}}
-                                    <p class="data">{{thousandSeparate (addition overviewData.0.tests.newPillarOneTestsByPublishDate overviewData.0.tests.newPillarTwoTestsByPublishDate)}}</p> 
-                                {{else}}
-                                    <p class="data">No data</p>
-                                {{/if}}
+                                <p class="cardTitle">Daily Tests</p>
+                                <p class="card-subtitle">(PCR only)</p>
+                                <p class="data">{{thousandSeparate testData.newPCRTestsByPublishDate}}</p> 
                             </div>
                         </div>
                     </div>
@@ -130,12 +126,8 @@
                         <div class="card">
                             <div class="container">
                                 <p class="cardTitle">Testing Capacity</p>
-                                <p class="card-subtitle">(all pillars - estimated)</p>
-                                {{#if overviewData.0.tests.plannedCapacityByPublishDate}}
-                                    <p class="data">{{thousandSeparate overviewData.0.tests.plannedCapacityByPublishDate}}</p> 
-                                {{else}}
-                                    <p class="data">No data</p>
-                                {{/if}}
+                                <p class="card-subtitle">(PCR only)</p>
+                                <p class="data">{{thousandSeparate testData.plannedPCRCapacityByPublishDate}}</p> 
                             </div>
                         </div>
                     </div>
